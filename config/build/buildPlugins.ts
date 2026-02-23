@@ -2,6 +2,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin, { Configuration } from "mini-css-extract-plugin";
 import { BuildOptions } from "./types/types";
 import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
+import { DefinePlugin } from "webpack";
 
 export function buildPlugins(params: BuildOptions): Configuration["plugins"] {
   const isDev = params.mode === "development";
@@ -11,6 +12,9 @@ export function buildPlugins(params: BuildOptions): Configuration["plugins"] {
     new HtmlWebpackPlugin({
       template: params.paths.html,
     }),
+    new DefinePlugin({
+      __PLATFORM__: JSON.stringify(params.platform),
+    }), // подменяет глобальные переменные на значения которые мы задаем при сборке
   ];
 
   if (isProd) {

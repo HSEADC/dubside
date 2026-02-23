@@ -5,11 +5,14 @@
   "scripts": {
     "build:dev": "webpack  --env mode=development",
     "build:prod": "webpack --env mode=production",
+    "build:mobile": "webpack --env mode=production platform=mobile",
+    "build:desktop": "webpack --env mode=production platform=desktop",
     "start": "webpack serve --env mode=development"
   },
   "author": "dunchek",
   "license": "MIT",
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^25.2.3",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
