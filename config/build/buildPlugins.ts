@@ -5,6 +5,7 @@ import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 import { DefinePlugin } from "webpack";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 import ReactRefrashWebpackPluguin from "@pmmmwh/react-refresh-webpack-plugin";
+import path from "path";
 
 export function buildPlugins(params: BuildOptions): Configuration["plugins"] {
   const isDev = params.mode === "development";
@@ -13,6 +14,7 @@ export function buildPlugins(params: BuildOptions): Configuration["plugins"] {
   const plugins: Configuration["plugins"] = [
     new HtmlWebpackPlugin({
       template: params.paths.html,
+      favicon: path.resolve(params.paths.public, "favicon.svg"),
     }),
     new DefinePlugin({
       __PLATFORM__: JSON.stringify(params.platform),
