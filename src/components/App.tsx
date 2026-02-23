@@ -1,5 +1,5 @@
 import { useState } from "react";
-import classes from "./App.module.scss";
+import classes from "@/components/App.module.scss";
 import { Link, Outlet } from "react-router";
 
 const App = () => {
@@ -13,6 +13,8 @@ const App = () => {
       <Link to={"about"}>about</Link>
       <br />
       <Link to={"tests"}>tests</Link>
+      <br />
+      <Link to={"articles"}>articles</Link>
 
       <h1>{count}</h1>
       <button className={classes.button} onClick={increment}>
