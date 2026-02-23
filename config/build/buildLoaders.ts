@@ -1,5 +1,6 @@
 import { ModuleOptions } from "webpack";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import ReactRefreshTypeScript from "react-refresh-typescript";
 import { BuildOptions } from "./types/types";
 
 export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
@@ -42,9 +43,19 @@ export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
   };
 
   const tsLoader = {
-    test: /\.tsx?$/,
-    use: "ts-loader",
     exclude: /node_modules/,
+    test: /\.tsx?$/,
+    use: [
+      {
+        loader: "ts-loader",
+        options: {
+          transpileOnly: true,
+          getCustomTransformers: () => ({
+            before: [isDev && ReactRefreshTypeScript()].filter(Boolean),
+          }),
+        },
+      },
+    ],
   };
 
   return [accetLoader, scssModuleLoader, scssLoader, tsLoader, svgrLoader];

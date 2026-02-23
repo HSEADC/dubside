@@ -3,6 +3,8 @@ import MiniCssExtractPlugin, { Configuration } from "mini-css-extract-plugin";
 import { BuildOptions } from "./types/types";
 import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 import { DefinePlugin } from "webpack";
+import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
+import ReactRefrashWebpackPluguin from "@pmmmwh/react-refresh-webpack-plugin";
 
 export function buildPlugins(params: BuildOptions): Configuration["plugins"] {
   const isDev = params.mode === "development";
@@ -23,6 +25,13 @@ export function buildPlugins(params: BuildOptions): Configuration["plugins"] {
         filename: "css/[name].[contenthash:8].css",
         chunkFilename: "css/[name].[contenthash:8].css",
       })
+    );
+  }
+
+  if (isDev) {
+    plugins.push(
+      new ForkTsCheckerWebpackPlugin(), // выносим проверку типов в отдельный процесс
+      new ReactRefrashWebpackPluguin()
     );
   }
 
