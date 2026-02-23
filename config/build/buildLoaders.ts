@@ -7,6 +7,17 @@ export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
 
   const styleOrExtract = isDev ? "style-loader" : MiniCssExtractPlugin.loader;
 
+  const accetLoader = {
+    test: /\.(png|jpg|jpeg|gif)$/i,
+    type: "asset/resource",
+  };
+
+  const svgrLoader = {
+    test: /\.svg$/i,
+    issuer: /\.[jt]sx?$/,
+    use: [{ loader: "@svgr/webpack", options: { icon: true } }],
+  };
+
   const scssModuleLoader = {
     test: /\.module\.s[ac]ss$/i,
     use: [
@@ -16,9 +27,7 @@ export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
         options: {
           esModule: false,
           modules: {
-            localIdentName: isDev
-              ? "[path][name]__[local]"
-              : "[hash:base64:8]",
+            localIdentName: isDev ? "[path][name]__[local]" : "[hash:base64:8]",
           },
         },
       },
@@ -38,5 +47,5 @@ export function buildLoaders(options: BuildOptions): ModuleOptions["rules"] {
     exclude: /node_modules/,
   };
 
-  return [scssModuleLoader, scssLoader, tsLoader];
+  return [accetLoader, scssModuleLoader, scssLoader, tsLoader, svgrLoader];
 }

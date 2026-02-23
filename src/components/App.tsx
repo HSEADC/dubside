@@ -1,6 +1,8 @@
 import { useState } from "react";
 import classes from "@/components/App.module.scss";
 import { Link, Outlet } from "react-router";
+import AvatarPng from "@/assets/travis.jpg";
+import Tree from "@/assets/tree.svg";
 
 const App = () => {
   const [count, setCount] = useState<number>(0);
@@ -10,12 +12,15 @@ const App = () => {
 
   return (
     <div>
+      <img src={AvatarPng}></img>
+      <br />
+      <Tree fill="#999" width={200} height={200} />
+      <br />
       <Link to={"about"}>about</Link>
       <br />
       <Link to={"tests"}>tests</Link>
       <br />
       <Link to={"articles"}>articles</Link>
-
       <h1>{count}</h1>
       <button className={classes.button} onClick={increment}>
         <span>increment</span>
