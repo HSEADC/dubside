@@ -8,6 +8,7 @@ yarn-debug.log*
 yarn-error.log*
 
 docs/
+docs/index.html
 
 # env files
 .env
