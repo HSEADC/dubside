@@ -7,6 +7,7 @@ import path from "path";
 interface EnvVariables {
   mode: BuildMode;
   port: number;
+  analyzer: boolean;
 }
 
 export default (env: EnvVariables) => {
@@ -20,6 +21,7 @@ export default (env: EnvVariables) => {
     port: env.port ?? 8080,
     mode: env.mode ?? "development",
     paths: paths,
+    analyzer: env.analyzer,
   });
   return config;
 };
