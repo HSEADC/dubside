@@ -1,14 +1,43 @@
-html {
+@use '@/styles/config.scss' as *;
+@use '@/styles/fonts.scss' as *;
+
+* {
   font-family: 'GT America';
   line-height: 1.5;
   font-style: normal;
   color: white;
-  font-weight: 200;
-  line-height: 150%;
+  font-weight: 400;
   -webkit-text-size-adjust: 100%;
   font-stretch: 125%;
 }
 
 body {
   background: black;
+}
+
+#root {
+  width: $max-width;
+  background: red;
+  margin-inline: auto;
+}
+
+h1 {
+  font-stretch: 150%;
+  font-size: $heading-1-text-size;
+}
+
+h2 {
+  font-size: $heading-2-text-size;
+}
+
+h3 {
+  font-size: $heading-3-text-size;
+}
+
+h4 {
+  font-size: $heading-4-text-size;
+}
+
+p {
+  font-size: $text-1-text-size;
 }

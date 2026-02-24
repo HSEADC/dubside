@@ -74,13 +74,5 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
     }
   };
 
-  return [
-    accetLoader,
-    scssModuleLoader,
-    scssLoader,
-    tsLoader,
-    svgrLoader,
-    videoLoader,
-    fontLoader
-  ];
+  return [accetLoader, scssModuleLoader, scssLoader, tsLoader, svgrLoader, videoLoader, fontLoader];
 }
