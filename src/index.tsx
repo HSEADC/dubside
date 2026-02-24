@@ -1,20 +1,20 @@
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter } from 'react-router'
-import { RouterProvider } from 'react-router'
-import { Suspense } from 'react'
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter } from 'react-router';
+import { RouterProvider } from 'react-router';
+import { Suspense } from 'react';
 
-import '@/styles/global.scss'
+import '@/styles/global.scss';
 
-import App from '@/pages/App'
-import { LazyAbout } from '@/pages/about/About.lazy'
-import { LazyTests } from '@/pages/tests/Tests.lazy'
-import { LazyArticles } from '@/pages/articles/Articles.lazy'
-import { LazyGuide } from './pages/guide/Guide.lazy'
+import App from '@/pages/App';
+import { LazyAbout } from '@/pages/about/About.lazy';
+import { LazyTests } from '@/pages/tests/Tests.lazy';
+import { LazyArticles } from '@/pages/articles/Articles.lazy';
+import { LazyGuide } from './pages/guide/Guide.lazy';
 
-const root = document.getElementById('root')
+const root = document.getElementById('root');
 
 if (!root) {
-  throw new Error('root now found')
+  throw new Error('root now found');
 }
 
 const router = createBrowserRouter([
@@ -56,6 +56,6 @@ const router = createBrowserRouter([
       }
     ]
   }
-])
+]);
 
-ReactDOM.createRoot(root).render(<RouterProvider router={router} />)
+ReactDOM.createRoot(root).render(<RouterProvider router={router} />);

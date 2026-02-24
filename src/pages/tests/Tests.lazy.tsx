@@ -1,3 +1,3 @@
-import { lazy } from "react";
+import { lazy } from 'react';
 
-export const LazyTests = lazy(() => import("@/pages/tests/Tests"));
+export const LazyTests = lazy(() => import('@/pages/tests/Tests'));

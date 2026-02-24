@@ -1,31 +1,31 @@
-import HtmlWebpackPlugin from "html-webpack-plugin";
-import MiniCssExtractPlugin, { Configuration } from "mini-css-extract-plugin";
-import { BuildOptions } from "./types/types";
-import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
-import { DefinePlugin } from "webpack";
-import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
-import ReactRefrashWebpackPluguin from "@pmmmwh/react-refresh-webpack-plugin";
-import path from "path";
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin, { Configuration } from 'mini-css-extract-plugin';
+import { BuildOptions } from './types/types';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+import { DefinePlugin } from 'webpack';
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
+import ReactRefrashWebpackPluguin from '@pmmmwh/react-refresh-webpack-plugin';
+import path from 'path';
 
-export function buildPlugins(params: BuildOptions): Configuration["plugins"] {
-  const isDev = params.mode === "development";
-  const isProd = params.mode === "production";
+export function buildPlugins(params: BuildOptions): Configuration['plugins'] {
+  const isDev = params.mode === 'development';
+  const isProd = params.mode === 'production';
 
-  const plugins: Configuration["plugins"] = [
+  const plugins: Configuration['plugins'] = [
     new HtmlWebpackPlugin({
       template: params.paths.html,
-      favicon: path.resolve(params.paths.public, "favicon.svg"),
+      favicon: path.resolve(params.paths.public, 'favicon.svg')
     }),
     new DefinePlugin({
-      __PLATFORM__: JSON.stringify(params.platform),
-    }), // подменяет глобальные переменные на значения которые мы задаем при сборке
+      __PLATFORM__: JSON.stringify(params.platform)
+    }) // подменяет глобальные переменные на значения которые мы задаем при сборке
   ];
 
   if (isProd) {
     plugins.push(
       new MiniCssExtractPlugin({
-        filename: "css/[name].[contenthash:8].css",
-        chunkFilename: "css/[name].[contenthash:8].css",
+        filename: 'css/[name].[contenthash:8].css',
+        chunkFilename: 'css/[name].[contenthash:8].css'
       })
     );
   }
