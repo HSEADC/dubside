@@ -1,51 +1,61 @@
-import { createRoot } from "react-dom/client";
-import ReactDOM from "react-dom/client";
-import { createBrowserRouter } from "react-router";
-import { RouterProvider } from "react-router";
-import { Suspense } from "react";
+import ReactDOM from 'react-dom/client'
+import { createBrowserRouter } from 'react-router'
+import { RouterProvider } from 'react-router'
+import { Suspense } from 'react'
 
-import App from "@/components/App";
-import { LazyAbout } from "@/pages/about/About.lazy";
-import { LazyTests } from "@/pages/tests/Tests.lazy";
-import { LazyArticles } from "@/pages/articles/Articles.lazy";
+import '@/styles/global.scss'
 
-const root = document.getElementById("root");
+import App from '@/pages/App'
+import { LazyAbout } from '@/pages/about/About.lazy'
+import { LazyTests } from '@/pages/tests/Tests.lazy'
+import { LazyArticles } from '@/pages/articles/Articles.lazy'
+import { LazyGuide } from './pages/guide/Guide.lazy'
+
+const root = document.getElementById('root')
 
 if (!root) {
-  throw new Error("root now found");
+  throw new Error('root now found')
 }
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     children: [
       {
-        path: "/about",
+        path: '/',
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <LazyGuide />
+          </Suspense>
+        )
+      },
+      {
+        path: '/about',
         element: (
           <Suspense fallback={<div>Loading...</div>}>
             <LazyAbout />
           </Suspense>
-        ),
+        )
       },
       {
-        path: "/tests",
+        path: '/tests',
         element: (
           <Suspense fallback={<div>Loading...</div>}>
             <LazyTests />
           </Suspense>
-        ),
+        )
       },
       {
-        path: "/articles",
+        path: '/articles',
         element: (
           <Suspense fallback={<div>Loading...</div>}>
             <LazyArticles />
           </Suspense>
-        ),
-      },
-    ],
-  },
-]);
+        )
+      }
+    ]
+  }
+])
 
-ReactDOM.createRoot(root).render(<RouterProvider router={router} />);
+ReactDOM.createRoot(root).render(<RouterProvider router={router} />)
