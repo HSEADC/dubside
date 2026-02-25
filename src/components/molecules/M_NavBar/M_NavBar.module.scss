@@ -1,7 +1,7 @@
 @use '@/styles/config.scss' as *;
 
 .nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -9,4 +9,5 @@
   height: calc(#{$space} * 10);
   padding-top: calc(#{$space} * 2);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 100%);
+  z-index: 999;
 }

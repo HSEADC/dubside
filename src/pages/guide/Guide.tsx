@@ -1,13 +1,16 @@
+import Q_VideoBackground from '@/components/quarks/Q_VideoBackground/Q_VideoBackground';
 import React from 'react';
+import video from '@/assets/videos/Q_HeroVideo.mp4';
 
 const Guide = () => {
   return (
-    <div>
-      <h1>dubside</h1>
-      <h2>h2 try</h2>
-      <h3>h3 try</h3>
-      <h4>h4 try</h4>
-    </div>
+    <section>
+      <Q_VideoBackground source={video} />
+      <div className="W_SectionElementsWrapper">
+        <h1>lol</h1>
+        <h2>h2 try</h2>
+      </div>
+    </section>
   );
 };
 

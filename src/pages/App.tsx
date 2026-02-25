@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router';
-import NavBar from '@/components/molecules/M_NavBar/NavBar';
+import NavBar from '@/components/molecules/M_NavBar/M_NavBar';
 
 const App = () => {
   return (
