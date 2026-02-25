@@ -11,15 +11,20 @@
   font-stretch: 125%;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   background: black;
 }
 
-#root {
+.W_SectionElementsWrapper {
   width: $max-width;
-  background: red;
+  background: rgb(42, 1, 1);
   margin-inline: auto;
   position: relative;
+  z-index: 0;
 }
 
 h1 {

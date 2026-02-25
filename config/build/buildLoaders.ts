@@ -39,7 +39,16 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
   const scssLoader = {
     test: /\.s[ac]ss$/i,
     exclude: /\.module\.s[ac]ss$/i,
-    use: [styleOrExtract, 'css-loader', 'sass-loader']
+    use: [
+      styleOrExtract,
+      'css-loader',
+      {
+        loader: 'sass-loader',
+        options: {
+          sassOptions: { includePaths: [options.paths.src] }
+        }
+      }
+    ]
   };
 
   const tsLoader = {

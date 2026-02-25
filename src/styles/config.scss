@@ -1,13 +1,15 @@
 /* MEASURES */
 
 $max-width: min(90vw, 1000px);
-$bleed: calc((100vw - #{$max-width}) / 2);
+$bleed: calc((100vw - #{$max-width}) / -2);
 
 $space: clamp(4px, 0.5vw, 12px);
 $radius: clamp(10px, 1.8vw, 24px);
 $radius-max: 999px;
 $average-gap: clamp(10px, 1.38vw, 20px);
 $double-average-gap: calc(#{$average-gap} * 2);
+
+$screen-width: 100vw;
 
 $p-max-width: 35vw;
 $p-gap: clamp(12px, 1.5vw, 20px);
