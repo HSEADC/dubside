@@ -1,20 +1,12 @@
-import { Link, Outlet } from 'react-router';
+import { Outlet } from 'react-router';
+import NavBar from '@/components/molecules/M_NavBar/NavBar';
 
 const App = () => {
   return (
     <div>
-      <Link to={'/'}>guide</Link>
-      <br />
-      <Link to={'/about'}>about</Link>
-      <br />
-      <Link to={'/tests'}>tests</Link>
-      <br />
-      <Link to={'/articles'}>articles</Link>
-
+      <NavBar />
       <Outlet />
       {/* Child routes are rendered through the <Outlet/> in the parent route. */}
-
-      <div>FOOTER</div>
     </div>
   );
 };
