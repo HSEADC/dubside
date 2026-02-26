@@ -10,12 +10,13 @@
 }
 
 .wrapper {
-  position: relative;
+  position: absolute;
+  top: 0;
   width: $screen-width;
   height: 100vh;
   overflow: hidden;
-  isolation: isolate;
-  z-index: 1;
+  /*  isolation: isolate; */
+  z-index: 0;
 
   &::after {
     content: '';
@@ -23,7 +24,7 @@
     inset: 0;
     opacity: 75%;
     background: url('@/assets/images/Q_HeroEffect.png') center / cover no-repeat;
-    z-index: 3;
+    z-index: 1;
     pointer-events: none;
   }
 }

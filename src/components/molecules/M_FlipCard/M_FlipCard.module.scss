@@ -1,0 +1,91 @@
+@use '@/styles/config.scss' as *;
+
+.wrapper {
+  position: relative;
+  z-index: 5;
+  width: min(300px, 75vw);
+  height: min(370px, 90vw);
+  perspective: 1000px; /* глубина */
+}
+
+/* --- */
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.wrapper:hover .inner {
+  transform: rotateY(180deg);
+}
+
+@mixin face() {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: $radius;
+  padding: calc($space + 7px);
+  overflow: hidden;
+  line-height: $card-line-height;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 95%);
+  border-bottom: 0.5px solid white;
+}
+
+/* лицевая */
+.front {
+  @include face();
+  justify-content: flex-end;
+}
+
+.front::before {
+  @include border();
+}
+
+/* обратная */
+.back {
+  @include face();
+  transform: rotateY(180deg);
+  justify-content: space-between;
+}
+
+.back::before {
+  @include border();
+}
+
+.li {
+  @include card();
+  line-height: $card-line-height;
+  font-size: $text-2-text-size;
+  font-weight: 200;
+}
+
+.label {
+  @include card();
+  @include label();
+  margin-top: calc($space * 0.7);
+}
+
+.img {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.backdiv {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.h4 {
+  margin-bottom: calc($space * 0.5);
+}

@@ -3,7 +3,7 @@
 
 * {
   font-family: 'GT America';
-  line-height: 1.5;
+  line-height: $avarage-line-height;
   font-style: normal;
   color: white;
   font-weight: 400;
@@ -26,16 +26,38 @@ h1 {
 
 h2 {
   font-size: $heading-2-text-size;
+  font-stretch: 150%;
 }
 
 h3 {
   font-size: $heading-3-text-size;
+  font-stretch: 150%;
 }
 
 h4 {
   font-size: $heading-4-text-size;
+  font-stretch: 150%;
 }
 
 p {
   font-size: $text-1-text-size;
+}
+
+/* li {
+  position: relative;
+  display: flex;
+  gap: $space;
+} */
+
+li::before {
+  content: '— ';
+  /* display: block; */
+}
+
+.SO_HeroBlock {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }

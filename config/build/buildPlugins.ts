@@ -4,6 +4,7 @@ import { BuildOptions } from './types/types';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { DefinePlugin } from 'webpack';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
+import CopyPlugin from 'copy-webpack-plugin';
 import ReactRefrashWebpackPluguin from '@pmmmwh/react-refresh-webpack-plugin';
 import path from 'path';
 
@@ -18,7 +19,16 @@ export function buildPlugins(params: BuildOptions): Configuration['plugins'] {
     }),
     new DefinePlugin({
       __PLATFORM__: JSON.stringify(params.platform)
-    }) // подменяет глобальные переменные на значения которые мы задаем при сборке
+    }), // подменяет глобальные переменные на значения которые мы задаем при сборке
+    new CopyPlugin({
+      patterns: [
+        {
+          from: params.paths.public,
+          to: params.paths.output,
+          globOptions: { ignore: ['**/index.html'] }
+        }
+      ]
+    })
   ];
 
   if (isProd) {
