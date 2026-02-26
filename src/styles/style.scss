@@ -19,14 +19,6 @@ body {
   background: black;
 }
 
-.W_SectionElementsWrapper {
-  width: $max-width;
-  background: rgb(42, 1, 1);
-  margin-inline: auto;
-  position: relative;
-  z-index: 0;
-}
-
 h1 {
   font-stretch: 150%;
   font-size: $heading-1-text-size;
