@@ -2,14 +2,14 @@ import Q_VideoBackground from '@/components/quarks/Q_VideoBackground/Q_VideoBack
 import React from 'react';
 import video from '@/assets/videos/Q_HeroVideo.mp4';
 import W_SectionElementsWrapper from '@/components/wrappers/W_SectionElementsWrapper/W_SectionElementsWrapper';
-import M_FlipCard from '@/components/molecules/M_FlipCard/M_FlipCard';
+import O_CardSlider from '@/components/organisms/O_CardSlider/O_CardSlider';
 
 const Guide = () => {
   return (
     <div>
       <section className="SO_HeroBlock">
         <Q_VideoBackground source={video} />
-        <M_FlipCard nickname="kendrick" />
+        <O_CardSlider />
       </section>
 
       <section>

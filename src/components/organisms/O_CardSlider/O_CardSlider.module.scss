@@ -1,0 +1,113 @@
+@use '@/styles/config.scss' as *;
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 800vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-style: preserve-3d;
+  transition: transform 800ms ease, opacity 800ms ease;
+  will-change: transform, opacity;
+}
+
+$posX1: 0px;
+$posX2: $posX1 + 220px;
+$posX3: $posX2 + 180px;
+$posX4: $posX3 + 150px;
+$posX5: $posX4 + 130px;
+$posX6: $posX5 + 100px;
+$posX7: $posX5 + 90px;
+
+.posa {
+  transform: translate(-50%, -50%) translateX(calc($posX6 * -1)) translateY(-200px) rotateY(-25deg)
+    rotateZ(25deg) scale(0.78);
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.posb {
+  transform: translate(-50%, -50%) translateX(calc($posX5 * -1)) translateY(-180px) rotateY(-20deg)
+    rotateZ(20deg) scale(0.84);
+  z-index: 2;
+  opacity: 0.4;
+}
+
+.posc {
+  transform: translate(-50%, -50%) translateX(calc($posX4 * -1)) translateY(-125px) rotateY(-15deg)
+    rotateZ(15deg) scale(0.9);
+  z-index: 3;
+  opacity: 0.6;
+}
+
+.posd {
+  transform: translate(-50%, -50%) translateX(calc($posX3 * -1)) translateY(-70px) rotateY(-10deg)
+    rotateZ(10deg) scale(0.95);
+  z-index: 4;
+  opacity: 0.85;
+}
+
+.pose {
+  transform: translate(-50%, -50%) translateX(calc($posX2 * -1)) translateY(-30px) rotateY(-5deg)
+    rotateZ(5deg) scale(0.98);
+  z-index: 5;
+  opacity: 1;
+}
+
+.posf {
+  transform: translate(-50%, -50%) translateX($posX1) translateY(0px) rotateY(0deg) rotateZ(0deg)
+    scale(1);
+  z-index: 6;
+  opacity: 1;
+}
+
+.posg {
+  transform: translate(-50%, -50%) translateX($posX2) translateY(-30px) rotateY(5deg) rotateZ(-5deg)
+    scale(0.98);
+  z-index: 5;
+  opacity: 1;
+}
+
+.posh {
+  transform: translate(-50%, -50%) translateX($posX3) translateY(-70px) rotateY(10deg)
+    rotateZ(-10deg) scale(0.95);
+  z-index: 4;
+  opacity: 0.85;
+}
+
+.posi {
+  transform: translate(-50%, -50%) translateX($posX4) translateY(-125px) rotateY(15deg)
+    rotateZ(-15deg) scale(0.9);
+  z-index: 3;
+  opacity: 0.6;
+}
+
+.posj {
+  transform: translate(-50%, -50%) translateX($posX5) translateY(-180px) rotateY(20deg)
+    rotateZ(-20deg) scale(0.84);
+  z-index: 2;
+  opacity: 0.4;
+}
+
+.posk {
+  transform: translate(-50%, -50%) translateX($posX6) translateY(-200px) rotateY(25deg)
+    rotateZ(-25deg) scale(0.78);
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.posl {
+  transform: translate(-50%, -50%) translateX($posX7) translateY(-230px) rotateY(30deg)
+    rotateZ(-30deg) scale(0.72);
+  z-index: 0;
+  opacity: 0;
+}

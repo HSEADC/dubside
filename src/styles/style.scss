@@ -43,11 +43,11 @@ p {
   font-size: $text-1-text-size;
 }
 
-/* li {
+li {
   position: relative;
-  display: flex;
-  gap: $space;
-} */
+  /* display: flex;
+  gap: $space; */
+}
 
 li::before {
   content: '— ';
