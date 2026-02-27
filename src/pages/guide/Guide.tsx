@@ -1,16 +1,11 @@
-import Q_VideoBackground from '@/components/quarks/Q_VideoBackground/Q_VideoBackground';
 import React from 'react';
-import video from '@/assets/videos/Q_HeroVideo.mp4';
 import W_SectionElementsWrapper from '@/components/wrappers/W_SectionElementsWrapper/W_SectionElementsWrapper';
-import O_CardSlider from '@/components/organisms/O_CardSlider/O_CardSlider';
+import SO_HeroBlock from '@/components/super-organisms/SO_HeroBlock/SO_HeroBlock';
 
 const Guide = () => {
   return (
     <div>
-      <section className="SO_HeroBlock">
-        <Q_VideoBackground source={video} />
-        <O_CardSlider />
-      </section>
+      <SO_HeroBlock />
 
       <section>
         <W_SectionElementsWrapper>

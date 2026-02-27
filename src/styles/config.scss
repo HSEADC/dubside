@@ -4,14 +4,14 @@ $max-width: min(90vw, 1000px);
 $bleed: calc((100vw - #{$max-width}) / -2);
 
 $space: clamp(4px, 0.5vw, 12px);
-$radius: clamp(10px, 1.8vw, 24px);
+$radius: clamp(17px, 1.8vw, 24px);
 $radius-max: 999px;
 $average-gap: clamp(10px, 1.38vw, 20px);
 $double-average-gap: calc(#{$average-gap} * 2);
 
 $screen-width: 100vw;
 
-$p-max-width: 35vw;
+$p-max-width: clamp(35vw, 400px, 80vw);
 $p-gap: clamp(12px, 1.5vw, 20px);
 
 /* TYPO */
@@ -25,7 +25,7 @@ $text-1-text-size: clamp(16px, calc(12.818px + 0.282vw), 18px);
 $heading-4-text-size: clamp(18px, calc(9.455px + 2.045vw), 23px);
 $heading-3-text-size: clamp(24px, calc(18.182px + 1.818vw), 32px);
 $heading-2-text-size: clamp(24px, calc(15.273px + 2.727vw), 48px);
-$heading-1-text-size: clamp(30px, calc(17.636px + 3.864vw), 56px);
+$heading-1-text-size: clamp(30px, calc(17.636px + 3.864vw), 60px);
 
 $avarage-line-height: 1.5;
 $card-line-height: 1.25;

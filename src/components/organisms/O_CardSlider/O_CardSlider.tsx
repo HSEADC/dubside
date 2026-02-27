@@ -2,7 +2,11 @@ import M_FlipCard from '@/components/molecules/M_FlipCard/M_FlipCard';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import classes from '@/components/organisms/O_CardSlider/O_CardSlider.module.scss';
 
-const O_CardSlider = () => {
+interface Proos {
+  className?: string;
+}
+
+const O_CardSlider = ({ className }: Proos) => {
   const items = useMemo(
     () => [
       { id: 0, nickname: 'kendrick' },
@@ -71,7 +75,7 @@ const O_CardSlider = () => {
   }, [items.length]);
 
   return (
-    <div className={classes.wrapper}>
+    <div className={classes.wrapper + ` ${className}`}>
       {items.map((item, index) => {
         const posIndex = (index + offset) % items.length;
         return (

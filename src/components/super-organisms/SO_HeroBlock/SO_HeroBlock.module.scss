@@ -1,0 +1,52 @@
+@use '@/styles/config.scss' as *;
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.slider {
+  margin-top: calc(#{$space} * 2);
+}
+
+.h1 {
+  position: relative;
+  margin-inline: auto;
+  text-align: center;
+  z-index: 5;
+  margin-top: calc(#{$space}* -14);
+}
+
+.p {
+  position: relative;
+  margin-inline: auto;
+  text-align: center;
+  z-index: 5;
+  /* bottom: calc(#{$space}* 25); */
+  max-width: calc($p-max-width - 0px);
+}
+
+.icon {
+  width: calc(#{$space} + 5px);
+  margin-inline: auto;
+  display: block;
+  position: relative;
+  z-index: 5;
+  margin-top: calc(#{$space} + 30px);
+  animation: icon-float 2.4s ease-in-out infinite;
+}
+
+@keyframes icon-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

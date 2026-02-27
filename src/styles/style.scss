@@ -41,6 +41,7 @@ h4 {
 
 p {
   font-size: $text-1-text-size;
+  max-width: $p-max-width;
 }
 
 li {
@@ -52,12 +53,4 @@ li {
 li::before {
   content: '— ';
   /* display: block; */
-}
-
-.SO_HeroBlock {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
