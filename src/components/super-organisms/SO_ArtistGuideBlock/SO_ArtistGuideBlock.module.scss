@@ -1,0 +1,31 @@
+@use '@/styles/config.scss' as *;
+
+.wrapper {
+  position: relative;
+  overflow-y: visible;
+}
+
+.breakdiv {
+  height: 60vh;
+  grid-column: 2;
+}
+
+.h1 {
+  margin-bottom: calc(#{$space} * 3);
+  grid-column: 2;
+}
+
+.bottompwrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+  gap: $space;
+}
+
+.p {
+  grid-column: 2;
+}
