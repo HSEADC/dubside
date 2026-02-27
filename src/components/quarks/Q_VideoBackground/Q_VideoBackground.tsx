@@ -4,15 +4,17 @@ import classes from '@/components/quarks/Q_VideoBackground/Q_VideoBackground.mod
 
 interface Q_VideoBackgroundType {
   source: string;
+  uppergrad: boolean;
 }
 
-const Q_VideoBackground = (params: Q_VideoBackgroundType) => {
+const Q_VideoBackground = ({ source, uppergrad }: Q_VideoBackgroundType) => {
   return (
     <div className={classes.wrapper}>
       <video className={classes.vid} autoPlay loop muted playsInline preload="auto">
-        <source src={params.source} type="video/mp4" />
+        <source src={source} type="video/mp4" />
       </video>
-      <div className={classes.gradient}></div>
+      <div className={classes.gradientdown}></div>
+      <div className={uppergrad ? classes.gradientup : undefined}></div>
     </div>
   );
 };

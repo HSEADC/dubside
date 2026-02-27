@@ -6,15 +6,16 @@
   left: 0;
   inset: 0;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   object-fit: cover;
 }
 
 .wrapper {
   position: absolute;
   top: 0;
+  left: 0;
   width: $screen-width;
-  height: 100vh;
+  height: 110vh;
   overflow: hidden;
   /*  isolation: isolate; */
   z-index: 0;
@@ -23,21 +24,35 @@
     content: '';
     position: absolute;
     inset: 0;
-    opacity: 75%;
+    opacity: 80%;
     background: url('@/assets/images/Q_HeroEffect.png') center / cover no-repeat;
     z-index: 1;
     pointer-events: none;
   }
 }
 
-.gradient {
+.gradientdown {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: calc(#{$space}* 20);
+  height: calc(#{$space}* 50);
   background: linear-gradient(
     to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.5) 40%,
+    rgba(0, 0, 0, 0) 95%
+  );
+}
+
+.gradientup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(#{$space}* 50);
+  background: linear-gradient(
+    to bottom,
     rgba(0, 0, 0, 1) 0%,
     rgba(0, 0, 0, 0.5) 40%,
     rgba(0, 0, 0, 0) 95%
