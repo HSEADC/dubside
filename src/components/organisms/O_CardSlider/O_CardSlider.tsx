@@ -1,5 +1,5 @@
 import M_FlipCard from '@/components/molecules/M_FlipCard/M_FlipCard';
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import classes from '@/components/organisms/O_CardSlider/O_CardSlider.module.scss';
 
 const O_CardSlider = () => {
@@ -37,13 +37,37 @@ const O_CardSlider = () => {
   ];
 
   const [offset, setOffset] = useState(0);
+  const intervalRef = useRef<number | null>(null);
 
   useEffect(() => {
-    const id = window.setInterval(() => {
-      setOffset((current) => (current + 1) % items.length);
-    }, 5000);
+    const startInterval = () => {
+      if (intervalRef.current !== null) return;
+      intervalRef.current = window.setInterval(() => {
+        setOffset((current) => (current + 1) % items.length);
+      }, 4500);
+    };
 
-    return () => window.clearInterval(id);
+    const stopInterval = () => {
+      if (intervalRef.current === null) return;
+      window.clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    };
+
+    const handleVisibility = () => {
+      if (document.visibilityState === 'hidden') {
+        stopInterval();
+      } else {
+        startInterval();
+      }
+    };
+
+    handleVisibility();
+    document.addEventListener('visibilitychange', handleVisibility);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibility);
+      stopInterval();
+    };
   }, [items.length]);
 
   return (
@@ -52,7 +76,9 @@ const O_CardSlider = () => {
         const posIndex = (index + offset) % items.length;
         return (
           <div key={item.id} className={`${classes.card} ${posClasses[posIndex]}`}>
-            <M_FlipCard nickname={item.nickname} />
+            <M_FlipCard nickname={item.nickname}>
+              <div className={classes.innerdiv}></div>
+            </M_FlipCard>
           </div>
         );
       })}

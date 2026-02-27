@@ -16,98 +16,148 @@
   left: 50%;
   top: 50%;
   transform-style: preserve-3d;
-  transition: transform 800ms ease, opacity 800ms ease;
+  transition: transform 1s ease, opacity 1s ease;
   will-change: transform, opacity;
 }
 
+.innerdiv {
+  position: absolute;
+  inset: 0;
+  background: black;
+}
+
 $posX1: 0px;
-$posX2: $posX1 + 220px;
-$posX3: $posX2 + 180px;
-$posX4: $posX3 + 150px;
-$posX5: $posX4 + 130px;
+$posX2: $posX1 + 250px;
+$posX3: $posX2 + 150px;
+$posX4: $posX3 + 100px;
+$posX5: $posX4 + 100px;
 $posX6: $posX5 + 100px;
 $posX7: $posX5 + 90px;
 
+.innerdiv {
+  transition: opacity 1s ease;
+}
+
+.card:not(.pose):not(.posf):not(.posg) {
+  pointer-events: none;
+}
+
 .posa {
-  transform: translate(-50%, -50%) translateX(calc($posX6 * -1)) translateY(-200px) rotateY(-25deg)
+  transform: translate(-50%, -50%) translateX(calc($posX6 * -1)) translateY(-240px) rotateY(-15deg)
     rotateZ(25deg) scale(0.78);
   z-index: 1;
-  opacity: 0.2;
+
+  .innerdiv {
+    opacity: 0.9;
+  }
 }
 
 .posb {
-  transform: translate(-50%, -50%) translateX(calc($posX5 * -1)) translateY(-180px) rotateY(-20deg)
+  transform: translate(-50%, -50%) translateX(calc($posX5 * -1)) translateY(-180px) rotateY(-12deg)
     rotateZ(20deg) scale(0.84);
   z-index: 2;
-  opacity: 0.4;
+
+  .innerdiv {
+    opacity: 0.7;
+  }
 }
 
 .posc {
-  transform: translate(-50%, -50%) translateX(calc($posX4 * -1)) translateY(-125px) rotateY(-15deg)
+  transform: translate(-50%, -50%) translateX(calc($posX4 * -1)) translateY(-125px) rotateY(-9deg)
     rotateZ(15deg) scale(0.9);
   z-index: 3;
-  opacity: 0.6;
+
+  .innerdiv {
+    opacity: 0.5;
+  }
 }
 
 .posd {
-  transform: translate(-50%, -50%) translateX(calc($posX3 * -1)) translateY(-70px) rotateY(-10deg)
+  transform: translate(-50%, -50%) translateX(calc($posX3 * -1)) translateY(-70px) rotateY(-6deg)
     rotateZ(10deg) scale(0.95);
   z-index: 4;
-  opacity: 0.85;
+
+  .innerdiv {
+    opacity: 0.3;
+  }
 }
 
 .pose {
-  transform: translate(-50%, -50%) translateX(calc($posX2 * -1)) translateY(-30px) rotateY(-5deg)
+  transform: translate(-50%, -50%) translateX(calc($posX2 * -1)) translateY(-30px) rotateY(-3deg)
     rotateZ(5deg) scale(0.98);
   z-index: 5;
-  opacity: 1;
+
+  .innerdiv {
+    opacity: 0.1;
+  }
 }
 
 .posf {
   transform: translate(-50%, -50%) translateX($posX1) translateY(0px) rotateY(0deg) rotateZ(0deg)
     scale(1);
   z-index: 6;
-  opacity: 1;
+
+  .innerdiv {
+    opacity: 0;
+  }
 }
 
 .posg {
-  transform: translate(-50%, -50%) translateX($posX2) translateY(-30px) rotateY(5deg) rotateZ(-5deg)
+  transform: translate(-50%, -50%) translateX($posX2) translateY(-30px) rotateY(3deg) rotateZ(-5deg)
     scale(0.98);
   z-index: 5;
-  opacity: 1;
+
+  .innerdiv {
+    opacity: 0.1;
+  }
 }
 
 .posh {
-  transform: translate(-50%, -50%) translateX($posX3) translateY(-70px) rotateY(10deg)
+  transform: translate(-50%, -50%) translateX($posX3) translateY(-70px) rotateY(6deg)
     rotateZ(-10deg) scale(0.95);
   z-index: 4;
-  opacity: 0.85;
+
+  .innerdiv {
+    opacity: 0.3;
+  }
 }
 
 .posi {
-  transform: translate(-50%, -50%) translateX($posX4) translateY(-125px) rotateY(15deg)
+  transform: translate(-50%, -50%) translateX($posX4) translateY(-125px) rotateY(9deg)
     rotateZ(-15deg) scale(0.9);
   z-index: 3;
-  opacity: 0.6;
+
+  .innerdiv {
+    opacity: 0.5;
+  }
 }
 
 .posj {
-  transform: translate(-50%, -50%) translateX($posX5) translateY(-180px) rotateY(20deg)
+  transform: translate(-50%, -50%) translateX($posX5) translateY(-180px) rotateY(12deg)
     rotateZ(-20deg) scale(0.84);
   z-index: 2;
-  opacity: 0.4;
+
+  .innerdiv {
+    opacity: 0.7;
+  }
 }
 
 .posk {
-  transform: translate(-50%, -50%) translateX($posX6) translateY(-200px) rotateY(25deg)
+  transform: translate(-50%, -50%) translateX($posX6) translateY(-240px) rotateY(15deg)
     rotateZ(-25deg) scale(0.78);
   z-index: 1;
-  opacity: 0.2;
+
+  .innerdiv {
+    opacity: 0.9;
+  }
 }
 
 .posl {
-  transform: translate(-50%, -50%) translateX($posX7) translateY(-230px) rotateY(30deg)
+  transform: translate(-50%, -50%) translateX($posX7) translateY(-260px) rotateY(15deg)
     rotateZ(-30deg) scale(0.72);
   z-index: 0;
-  opacity: 0;
+
+  .innerdiv {
+    opacity: 1;
+  }
 }

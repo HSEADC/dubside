@@ -4,6 +4,7 @@ import flipCards from '@/assets/data/flipCards/flipCards.json';
 
 type Props = {
   nickname: string;
+  children?: React.ReactNode;
 };
 
 interface SingerCard {
@@ -15,7 +16,7 @@ interface SingerCard {
 
 type FlipCardsMap = Record<string, SingerCard>;
 
-const M_FlipCard = ({ nickname }: Props) => {
+const M_FlipCard = ({ nickname, children }: Props) => {
   const flipCardsObj: FlipCardsMap = flipCards;
   const singer: SingerCard = flipCardsObj[nickname];
 
@@ -37,6 +38,7 @@ const M_FlipCard = ({ nickname }: Props) => {
             ))}
           </ul>
           <p className={classes.label}>наведи курсор</p>
+          {children}
         </div>
         <div className={classes.back}>
           {/* <!-- Обратная сторона (другая верстка) --> */}
