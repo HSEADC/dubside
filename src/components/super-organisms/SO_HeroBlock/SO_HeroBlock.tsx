@@ -7,7 +7,7 @@ import classes from '@/components/super-organisms/SO_HeroBlock/SO_HeroBlock.modu
 const SO_HeroBlock = () => {
   return (
     <section className={classes.wrapper}>
-      <Q_VideoBackground source={video} />
+      <Q_VideoBackground source={video} uppergrad={false} />
       <O_CardSlider className={classes.slider} />
       <h1 className={classes.h1}>dubside</h1>
       <p className={classes.p}>
