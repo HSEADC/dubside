@@ -6,7 +6,7 @@
   line-height: $avarage-line-height;
   font-style: normal;
   color: white;
-  font-weight: 400;
+  font-weight: 300;
   -webkit-text-size-adjust: 100%;
   font-stretch: 125%;
 }
@@ -42,6 +42,11 @@ h4 {
 p {
   font-size: $text-1-text-size;
   max-width: $p-max-width;
+  margin: 0;
+}
+
+p + p {
+  margin-top: $p-gap;
 }
 
 li {

@@ -8,11 +8,12 @@ $radius: clamp(17px, 1.8vw, 24px);
 $radius-max: 999px;
 $average-gap: clamp(10px, 1.38vw, 20px);
 $double-average-gap: calc(#{$average-gap} * 2);
+$padding: calc($space * 3);
 
 $screen-width: 100vw;
 
 $p-max-width: clamp(35vw, 400px, 80vw);
-$p-gap: clamp(12px, 1.5vw, 20px);
+$p-gap: clamp(24px, 3vw, 40px);
 
 /* TYPO */
 
