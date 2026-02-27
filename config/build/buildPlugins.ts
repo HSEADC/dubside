@@ -15,7 +15,7 @@ export function buildPlugins(params: BuildOptions): Configuration['plugins'] {
   const plugins: Configuration['plugins'] = [
     new HtmlWebpackPlugin({
       template: params.paths.html,
-      favicon: path.resolve(params.paths.public, 'favicon.svg')
+      favicon: path.resolve(params.paths.public, 'icons/favicon.svg')
     }),
     new DefinePlugin({
       __PLATFORM__: JSON.stringify(params.platform)
