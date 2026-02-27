@@ -1,0 +1,51 @@
+{
+  "kendrick": {
+    "name": "Kendrick Lamar",
+    "paragraphs_top": [
+      "Кендрик — ультра база (и мейнстрим) в хип-хопе, пропустить его невозможно.",
+      "В треках он рассуждает о тяжелых для общества социально значимых темах. Это во многом выделяет его из большинства артистов современной зарубежной хип-хоп сцены."
+    ],
+    "paragraphs_bottom": [
+      "Его лирика про жизнь черных сообществ, травму, религию, депрессию и славу. Её честность и исповедальность притягивает.",
+      "Он комбинирует западное побережье (West Coast), джаз-рэп, соул и фанк с социальным, политическим и личным стори-теллингом."
+    ],
+    "tracks": [
+      {
+        "name": "Swimming Pools (Drank)",
+        "footer": "Good Kid, M.A.A.D City | 2012"
+      },
+      {
+        "name": "HUMBLE.",
+        "footer": "Damn | 2017"
+      },
+      {
+        "name": "DNA.",
+        "footer": "Damn | 2017"
+      },
+      {
+        "name": "United In Grief",
+        "footer": "Mr. Morale & the Big Steppers | 2022"
+      },
+      {
+        "name": "N95",
+        "footer": "Mr. Morale & the Big Steppers | 2022"
+      },
+      {
+        "name": "Swimming Pools (Drank)",
+        "footer": "Good Kid, M.A.A.D City | 2012"
+      },
+      {
+        "name": "Not Like Us",
+        "footer": "2024"
+      },
+      {
+        "name": "All the Stars",
+        "footer": "Black Panther: The Album | 2018"
+      }
+    ],
+    "album": {
+      "name": "DAMN.",
+      "footer": "2018"
+    }
+  }
+}
