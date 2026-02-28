@@ -108,5 +108,195 @@
       "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/nonstop.png",
       "link": "https://music.yandex.ru/album/521766/track/4650823"
     }
+  },
+  "kanye": {
+    "name": "",
+    "paragraphs_top": [],
+    "paragraphs_bottom": [],
+    "tracks": [
+      {
+        "name": "dunchek: Это в скобочках объект одного трека. в массиве tracks их от 5 до 8. этот дублируете, ставите запятую где надо, и добавляете новый. текст этот сотрите, в этой графе должно быть название трека",
+        "footer": "подпись под треком (алббом, год)",
+        "img": "ссылка на картинку трека, скопируйте из верхних: ...tracks-imgs/<nickname>/<filename>",
+        "link": "ссылка на соответсвующий трек в яндекс музыке"
+      }
+    ],
+    "album": {
+      "name": "",
+      "footer": "",
+      "img": "",
+      "link": ""
+    }
+  },
+  "jayz": {
+    "name": "",
+    "paragraphs_top": [],
+    "paragraphs_bottom": [],
+    "tracks": [
+      {
+        "name": "",
+        "footer": "",
+        "img": "",
+        "link": ""
+      }
+    ],
+    "album": {
+      "name": "",
+      "footer": "",
+      "img": "",
+      "link": ""
+    }
+  },
+  "eminem": {
+    "name": "",
+    "paragraphs_top": [],
+    "paragraphs_bottom": [],
+    "tracks": [
+      {
+        "name": "",
+        "footer": "",
+        "img": "",
+        "link": ""
+      }
+    ],
+    "album": {
+      "name": "",
+      "footer": "",
+      "img": "",
+      "link": ""
+    }
+  },
+  "nicki": {
+    "name": "",
+    "paragraphs_top": [],
+    "paragraphs_bottom": [],
+    "tracks": [
+      {
+        "name": "",
+        "footer": "",
+        "img": "",
+        "link": ""
+      }
+    ],
+    "album": {
+      "name": "",
+      "footer": "",
+      "img": "",
+      "link": ""
+    }
+  },
+  "wayne": {
+    "name": "",
+    "paragraphs_top": [],
+    "paragraphs_bottom": [],
+    "tracks": [
+      {
+        "name": "",
+        "footer": "",
+        "img": "",
+        "link": ""
+      }
+    ],
+    "album": {
+      "name": "",
+      "footer": "",
+      "img": "",
+      "link": ""
+    }
+  },
+  "50cent": {
+    "name": "",
+    "paragraphs_top": [],
+    "paragraphs_bottom": [],
+    "tracks": [
+      {
+        "name": "",
+        "footer": "",
+        "img": "",
+        "link": ""
+      }
+    ],
+    "album": {
+      "name": "",
+      "footer": "",
+      "img": "",
+      "link": ""
+    }
+  },
+  "travis": {
+    "name": "",
+    "paragraphs_top": [],
+    "paragraphs_bottom": [],
+    "tracks": [
+      {
+        "name": "",
+        "footer": "",
+        "img": "",
+        "link": ""
+      }
+    ],
+    "album": {
+      "name": "",
+      "footer": "",
+      "img": "",
+      "link": ""
+    }
+  },
+  "jcole": {
+    "name": "",
+    "paragraphs_top": [],
+    "paragraphs_bottom": [],
+    "tracks": [
+      {
+        "name": "",
+        "footer": "",
+        "img": "",
+        "link": ""
+      }
+    ],
+    "album": {
+      "name": "",
+      "footer": "",
+      "img": "",
+      "link": ""
+    }
+  },
+  "future": {
+    "name": "",
+    "paragraphs_top": [],
+    "paragraphs_bottom": [],
+    "tracks": [
+      {
+        "name": "",
+        "footer": "",
+        "img": "",
+        "link": ""
+      }
+    ],
+    "album": {
+      "name": "",
+      "footer": "",
+      "img": "",
+      "link": ""
+    }
+  },
+  "carti": {
+    "name": "",
+    "paragraphs_top": [],
+    "paragraphs_bottom": [],
+    "tracks": [
+      {
+        "name": "",
+        "footer": "",
+        "img": "",
+        "link": ""
+      }
+    ],
+    "album": {
+      "name": "",
+      "footer": "",
+      "img": "",
+      "link": ""
+    }
   }
 }
