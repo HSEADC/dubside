@@ -4,16 +4,39 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 колонки */
   grid-template-rows: repeat(4, auto); /* 4 строки */
-  gap: $space;
+  gap: calc($space * 1);
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 499px) {
+  .tracks {
+    grid-template-columns: 1fr; /* 1 колонка */
+    grid-template-rows: repeat(8, auto); /* 8 строк */
+  }
 }
 
 .track {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: calc($space * 1.5);
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  z-index: 1;
+}
+
+.trackinfo {
+  display: flex;
   flex-direction: column;
-  align-items: start;
-  padding: $space;
-  background: rgb(23, 23, 23);
+  justify-content: center;
+}
+
+.img {
+  width: $track-size;
+  height: $track-size;
+  border-radius: $radius-tracks-img;
 }
 
 .footer1 {
@@ -24,7 +47,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: $space;
+  gap: calc($space * 3);
+
   padding: $padding;
   border-radius: $radius;
   margin-top: calc($space * 8);
@@ -32,5 +56,6 @@
 
   &::before {
     @include border();
+    pointer-events: none;
   }
 }
