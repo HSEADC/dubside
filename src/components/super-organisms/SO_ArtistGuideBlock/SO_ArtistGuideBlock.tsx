@@ -35,6 +35,7 @@ const SO_ArtistGuideBlock = ({ artist, side }: Props) => {
   const artistInfo: ArtistInfoTypes = artistGuideBlockInfo[artist];
 
   const video = videosGuideMap[artist];
+
   const name = artistInfo.name;
   const paragraphs_top = artistInfo.paragraphs_top;
   const paragraphs_bottom = artistInfo.paragraphs_bottom;

@@ -1,10 +1,11 @@
 import O_CardSlider from '@/components/organisms/O_CardSlider/O_CardSlider';
 import Q_VideoBackground from '@/components/quarks/Q_VideoBackground/Q_VideoBackground';
 import React from 'react';
-import video from '@/assets/videos/Q_HeroVideo.mp4';
 import classes from '@/components/super-organisms/SO_HeroBlock/SO_HeroBlock.module.scss';
+import { videosGuideMap } from '@/shared/constants/videoGuideMap';
 
 const SO_HeroBlock = () => {
+  const video = videosGuideMap.hero;
   return (
     <section className={classes.wrapper}>
       <Q_VideoBackground source={video} uppergrad={false} />

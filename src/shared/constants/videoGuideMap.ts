@@ -1,7 +1,6 @@
-import kendrick from '@/assets/videos/kendrick/Q_vid.mp4';
-
 type videosGuideMapType = Record<string, string>;
 
 export const videosGuideMap: videosGuideMapType = {
-  kendrick: kendrick
+  hero: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/hero.mp4',
+  kendrick: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/kendrick.mp4'
 };
