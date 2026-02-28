@@ -12,40 +12,52 @@
     "tracks": [
       {
         "name": "Swimming Pools (Drank)",
-        "footer": "Good Kid, M.A.A.D City | 2012"
+        "footer": "Good Kid, M.A.A.D City | 2012",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/swimmingpool.jfif",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "HUMBLE.",
-        "footer": "Damn | 2017"
+        "footer": "Damn | 2017",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/humble.jfif",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "DNA.",
-        "footer": "Damn | 2017"
+        "footer": "Damn | 2017",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/humble.jfif",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "United In Grief",
-        "footer": "Mr. Morale & the Big Steppers | 2022"
+        "footer": "Mr. Morale & the Big Steppers | 2022",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/95.jfif",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "N95",
-        "footer": "Mr. Morale & the Big Steppers | 2022"
-      },
-      {
-        "name": "Swimming Pools (Drank)",
-        "footer": "Good Kid, M.A.A.D City | 2012"
+        "footer": "Mr. Morale & the Big Steppers | 2022",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/95.jfif",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "Not Like Us",
-        "footer": "2024"
+        "footer": "2024",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/notlikeus.jfif",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "All the Stars",
-        "footer": "Black Panther: The Album | 2018"
+        "footer": "Black Panther: The Album | 2018",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/allthestars.jfif",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
       }
     ],
     "album": {
       "name": "DAMN.",
-      "footer": "2018"
+      "footer": "2018",
+      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/humble.jfif",
+      "link": "https://music.yandex.ru/album/521766/track/4650823"
     }
   }
 }
