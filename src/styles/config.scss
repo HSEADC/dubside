@@ -8,7 +8,7 @@ $radius: clamp(17px, 1.8vw, 24px);
 $radius-max: 999px;
 $average-gap: clamp(10px, 1.38vw, 20px);
 $double-average-gap: calc(#{$average-gap} * 2);
-$padding: calc($space * 3);
+$padding: calc($space * 4);
 
 $screen-width: 100vw;
 
@@ -32,6 +32,9 @@ $avarage-line-height: 1.5;
 $card-line-height: 1.25;
 
 /* MORE */
+
+$track-size: calc(20px + calc(#{$space} * 5));
+$radius-tracks-img: calc(#{$radius} / 1.65);
 
 @mixin label() {
   font-size: $label-text-size;

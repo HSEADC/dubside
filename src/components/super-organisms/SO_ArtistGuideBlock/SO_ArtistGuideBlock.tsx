@@ -15,6 +15,8 @@ interface Props {
 interface Track {
   name: string;
   footer: string;
+  img: string;
+  link: string;
 }
 
 type Album = Track;
@@ -56,11 +58,12 @@ const SO_ArtistGuideBlock = ({ artist, side }: Props) => {
             <p className={classes.p}>{p}</p>
           ))}
         </div>
+
         <O_MainTracks tracks={tracks} />
 
         {isRight ? (
           <div className={classes.bottompwrap}>
-            <M_AlbumCard album={album} source="/images/kendrick/tracksImgs/i.jfif" />
+            <M_AlbumCard album={album} />
             <div>
               {paragraphs_bottom.map((p: string) => (
                 <p>{p}</p>
@@ -74,7 +77,7 @@ const SO_ArtistGuideBlock = ({ artist, side }: Props) => {
                 <p>{p}</p>
               ))}
             </div>
-            <M_AlbumCard album={album} source="/images/kendrick/tracksImgs/i.jfif" />
+            <M_AlbumCard album={album} />
           </div>
         )}
       </W_SectionElementsWrapper>
