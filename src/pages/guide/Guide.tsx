@@ -26,7 +26,7 @@ const Guide = () => {
       </section>
 
       <SO_ArtistGuideBlock artist="kendrick" side="left" />
-      <SO_ArtistGuideBlock artist="kendrick" side="right" />
+      <SO_ArtistGuideBlock artist="drake" side="right" />
     </div>
   );
 };

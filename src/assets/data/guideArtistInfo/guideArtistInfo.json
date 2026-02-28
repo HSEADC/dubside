@@ -59,5 +59,54 @@
       "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/humble.jfif",
       "link": "https://music.yandex.ru/album/521766/track/4650823"
     }
+  },
+  "drake": {
+    "name": "Drake",
+    "paragraphs_top": [
+      "Дрейк — главная поп-ветвь хип-хопа, его голос и биты слышны отовсюду последние десять лет. Пропустить его также невозможно, как и Кендрика, просто они говорят с миром на разных языках."
+    ],
+    "paragraphs_bottom": [
+      "Он не столько про остросоциальные темы, сколько про личное: отношения, славу, сомнения, ностальгию и победы. В этом его сила — он сделал рэп и R&B личным дневником, ставшим открытым для миллионов.",
+      "Его лирика про жизнь черных сообществ, травму, религию, депрессию и славу. Её честность и исповедальность притягивает.",
+      "Он комбинирует западное побережье (West Coast), джаз-рэп, соул и фанк с социальным, политическим и личным стори-теллингом."
+    ],
+    "tracks": [
+      {
+        "name": "Marvins Room",
+        "footer": "Take Care | 2011",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/marvins.png",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
+      },
+      {
+        "name": "Started From The Bottom",
+        "footer": "Take Care | 2011",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/startedfrom.png",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
+      },
+      {
+        "name": "Hotline Bling",
+        "footer": "Views | 2015",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/hotline.png",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
+      },
+      {
+        "name": "God’s Plan",
+        "footer": "2018",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/godsplan.png",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
+      },
+      {
+        "name": "One Dance",
+        "footer": "2016",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/onedance.png",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
+      }
+    ],
+    "album": {
+      "name": "DAMN.",
+      "footer": "2018",
+      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/nonstop.png",
+      "link": "https://music.yandex.ru/album/521766/track/4650823"
+    }
   }
 }
