@@ -4,23 +4,26 @@ import classes from '@/components/molecules/M_AlbumCard/M_AlbumCard.module.scss'
 interface Album {
   name: string;
   footer: string;
+  img: string;
+  link: string;
 }
 
 interface Props {
-  source: string;
   album: Album;
 }
 
-const M_AlbumCard = ({ source, album }: Props) => {
+const M_AlbumCard = ({ album }: Props) => {
   return (
-    <div className={classes.album}>
-      <img src={source} alt="album" />
-      <div className={classes.grad}></div>
-      <div className={classes.albumspans}>
-        <span>{album.name}</span>
-        <span className={classes.footer1}>{album.footer}</span>
+    <a href={album.link} target="_blank" rel="noopener noreferrer">
+      <div className={classes.album}>
+        <img src={album.img} alt="album" />
+        <div className={classes.grad}></div>
+        <div className={classes.albumspans}>
+          <span>{album.name}</span>
+          <span className={classes.footer1}>{album.footer}</span>
+        </div>
       </div>
-    </div>
+    </a>
   );
 };
 
