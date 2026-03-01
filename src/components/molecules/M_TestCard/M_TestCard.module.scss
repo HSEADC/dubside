@@ -1,0 +1,55 @@
+@use '@/styles/config.scss' as *;
+
+@mixin testblock {
+  position: relative;
+  border-radius: $radius;
+  padding: $padding-mid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20vw;
+  overflow: hidden;
+
+  &::before {
+    @include border();
+  }
+}
+
+.mini {
+  width: 40%;
+  @include testblock();
+}
+.mid {
+  width: calc(60% - $average-gap);
+  @include testblock();
+}
+
+.max {
+  width: 100%;
+  @include testblock();
+}
+
+.buttons {
+  display: flex;
+  gap: $padding-mini;
+  z-index: 10;
+}
+
+.img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.grad {
+  background: $backgroung-grad-toright;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
