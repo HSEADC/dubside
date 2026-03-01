@@ -1,0 +1,44 @@
+{
+  "1": {
+    "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
+    "timing": "3 мин",
+    "hardness": "easy",
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/alright.jfif",
+    "questions": [
+      {
+        "question": "&??",
+        "answers": [
+          {
+            "answer": "lala",
+            "count": "1"
+          },
+          {
+            "answer": "lalaaaaa",
+            "count": "0"
+          },
+          {
+            "answer": "laaala",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "sdkvvm??",
+        "answers": [
+          {
+            "answer": "lalaebarfva",
+            "count": "1"
+          },
+          {
+            "answer": "lalaabtyjydaaa",
+            "count": "0"
+          },
+          {
+            "answer": "laaabswjrdla",
+            "count": "0"
+          }
+        ]
+      }
+    ]
+  }
+}
