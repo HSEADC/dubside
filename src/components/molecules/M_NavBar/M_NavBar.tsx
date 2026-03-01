@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from '@/components/molecules/M_NavBar/M_NavBar.module.scss';
-import A_Link from '@/components/atoms/A_Link';
+import A_Link from '@/components/atoms/A_Link/A_Link';
 
 const NavBar = () => {
   return (
