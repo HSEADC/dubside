@@ -1,0 +1,14 @@
+@use '@/styles/config.scss' as *;
+
+.breakdiv {
+  height: $upper-h1-margin-top;
+}
+
+.testswrapper {
+  display: flex;
+  gap: $average-gap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  margin-top: $double-average-gap;
+}

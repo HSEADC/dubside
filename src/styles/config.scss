@@ -9,11 +9,16 @@ $radius-max: 999px;
 $average-gap: clamp(10px, 1.38vw, 20px);
 $double-average-gap: calc(#{$average-gap} * 2);
 $padding: calc($space * 4);
+$padding-mini: calc($space * 2);
+$padding-mid: calc($space * 3);
 
 $screen-width: 100vw;
 
+$h1-max-width: clamp(35vw, 650px, 80vw);
 $p-max-width: clamp(35vw, 400px, 80vw);
 $p-gap: clamp(24px, 3vw, 40px);
+
+$upper-h1-margin-top: 55vh;
 
 /* TYPO */
 
@@ -36,6 +41,13 @@ $card-line-height: 1.25;
 $track-size: calc(20px + calc(#{$space} * 5));
 $radius-tracks-img: calc(#{$radius} / 1.65);
 
+$backgroung-grad-base: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25));
+$backgroung-grad-toright: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4));
+
+$backgroung-grad-green: linear-gradient(to top, rgba(0, 48, 24, 0.5), rgba(0, 48, 24, 0));
+$backgroung-grad-blue: linear-gradient(to top, rgba(6, 0, 84, 0.5), rgba(6, 0, 84, 0));
+$backgroung-grad-red: linear-gradient(to top, rgba(108, 0, 0, 0.5), rgba(108, 0, 0, 0));
+
 @mixin label() {
   font-size: $label-text-size;
   opacity: 50%;
@@ -52,6 +64,7 @@ $radius-tracks-img: calc(#{$radius} / 1.65);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
+  z-index: 15;
 }
 
 @mixin card() {
