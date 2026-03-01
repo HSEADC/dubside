@@ -2,8 +2,6 @@ import Q_VideoBackground from '@/components/quarks/Q_VideoBackground/Q_VideoBack
 import React from 'react';
 import classes from '@/pages/tests/Tests.module.scss';
 import W_SectionElementsWrapper from '@/components/wrappers/W_SectionElementsWrapper/W_SectionElementsWrapper';
-import testInfo from '@/assets/data/tests/tests.json';
-import A_Badge from '@/components/atoms/A_Badge/A_Badge';
 import M_TestCard from '@/components/molecules/M_TestCard/M_TestCard';
 
 const Tests = () => {
