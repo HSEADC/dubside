@@ -1,0 +1,43 @@
+@use '@/styles/config.scss' as *;
+
+@mixin badge() {
+  position: relative;
+  display: inline;
+  border-radius: $radius-tracks-img;
+  background: $backgroung-grad-base;
+  padding: $padding-mini;
+  padding-top: calc($padding-mini * 0.5);
+  padding-bottom: calc($padding-mini * 0.5);
+}
+
+.default {
+  @include badge();
+  &::before {
+    @include border();
+    border-radius: $radius-tracks-img;
+  }
+}
+
+.green {
+  background: $backgroung-grad-green;
+  &::before {
+    @include border();
+    border-radius: $radius-tracks-img;
+  }
+}
+
+.red {
+  background: $backgroung-grad-red;
+  &::before {
+    @include border();
+    border-radius: $radius-tracks-img;
+  }
+}
+
+.blue {
+  background: $backgroung-grad-blue;
+  &::before {
+    @include border();
+    border-radius: $radius-tracks-img;
+  }
+}
