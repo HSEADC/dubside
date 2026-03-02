@@ -3,6 +3,8 @@ import React from 'react';
 import classes from '@/components/molecules/M_TestCard/M_TestCard.module.scss';
 import A_Badge from '@/components/atoms/A_Badge/A_Badge';
 import testsDataRaw from '@/assets/data/tests/tests.json';
+// import A_Link from '@/components/atoms/A_Link/A_Link';
+import { useNavigate } from 'react-router';
 
 interface Props {
   id: TestId;
@@ -35,11 +37,12 @@ const M_TestCard = ({ id, size }: Props) => {
   const testData = testsData[id];
 
   const hardness: Hardness = testData.hardness;
-  const color: Color =
-    hardness === 'normal' ? 'blue' : hardness === 'hard' ? 'red' : 'green';
+  const color: Color = hardness === 'normal' ? 'blue' : hardness === 'hard' ? 'red' : 'green';
+
+  const navigate = useNavigate();
 
   return (
-    <div className={wrapper}>
+    <div className={wrapper} onClick={() => navigate(`/tests/${id}`)}>
       <img className={classes.img} src={testData.img} alt="img" />
       <div className={classes.grad}></div>
       <div className={classes.buttons}>

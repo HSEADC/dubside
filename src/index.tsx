@@ -10,6 +10,7 @@ import { LazyAbout } from '@/pages/about/About.lazy';
 import { LazyTests } from '@/pages/tests/Tests.lazy';
 import { LazyArticles } from '@/pages/articles/Articles.lazy';
 import { LazyGuide } from './pages/guide/Guide.lazy';
+import { LazyTest } from './pages/test/Test.lazy';
 
 const root = document.getElementById('root');
 
@@ -51,6 +52,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<div>Loading...</div>}>
             <LazyArticles />
+          </Suspense>
+        )
+      },
+      {
+        path: '/tests/:id',
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <LazyTest />
           </Suspense>
         )
       }

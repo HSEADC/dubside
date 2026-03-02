@@ -1,6 +1,8 @@
 @use '@/styles/config.scss' as *;
 
 .link {
+  position: relative;
+  display: inline;
   opacity: 0.7;
   transition: all 0.4s;
 

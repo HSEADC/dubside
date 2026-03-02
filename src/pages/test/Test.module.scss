@@ -1,0 +1,14 @@
+@use '@/styles/config.scss' as *;
+
+.wrapper {
+  position: relative;
+  z-index: 20;
+}
+
+.testbox {
+  position: relative;
+  top: 30vh;
+  width: 80%;
+  margin-inline: auto;
+  background: $backgroung-grad-base;
+}

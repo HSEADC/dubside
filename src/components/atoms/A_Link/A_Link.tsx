@@ -4,13 +4,15 @@ import { Link } from 'react-router';
 
 interface A_LinkPropsTypes {
   to: string;
-  text: string;
+  text?: string;
+  children?: React.ReactNode;
 }
 
-const A_Link = ({ to, text }: A_LinkPropsTypes) => {
+const A_Link = ({ to, text, children }: A_LinkPropsTypes) => {
   return (
     <Link to={to} className={classes.link}>
       {text}
+      {children}
     </Link>
   );
 };
