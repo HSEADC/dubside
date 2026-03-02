@@ -12,3 +12,9 @@
   position: relative;
   margin-top: $double-average-gap;
 }
+
+.buttons {
+  display: flex;
+  gap: calc($space * 2);
+  margin-top: calc($space * 2);
+}
