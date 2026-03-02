@@ -1,0 +1,68 @@
+@use '@/styles/config.scss' as *;
+
+@mixin badge-base() {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  border-radius: $radius-tracks-img;
+  padding: calc($padding-mini * 0.5) $padding-mini;
+  background: $backgroung-grad-base;
+  transition: all 500ms ease;
+}
+
+.default {
+  @include badge-base();
+  &::before {
+    @include border();
+    border-radius: $radius-tracks-img;
+  }
+}
+
+.green {
+  @include badge-base();
+  background: $backgroung-grad-green;
+  &::before {
+    @include border();
+    border-radius: $radius-tracks-img;
+  }
+}
+
+.red {
+  @include badge-base();
+  background: $backgroung-grad-red;
+  &::before {
+    @include border();
+    border-radius: $radius-tracks-img;
+  }
+}
+
+.blue {
+  @include badge-base();
+  background: $backgroung-grad-blue;
+  &::before {
+    @include border();
+    border-radius: $radius-tracks-img;
+  }
+}
+
+.disabled {
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.5;
+  &::before {
+    @include border();
+    border-radius: $radius-tracks-img;
+  }
+  &:hover {
+    color: rgba(255, 255, 255, 0.75);
+    opacity: 1;
+  }
+}
