@@ -22,7 +22,36 @@ const Test = () => {
       <Q_VideoBackground source={videoLink} uppergrad={false} />
       <W_SectionElementsWrapper>
         <div className={classes.testbox}>
-          <h4>test {id}</h4>
+          <span className={classes.span}>
+            вопрос {3} из {5}
+          </span>
+          <h3>текст вопроса {id}</h3>
+          <div className={classes.answers}>
+            <div className={classes.answer}>
+              <label className={classes.label}>
+                <input className={classes.input} type="checkbox" />
+                текст ответа
+              </label>
+            </div>
+            <div className={classes.answer}>
+              <label className={classes.label}>
+                <input className={classes.input} type="checkbox" />
+                текст ответа
+              </label>
+            </div>
+            <div className={classes.answer}>
+              <label className={classes.label}>
+                <input className={classes.input} type="checkbox" />
+                текст ответа
+              </label>
+            </div>
+            <div className={classes.answer}>
+              <label className={classes.label}>
+                <input className={classes.input} type="checkbox" />
+                текст ответа
+              </label>
+            </div>
+          </div>
         </div>
       </W_SectionElementsWrapper>
     </section>
