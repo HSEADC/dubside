@@ -1,0 +1,69 @@
+@use '@/styles/config.scss' as *;
+
+.inputwrapp {
+  position: relative;
+  width: 100%;
+  border-radius: $radius-max;
+  &::before {
+    @include border();
+    pointer-events: none;
+    border-radius: $radius-max;
+  }
+}
+
+@mixin input() {
+  width: 100%;
+  height: 100%;
+  padding: calc(2 * $space);
+  padding-left: calc(3 * $space);
+  background: $backgroung-grad-base;
+  border-radius: $radius-max;
+  border: 0;
+
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+.input {
+  @include input();
+}
+
+.input:hover {
+  @include input();
+}
+
+.input:focus,
+.input:focus-visible,
+.input:focus-within,
+.input:active,
+.input:checked,
+.input:indeterminate,
+.input:enabled,
+.input:required {
+  @include input();
+}
+
+.input:disabled {
+}
+
+.input:placeholder-shown,
+.input:enabled,
+.input:required,
+.input:optional,
+.input:valid,
+.input:invalid,
+.input:read-only,
+.input:read-write,
+.input:in-range,
+.input:out-of-range,
+.input:default,
+.input:checked:hover,
+.input:checked:focus-visible,
+.input:checked:disabled,
+.input[aria-invalid='true'],
+.input[aria-disabled='true'],
+.input[aria-checked='true'],
+.input[aria-checked='mixed'] {
+  @include input();
+}
