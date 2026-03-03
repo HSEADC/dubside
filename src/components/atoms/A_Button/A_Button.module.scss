@@ -1,0 +1,25 @@
+@use '@/styles/config.scss' as *;
+
+@mixin button() {
+  all: unset;
+  display: inline;
+  padding: $space;
+  font-size: $text-1-text-size;
+  transition: all 1s ease;
+  opacity: 1;
+}
+
+.nonactive {
+  @include button();
+  opacity: 0.5;
+
+  &:hover {
+    transition: all 400ms ease;
+    opacity: 1;
+  }
+}
+
+.active {
+  @include button();
+  opacity: 1;
+}
