@@ -1,0 +1,54 @@
+@use '@/styles/config.scss' as *;
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: $average-gap;
+  margin-top: calc($space * 2);
+}
+
+.label {
+  position: relative;
+  display: flex;
+  gap: $space;
+  align-items: center;
+}
+
+@mixin inpt() {
+  all: unset;
+  display: inline-block;
+  border: 0;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  width: 15px;
+  height: 15px;
+  transition: all 300ms;
+  position: relative;
+}
+
+.input {
+  @include inpt();
+}
+
+.input:hover,
+.input:focus,
+.input:focus-visible {
+  @include inpt();
+}
+
+.input:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.input:active,
+.input:checked {
+  @include inpt();
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.input:checked {
+  &::before {
+    @include border();
+    border-radius: 2px;
+  }
+}
