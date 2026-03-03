@@ -1,28 +1,39 @@
+import Q_VideoBackground from '@/components/quarks/Q_VideoBackground/Q_VideoBackground';
+import W_SectionElementsWrapper from '@/components/wrappers/W_SectionElementsWrapper/W_SectionElementsWrapper';
+import { videosGuideMap } from '@/shared/constants/videoGuideMap';
 import React from 'react';
+import classes from '@/pages/articles/Articles.module.scss';
+import A_Button from '@/components/atoms/A_Button/A_Button';
+import M_Input from '@/components/molecules/M_Input/M_Input';
+import M_FlipCard from '@/components/molecules/M_FlipCard/M_FlipCard';
 
 const Articles = () => {
+  const videoLink = videosGuideMap.hero;
+
   return (
     <div>
-      <h1>ARTICLES</h1>
+      <Q_VideoBackground source={videoLink} uppergrad={false} />
+      <W_SectionElementsWrapper>
+        <div className={classes.breakdiv}></div>
 
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-        doloremque earum animi hic asperiores sapiente, repellendus velit.
-        Nesciunt animi, aspernatur sequi recusandae temporibus, porro laboriosam
-        autem qui suscipit quaerat dolorum.
-      </p>
-      <p>
-        Ad facere itaque earum corrupti assumenda voluptatum dolorum animi magni
-        cumque doloribus cum illo in molestiae at debitis quae iusto temporibus,
-        ipsum nulla dolor accusamus reprehenderit. Animi nemo accusantium
-        quidem.
-      </p>
-      <p>
-        Eveniet aliquam aperiam dolorum consequuntur error quas adipisci iure
-        animi in harum doloribus saepe nostrum magnam cumque placeat deleniti
-        qui sit, exercitationem, expedita ut! Praesentium tempora dicta
-        voluptate eveniet mollitia.
-      </p>
+        <M_Input placeholder={'бла бsdvsdvла'} />
+
+        {/* <div className={classes.inputwrapp}>
+          <input type="text" className={classes.input} placeholder="впишите слова для поиска" />
+        </div> */}
+
+        <div className={classes.buttonswrap}>
+          <A_Button isActive={false}>все</A_Button>
+          <A_Button isActive={false}>статьи</A_Button>
+          <A_Button isActive={false}>артисты</A_Button>
+          <A_Button isActive={false}>карточки</A_Button>
+        </div>
+
+        <div className={classes.articleswrapper}>
+          <div className={classes.article}></div>
+          <M_FlipCard nickname="kanye" />
+        </div>
+      </W_SectionElementsWrapper>
     </div>
   );
 };
