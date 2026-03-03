@@ -1,0 +1,32 @@
+@use '@/styles/config.scss' as *;
+
+.testbox {
+  position: relative;
+  top: 40vh;
+  width: 80%;
+  margin-inline: auto;
+  background: $backgroung-grad-base;
+  padding: $padding;
+  border-radius: $radius;
+  &::before {
+    @include border();
+    pointer-events: none;
+  }
+}
+
+.resultimg {
+  position: relative;
+  width: calc(200px + #{$space} * 3);
+  height: calc(200px + #{$space} * 7);
+  margin-inline: auto;
+  margin-top: calc($space * 3);
+  border-radius: $radius;
+  overflow: hidden;
+  &::before {
+    @include border();
+  }
+}
+
+.result {
+  object-fit: cover;
+}
