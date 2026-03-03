@@ -27,6 +27,16 @@ const Guide = () => {
 
       <SO_ArtistGuideBlock artist="kendrick" side="left" />
       <SO_ArtistGuideBlock artist="drake" side="right" />
+      <SO_ArtistGuideBlock artist="kanye" side="left" />
+      <SO_ArtistGuideBlock artist="jayz" side="right" />
+      <SO_ArtistGuideBlock artist="eminem" side="left" />
+      <SO_ArtistGuideBlock artist="nicki" side="right" />
+      <SO_ArtistGuideBlock artist="wayne" side="left" />
+      <SO_ArtistGuideBlock artist="50cent" side="right" />
+      <SO_ArtistGuideBlock artist="travis" side="left" />
+      <SO_ArtistGuideBlock artist="jcole" side="right" />
+      <SO_ArtistGuideBlock artist="future" side="left" />
+      <SO_ArtistGuideBlock artist="carti" side="right" />
     </div>
   );
 };
