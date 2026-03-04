@@ -7,9 +7,12 @@ type Props = {
   isActive: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const A_Button = (props: Props) => {
-  const classname = props.isActive ? classes.active : classes.nonactive;
-  return <button className={classname}>{props.children}</button>;
+const A_Button = ({ isActive, children, ...rest }: Props) => {
+  return (
+    <button className={isActive ? classes.active : classes.nonactive} {...rest}>
+      {children}
+    </button>
+  );
 };
 
 export default A_Button;

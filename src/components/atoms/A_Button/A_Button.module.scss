@@ -4,6 +4,8 @@
   all: unset;
   display: inline;
   padding: $space;
+  padding-top: 0;
+  padding-bottom: 0;
   font-size: $text-1-text-size;
   transition: all 1s ease;
   opacity: 1;
