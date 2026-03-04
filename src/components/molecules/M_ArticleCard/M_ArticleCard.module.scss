@@ -1,0 +1,86 @@
+@use '@/styles/config.scss' as *;
+
+@mixin articleblock {
+  position: relative;
+  border-radius: $radius;
+  padding: $padding-mid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25vw;
+  overflow: hidden;
+
+  &::before {
+    @include border();
+  }
+}
+.mini {
+  width: 40%;
+  @include articleblock();
+}
+.mid {
+  width: calc(60% - $average-gap);
+  @include articleblock();
+}
+.max {
+  width: 100%;
+  @include articleblock();
+}
+
+.buttons {
+  display: flex;
+  gap: $padding-mini;
+  z-index: 10;
+}
+
+.img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.gradright {
+  background: $backgroung-grad-toright;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.gradtop {
+  background: $backgroung-grad-base;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.p {
+  font-size: $text-2-text-size;
+}
+
+.label {
+  @include label();
+}
+
+.upperdiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.downdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  z-index: 10;
+  gap: $space;
+}
