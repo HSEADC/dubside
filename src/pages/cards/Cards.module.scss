@@ -1,1 +1,16 @@
 @use '@/styles/config.scss' as *;
+
+.breakdiv {
+  height: 25vh;
+}
+
+.cardswrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: $average-gap;
+  width: 100%;
+  max-width: calc(3 * 300px + 2 * #{$average-gap});
+  margin: 0 auto;
+}
