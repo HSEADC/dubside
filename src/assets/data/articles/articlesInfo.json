@@ -1,0 +1,68 @@
+[
+  {
+    "id": 0,
+    "title": "Что такое флоу и почему он важнее текста",
+    "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
+    "slug": "flow-and-text",
+    "date": "2025-10-27",
+    "timing": "10мин",
+    "tags": ["бронкс", "история"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
+  },
+  {
+    "id": 1,
+    "title": "Ники Минаж",
+    "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
+    "slug": "flow-and-text2",
+    "date": "2025-10-23",
+    "timing": "10мин",
+    "tags": ["вестсайд", "артист"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
+  },
+  {
+    "id": 2,
+    "title": "Начало хип-хоп культуры",
+    "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
+    "slug": "flow-and-text3",
+    "date": "2025-10-13",
+    "timing": "10мин",
+    "tags": ["бронкс", "ньюскул"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
+  },
+  {
+    "id": 3,
+    "title": "Что такое флоу и почему он важнее текста 4",
+    "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
+    "slug": "flow-and-text4",
+    "date": "2025-10-14",
+    "timing": "10мин",
+    "tags": ["звук", "техническое"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
+  },
+  {
+    "id": 4,
+    "title": "Начало хип-хоп культуры",
+    "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
+    "slug": "flow-and-text3",
+    "date": "2025-10-13",
+    "timing": "10мин",
+    "tags": ["бронкс", "ньюскул"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
+  },
+  {
+    "id": 5,
+    "title": "Что такое флоу и почему он важнее текста 4",
+    "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
+    "slug": "flow-and-text4",
+    "date": "2025-10-14",
+    "timing": "10мин",
+    "tags": ["звук", "техническое"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
+  }
+]
