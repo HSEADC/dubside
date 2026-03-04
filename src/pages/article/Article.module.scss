@@ -1,0 +1,23 @@
+@use '@/styles/config.scss' as *;
+
+.breakdiv {
+  height: 47vh;
+}
+
+.buttonswrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $space;
+  margin-inline: auto;
+  /*  margin-top: $space; */
+}
+
+.articleswrapper {
+  display: flex;
+  gap: $average-gap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 25vh;
+}
