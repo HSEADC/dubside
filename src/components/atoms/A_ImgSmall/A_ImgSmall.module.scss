@@ -1,0 +1,46 @@
+@use '@/styles/config.scss' as *;
+
+.imgwrapper {
+  max-width: 100%;
+  height: 30vh;
+  position: relative;
+  border-radius: $radius;
+  overflow: hidden;
+
+  &::before {
+    @include border();
+    pointer-events: none;
+  }
+}
+
+.img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: relative;
+}
+
+.grad {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+
+  transition: opacity 1s ease;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0) 70%);
+}
+
+.imgwrapper:hover .grad {
+  opacity: 0.5;
+}
+
+.footer {
+  position: absolute;
+  z-index: 5;
+  left: $padding-mid;
+  bottom: $padding-mid;
+}
