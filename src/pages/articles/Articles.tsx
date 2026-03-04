@@ -6,7 +6,7 @@ import classes from '@/pages/articles/Articles.module.scss';
 import A_Button from '@/components/atoms/A_Button/A_Button';
 import M_Input from '@/components/molecules/M_Input/M_Input';
 import ArticlesDataRaw from '@/assets/data/articles/articlesInfo.json';
-import Article from '@/shared/types/articles';
+import { Article } from '@/shared/types/articles';
 import M_ArticleCard from '@/components/molecules/M_ArticleCard/M_ArticleCard';
 import calcTestCardSize from '@/shared/utils/calcTestCardSize';
 

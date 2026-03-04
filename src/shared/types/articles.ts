@@ -1,4 +1,4 @@
-interface Article {
+export interface Article {
   id: number;
   title: string;
   paragraph: string;
@@ -10,4 +10,17 @@ interface Article {
   contentLink: string;
 }
 
-export default Article;
+interface ArticleImg {
+  img: string;
+  footer: string;
+}
+
+type ArticleParagraph = string | ArticleImg;
+
+interface ArticleBlockContent {
+  heading: string;
+  paragraphs: ArticleParagraph[];
+  side_imgs: ArticleImg[];
+}
+
+export type ArticleContent = ArticleBlockContent[];

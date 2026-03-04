@@ -4,7 +4,7 @@ import classes from '@/components/molecules/M_ArticleCard/M_ArticleCard.module.s
 import A_Badge from '@/components/atoms/A_Badge/A_Badge';
 import ArticlesDataRaw from '@/assets/data/articles/articlesInfo.json';
 import { useNavigate } from 'react-router';
-import Article from '@/shared/types/articles';
+import { Article } from '@/shared/types/articles';
 
 const articlesData: Article[] = ArticlesDataRaw;
 
