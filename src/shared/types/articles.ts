@@ -10,17 +10,24 @@ export interface Article {
   contentLink: string;
 }
 
-interface ArticleImg {
-  img: string;
-  footer: string;
+export interface BigArticleImg {
+  big_img: string;
+  img_footer: string;
 }
 
-type ArticleParagraph = string | ArticleImg;
+export interface SideArticleImg {
+  side_img: string;
+  img_footer: string;
+}
 
-interface ArticleBlockContent {
+export type ArticleParagraph = string | BigArticleImg;
+
+export type ArticleSide = 'left' | 'right';
+
+export interface ArticleBlockContent {
   heading: string;
   paragraphs: ArticleParagraph[];
-  side_imgs: ArticleImg[];
+  side_imgs: SideArticleImg[];
 }
 
 export type ArticleContent = ArticleBlockContent[];

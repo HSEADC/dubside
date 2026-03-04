@@ -14,12 +14,6 @@ $padding-mid: calc($space * 3);
 
 $screen-width: 100vw;
 
-$h1-max-width: clamp(35vw, 650px, 80vw);
-$p-max-width: clamp(35vw, 400px, 80vw);
-$p-gap: clamp(24px, 3vw, 40px);
-
-$upper-h1-margin-top: 55vh;
-
 /* TYPO */
 
 $text-color-white: #ffffff;
@@ -35,6 +29,16 @@ $heading-1-text-size: clamp(30px, calc(17.636px + 3.864vw), 60px);
 
 $avarage-line-height: 1.5;
 $card-line-height: 1.25;
+$h-line-height: 1.1;
+
+$h1-max-width: clamp(35vw, 650px, 80vw);
+$h2-max-width: clamp(35vw, 900px, 80vw);
+$p-max-width: clamp(35vw, 400px, 80vw);
+$p-large-max-width: clamp(35vw, 650px, 80vw);
+$p-gap: clamp(24px, 3vw, 40px);
+
+$p-large-max-width-bleed: calc($max-width - $p-large-max-width);
+$upper-h1-margin-top: 55vh;
 
 /* MORE */
 
@@ -65,6 +69,7 @@ $backgroung-grad-red: linear-gradient(to top, rgba(108, 0, 0, 0.5), rgba(108, 0,
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: 15;
+  pointer-events: none;
 }
 
 @mixin card() {

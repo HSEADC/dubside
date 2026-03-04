@@ -32,6 +32,8 @@ h2 {
   font-size: $heading-2-text-size;
   font-stretch: 150%;
   z-index: 10;
+  max-width: $h2-max-width;
+  line-height: $h-line-height;
 }
 
 h3 {
