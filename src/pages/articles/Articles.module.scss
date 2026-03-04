@@ -10,8 +10,14 @@
   align-items: center;
   gap: $space;
   margin-inline: auto;
-  margin-top: $space;
+  /*  margin-top: $space; */
 }
 
 .articleswrapper {
+  display: flex;
+  gap: $average-gap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 25vh;
 }
