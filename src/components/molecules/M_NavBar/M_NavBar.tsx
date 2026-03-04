@@ -6,7 +6,8 @@ const NavBar = () => {
   return (
     <nav className={classes.nav}>
       <A_Link to="/" text="гайд"></A_Link>
-      <A_Link to="/articles" text="материалы"></A_Link>
+      <A_Link to="/articles" text="статьи"></A_Link>
+      <A_Link to="/cards" text="карточки"></A_Link>
       <A_Link to="/tests" text="тесты"></A_Link>
       <A_Link to="/about" text="о проекте"></A_Link>
     </nav>
