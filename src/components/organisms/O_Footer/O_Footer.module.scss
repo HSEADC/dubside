@@ -9,7 +9,7 @@
   padding: $padding-mid;
   padding-bottom: $padding;
   background: $backgroung-grad-base;
-  height: 18vh;
+  height: 20vh;
   border-radius: $radius $radius 0 0;
 
   &::before {
@@ -47,4 +47,35 @@
 .text2 {
   @include label();
   opacity: 1;
+}
+
+.input {
+  position: relative;
+}
+.inputwrap {
+  display: inline;
+  position: relative;
+}
+
+.btn {
+  position: absolute;
+  top: calc(2 * $space);
+  right: calc(3 * $space);
+  width: calc($space * 3);
+  height: calc($space * 3);
+  background: black;
+  border: 0;
+  cursor: pointer;
+}
+.label {
+  @include label();
+  /* margin-left: calc(3 * $space); */
+}
+
+.form {
+  position: relative;
+
+  display: flex;
+  gap: calc($space/1);
+  flex-direction: column;
 }
