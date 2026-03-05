@@ -1,0 +1,50 @@
+@use '@/styles/config.scss' as *;
+
+.wrapper {
+  margin-top: calc(30px + calc($space * 10));
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: $double-average-gap;
+  padding: $padding-mid;
+  padding-bottom: $padding;
+  background: $backgroung-grad-base;
+  height: 18vh;
+  border-radius: $radius $radius 0 0;
+
+  &::before {
+    @include border();
+    pointer-events: none;
+    border-radius: $radius $radius 0 0;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: $average-gap;
+}
+
+.info {
+  display: flex;
+  gap: $average-gap;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(calc($max-width/2) - $double-average-gap);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(calc($max-width/2) - $double-average-gap);
+}
+
+.text2 {
+  @include label();
+  opacity: 1;
+}

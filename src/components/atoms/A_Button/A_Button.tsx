@@ -4,7 +4,7 @@ import React from 'react';
 
 type Props = {
   children: React.ReactNode;
-  isActive: boolean;
+  isActive?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const A_Button = ({ isActive, children, ...rest }: Props) => {
