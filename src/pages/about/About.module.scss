@@ -1,0 +1,9 @@
+@use '@/styles/config.scss' as *;
+
+.breakdiv {
+  height: 47vh;
+}
+
+.p {
+  max-width: $p-large-max-width;
+}
