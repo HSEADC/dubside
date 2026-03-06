@@ -11,16 +11,53 @@
   z-index: 1;
 }
 
+.grad {
+  --accent-rgb: 100 100 100;
+
+  position: absolute;
+  transition: all 400ms ease;
+  opacity: 0;
+  inset: 0;
+
+  background: linear-gradient(
+      to top,
+      rgb(0 0 0 / 1) 0%,
+      rgb(var(--accent-rgb) / 0.05098) 26%,
+      rgb(var(--accent-rgb) / 0.05098) 74%,
+      rgb(0 0 0 / 1) 100%
+    ),
+    linear-gradient(
+      to right,
+      rgb(0 0 0 / 1) 0%,
+      rgb(var(--accent-rgb) / 0.58039) 17%,
+      rgb(var(--accent-rgb) / 0.32157) 41%,
+      rgb(0 0 0 / 1) 100%
+    ),
+    radial-gradient(
+      farthest-side at 10% 50%,
+      rgb(var(--accent-rgb) / 1) 0%,
+      rgb(var(--accent-rgb) / 1) 30%,
+      rgb(var(--accent-rgb) / 0.47843) 60%,
+      rgb(0 0 0 / 1) 100%
+    );
+}
+
+.track:hover .grad {
+  opacity: 1;
+}
+
 .trackinfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 2;
 }
 
 .img {
   width: $track-size;
   height: $track-size;
   border-radius: $radius-tracks-img;
+  z-index: 2;
 }
 
 .footer1 {
