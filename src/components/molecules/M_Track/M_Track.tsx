@@ -25,6 +25,10 @@ const M_Track = ({ name, footer, img, link }: Track) => {
     return rgb;
   }
 
+  type CSSVars = React.CSSProperties & {
+    ['--accent-rgb']?: string;
+  };
+
   async function onLoad(e: React.SyntheticEvent<HTMLImageElement>) {
     try {
       const imgEl = e.currentTarget;
@@ -65,7 +69,7 @@ const M_Track = ({ name, footer, img, link }: Track) => {
 
   return (
     <a href={link} className={classes.track} target="_blank" rel="noopener noreferrer">
-      <div className={classes.grad} style={{ ['--accent-rgb' as any]: color }}></div>
+      <div className={classes.grad} style={{ ['--accent-rgb']: color } as CSSVars}></div>
       <img
         crossOrigin="anonymous"
         src={img}
