@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from '@/components/organisms/O_MainTracks/O_MainTracks.module.scss';
+import M_Track from '@/components/molecules/M_Track/M_Track';
 
 interface Track {
   name: string;
@@ -18,18 +19,7 @@ const O_MainTracks = ({ tracks }: Props) => {
       <h4>Ключевые треки</h4>
       <div className={classes.tracks}>
         {tracks.map((p: Track) => (
-          <a
-            key={p.link}
-            href={p.link}
-            className={classes.track}
-            target="_blank"
-            rel="noopener noreferrer">
-            <img src={p.img} className={classes.img}></img>
-            <div className={classes.trackinfo}>
-              <div>{p.name}</div>
-              <div className={classes.footer1}>{p.footer}</div>
-            </div>
-          </a>
+          <M_Track name={p.name} footer={p.footer} img={p.img} link={p.link} />
         ))}
       </div>
     </div>
