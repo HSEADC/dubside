@@ -80,3 +80,37 @@ li::before {
   content: '— ';
   /* display: block; */
 }
+
+/* Image skeleton (CSS-only) */
+@keyframes img-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+img {
+  background-color: rgba(255, 255, 255, 0.06);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.12) 35%,
+    rgba(255, 255, 255, 0.04) 70%
+  );
+  background-size: 200% 100%;
+  animation: img-shimmer 1.4s ease-in-out infinite;
+}
+
+img.no-skeleton,
+img[data-skeleton='off'] {
+  background: none;
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img {
+    animation: none;
+  }
+}
