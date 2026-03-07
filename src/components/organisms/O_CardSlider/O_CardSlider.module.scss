@@ -36,6 +36,9 @@ $posX7: $posX5 + 90px;
 
 .innerdiv {
   transition: opacity 1s ease;
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
 }
 
 .card:not(.pose):not(.posf):not(.posg) {
