@@ -1,6 +1,16 @@
 @use '@/styles/config.scss' as *;
 @use '@/styles/fonts.scss' as *;
 
+::selection {
+  background-color: $selection-bg;
+  color: $selection-fg;
+}
+
+::-moz-selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-fg);
+}
+
 * {
   font-family: 'GT America';
   line-height: $avarage-line-height;
