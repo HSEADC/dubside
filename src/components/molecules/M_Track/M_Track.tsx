@@ -2,6 +2,7 @@ import classes from '@/components/molecules/M_Track/M_Track.module.scss';
 import { getColor, getSwatches } from 'colorthief';
 import React, { useState } from 'react';
 import { Track } from '@/shared/types/cards';
+import Q_Image from '@/components/quarks/Q_Image/Q_image';
 
 const M_Track = ({ name, footer, img, link }: Track) => {
   const [color, setColor] = useState('100 100 100');
@@ -42,33 +43,16 @@ const M_Track = ({ name, footer, img, link }: Track) => {
     }
   }
 
-  // async function onLoad(e: React.SyntheticEvent<HTMLImageElement>) {
-  //   try {
-  //     const imgEl = e.currentTarget;
-  //     const dominant = (await getColor(imgEl)).array() as [number, number, number];
-
-  //     // if (!isTooDark(dominant)) {
-  //     //   setColor(dominant.join(' '));
-  //     //   return;
-  //     // }
-
-  //     // const swatches = await getSwatches(imgEl);
-  //     // const vibrant = swatches.DarkVibrant?.color.array() as [number, number, number] | undefined;
-
-  //     setColor(makeLighter(dominant).join(' '));
-  //   } catch {
-  //     // ignore: keep default color
-  //   }
-  // }
-
   return (
     <a href={link} className={classes.track} target="_blank" rel="noopener noreferrer">
       <div className={classes.grad} style={{ ['--accent-rgb']: color } as CSSVars}></div>
-      <img
+      <Q_Image
         crossOrigin="anonymous"
         src={img}
         className={classes.img}
-        onLoad={(e) => onLoad(e)}></img>
+        wrapperClasses={classes.img}
+        onLoad={(e) => onLoad(e)}
+      />
       <div className={classes.trackinfo}>
         <div>{name}</div>
         <div className={classes.footer1}>{footer}</div>
