@@ -1,13 +1,7 @@
 import classes from '@/components/molecules/M_Track/M_Track.module.scss';
 import { getColor, getSwatches } from 'colorthief';
 import React, { useState } from 'react';
-
-interface Track {
-  name: string;
-  footer: string;
-  img: string;
-  link: string;
-}
+import { Track } from '@/shared/types/cards';
 
 const M_Track = ({ name, footer, img, link }: Track) => {
   const [color, setColor] = useState('100 100 100');

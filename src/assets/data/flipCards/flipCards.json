@@ -1,36 +1,53 @@
 {
   "kendrick": {
     "name": "Kendrick Lamar",
-    "points": [
-      "ультра мейнстрим и база",
-      "текстовые концептуальные альбомы, сложная проблематика"
-    ],
+    "points": ["ультра мейнстрим и база", "текстовые концептуальные альбомы, сложная проблематика"],
     "paragraph": "Стал редким примером артиста, соединившего коммерческий успех с высокой поэтикой, политическим содержанием и влиянием на последующую поколенческую оптику рэпа.",
     "songs": [
-      "Swimming Pools (Drank)",
-      "Alright"
+      {
+        "name": "Swimming Pools (Drank)",
+        "footer": "Good Kid, M.A.A.D City | 2012",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/swimmingpools.jpg",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
+      },
+      {
+        "name": "HUMBLE.",
+        "footer": "Damn | 2017",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/humble.jpg",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
+      }
     ]
   },
   "drake": {
     "name": "Drake",
-    "points": [
-      "мелодичный мейнстрим-рэп и поп-рэп, акцент на эмоциях и отношениях"
-    ],
+    "points": ["мелодичный мейнстрим-рэп и поп-рэп, акцент на эмоциях и отношениях"],
     "paragraph": "Самый коммерчески доминирующий артист рэп-поп эпохи 2010–2020-х, который институционализировал мелодичный, уязвимый и жанрово гибридный формат хип-хопа.",
     "songs": [
-      "God’s Plan"
+      {
+        "name": "Nonstop",
+        "footer": "Scorpion | 2018",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/nonstop.jpg",
+        "link": "https://music.yandex.ru/album/521766/track/4650823"
+      }
     ]
   },
   "kanye": {
     "name": "Kanye West (Ye)",
-    "points": [
-      "копатыч, сумасшедший гений",
-      "эпатаж, нестабильность, экспериментальные альбомы"
-    ],
+    "points": ["копатыч, сумасшедший гений", "эпатаж, нестабильность, экспериментальные альбомы"],
     "paragraph": "Канье — провокатор и визионер, пересобравший хип-хоп, как арт-пространство. Он начинал как продюсер с золотым ухом, но стал фигурой, которая вывела рэп в высокое искусство.",
     "songs": [
-      "Runaway",
-      "Stronger"
+      {
+        "name": "POWER",
+        "footer": "My Beautiful Dark Twisted Fantasy | 2010",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kanye/power.jpg",
+        "link": "https://music.yandex.ru/track/637971"
+      },
+      {
+        "name": "Flashing Lights",
+        "footer": "Graduation | 2007",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kanye/flashinglights.jpg",
+        "link": "https://music.yandex.ru/artist/644"
+      }
     ]
   },
   "emenem": {
@@ -41,55 +58,94 @@
     ],
     "paragraph": "Один из самых коммерчески успешных и технически виртуозных MC в истории хип-хопа, который в конце 1990-х радикально расширил аудиторию жанра.",
     "songs": [
-      "The Real Slim Shady",
-      "Without Me"
+      {
+        "name": "The Real Slim Shady",
+        "footer": "The Marshall Mathers LP | 2000",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/eminem/realslimshady.jpg",
+        "link": "https://music.yandex.ru/artist/1053"
+      },
+      {
+        "name": "Without Me",
+        "footer": "The Eminem Show | 2002",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/eminem/withoutme.jpg",
+        "link": "https://music.yandex.ru/artist/1053"
+      }
     ]
   },
   "jay-z": {
     "name": "Jay-Z",
-    "points": [
-      "фундамент старой школы",
-      "капитал, власть, мемуарная лирика о пути к империи"
-    ],
+    "points": ["фундамент старой школы", "капитал, власть, мемуарная лирика о пути к империи"],
     "paragraph": "Ключевая фигура хип-хопа, превративший рэпера в стратегического предпринимателя без потери авторского веса.",
     "songs": [
-      "99 Problems",
-      "Empire State of Mind"
+      {
+        "name": "Empire State of Mind",
+        "footer": "The Blueprint 3 | 2009",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jayz/empirestateofmind.jpg",
+        "link": "https://music.yandex.ru/track/417474"
+      },
+      {
+        "name": "99 Problems",
+        "footer": "The Black Album | 2003",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jayz/99problems.jpg",
+        "link": "https://music.yandex.ru/album/89484"
+      }
     ]
   },
   "nicki": {
     "name": "Nicki Minaj",
-    "points": [
-      "королева поп-рэпа: гендерный слом в мейнстриме",
-      "мультяшность и сексуальность"
-    ],
+    "points": ["королева поп-рэпа: гендерный слом в мейнстриме", "мультяшность и сексуальность"],
     "paragraph": "В 2010-х заново институционализировала женское присутствие в мейнстрим-рэпе, совместив техническую агрессию, поп-кроссовер и гиперперформативный образ.",
     "songs": [
-      "Anaconda",
-      "Starships"
+      {
+        "name": "Anaconda",
+        "footer": "The Pinkprint | 2014",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/nicki/anaconda.jpg",
+        "link": "https://music.yandex.ru/artist/4113574"
+      },
+      {
+        "name": "Starships",
+        "footer": "Pink Friday: Roman Reloaded | 2012",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/nicki/starships.jpg",
+        "link": "https://music.yandex.ru/artist/4113574"
+      }
     ]
   },
   "travis": {
     "name": "Travis Scott",
-    "points": [
-      "архитектор современного саунда",
-      "атмосферный трэп, иммерсия"
-    ],
+    "points": ["архитектор современного саунда", "атмосферный трэп, иммерсия"],
     "paragraph": "Архитектор пост-трапа как иммерсивного саунд-дизайна, где продакшн, авто-тюн и атмосферная драматургия важнее классической рэп-техники. Стер границу между музыкой, модой и маркетинговой экосистемой.",
     "songs": [
-      "goosebumps"
+      {
+        "name": "Goosebumps",
+        "footer": "Birds in the Trap Sing McKnight | 2016",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/travis/Goosebumps.jpg",
+        "link": "https://music.yandex.ru/album/10698935/track/65872555?utm_source=web&utm_medium=copy_link"
+      },
+      {
+        "name": "FE!N",
+        "footer": "Utopia | 2023",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/travis/Fein.png",
+        "link": "https://music.yandex.ru/album/34425604/track/133059284?utm_source=web&utm_medium=copy_link"
+      }
     ]
   },
   "50-cent": {
     "name": "50-Cent",
-    "points": [
-      "классика новой школы 2000-х",
-      "мост между 90-ми и новым мейнстримом"
-    ],
+    "points": ["классика новой школы 2000-х", "мост между 90-ми и новым мейнстримом"],
     "paragraph": "Центральная фигура гангста-рэпа начала 2000-х. Вернул в мейнстрим уличную биографичность, жесткий минимализм и харизматичный образ «выжившего». Закрепил модель артиста как бренда с мощной индустриальной поддержкой.",
     "songs": [
-      "In da Club",
-      "Candy Shop"
+      {
+        "name": "In Da Club",
+        "footer": "Get Rich or Die Tryin' | 2003",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/50cent/indaclub.jpg",
+        "link": "https://music.yandex.ru/album/4241617/track/10358"
+      },
+      {
+        "name": "Candy Shop",
+        "footer": "The Massacre | 2005",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/50cent/candyshop.jpg",
+        "link": "https://music.yandex.ru/artist/3476"
+      }
     ]
   },
   "carti": {
@@ -99,20 +155,37 @@
     ],
     "paragraph": "Ключевая фигура пост-трапа, радикально сместивший фокус с лирики на ритм, тембр и адлибы, превратив голос в перкуссионный инструмент. Его эстетика хаоса и вамп-перформативности повлияла на целое поколение саунд-дизайна.",
     "songs": [
-      "Magnolia",
-      "Shoota"
+      {
+        "name": "Sky",
+        "footer": "Whole Lotta Red | 2020",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/carti/Whole_Lotta_Red.png",
+        "link": "https://music.yandex.ru/album/13278981/track/75570067?utm_source=web&utm_medium=copy_link"
+      },
+      {
+        "name": "Shoota",
+        "footer": "Die Lit | 2018",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/carti/Shoota.jpeg",
+        "link": "https://music.yandex.ru/album/5368515/track/41109419?utm_source=web&utm_medium=copy_link"
+      }
     ]
   },
   "future": {
     "name": "Future",
-    "points": [
-      "пионер тёмного трэпа",
-      "мрак, зависимость, роскошь и новая эмоциональность в рэпе"
-    ],
+    "points": ["пионер тёмного трэпа", "мрак, зависимость, роскошь и новая эмоциональность в рэпе"],
     "paragraph": "Архитектор меланхоличного трапа 2010-х, который довёл авто-тюн до статуса выразительного инструмента и сформировал канон «токсично-уязвимого» рэп-героя.",
     "songs": [
-      "Mask Off",
-      "Life Is Good"
+      {
+        "name": "Mask Off",
+        "footer": "Future | 2017",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/future/Mask_Off.jpg",
+        "link": "https://music.yandex.ru/album/12540886/track/33842446?utm_source=web&utm_medium=copy_link"
+      },
+      {
+        "name": "Life Is Good",
+        "footer": "High Off Life | 2020",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/future/Life_Is_Good.png",
+        "link": "https://vk.com/audio668283352_456244717_671802c9be3cf0d2b9"
+      }
     ]
   },
   "wayne": {
@@ -123,19 +196,37 @@
     ],
     "paragraph": "Один из самых влиятельных рэперов 2000-х. Радикализировал технику флоу, панчлайнов и фристайл-логики, превратив микстейп-культуру в главный двигатель сцены.",
     "songs": [
-      "Lollipop",
-      "A Milli"
+      {
+        "name": "Lollipop",
+        "footer": "Tha Carter III | 2008",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/wayne/lollipop.jpg",
+        "link": "https://music.yandex.ru/artist/3504"
+      },
+      {
+        "name": "A Milli",
+        "footer": "Tha Carter III | 2008",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/wayne/amilli.jpg",
+        "link": "https://music.yandex.ru/album/91056/track/79123"
+      }
     ]
   },
   "cole": {
     "name": "J. Cole",
-    "points": [
-      "голос созидательного хип-хопа: социальная лирика, зрелость и независимый путь"
-    ],
+    "points": ["голос созидательного хип-хопа: социальная лирика, зрелость и независимый путь"],
     "paragraph": "Один из главных «осмысленных» рэперов 2010-х, известный личными и социальными текстами без излишнего поп-блеска. Он доказал, что можно оставаться вдумчивым автором и при этом стабильно доминировать в чартах.",
     "songs": [
-      "No Role Modelz",
-      "Middle Child"
+      {
+        "name": "Middle Child",
+        "footer": "2019",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jcole/Middle_Child.png",
+        "link": "https://vk.com/audio474499320_456342768_a40be87cfd3b859f06"
+      },
+      {
+        "name": "No Role Modelz",
+        "footer": "2014 Forest Hills Drive | 2014",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jcole/NoRoleModelz.jpeg",
+        "link": "https://music.yandex.ru/album/20025668/track/20994321"
+      }
     ]
   }
 }

@@ -1,20 +1,13 @@
 import React from 'react';
 import classes from '@/components/molecules/M_FlipCard/M_FlipCard.module.scss';
 import flipCards from '@/assets/data/flipCards/flipCards.json';
+import { FlipCardsMap, SingerCard } from '@/shared/types/cards';
+import M_Track from '../M_Track/M_Track';
 
 type Props = {
   nickname: string;
   children?: React.ReactNode;
 };
-
-interface SingerCard {
-  name: string;
-  points: string[];
-  paragraph: string;
-  songs: string[];
-}
-
-type FlipCardsMap = Record<string, SingerCard>;
 
 const M_FlipCard = ({ nickname, children }: Props) => {
   const flipCardsObj: FlipCardsMap = flipCards;
@@ -50,7 +43,12 @@ const M_FlipCard = ({ nickname, children }: Props) => {
           </div>
           <div>
             {singer.songs.map((s) => (
-              <div key={s}>{s}</div>
+              <M_Track
+                img={s.img}
+                link={s.link}
+                name={s.name}
+                footer={s.footer}
+                key={s.name}></M_Track>
             ))}
           </div>
         </div>
