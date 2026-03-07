@@ -32,6 +32,7 @@
   height: 30vw;
   display: block;
   border-radius: $radius;
+  overflow: hidden;
 
   &::before {
     @include border();

@@ -17,13 +17,15 @@
   isolation: isolate;
   background-color: rgba(255, 255, 255, 0.06);
   background-image: linear-gradient(
-    45deg,
+    60deg,
     rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0.12) 35%,
-    rgba(255, 255, 255, 0.04) 70%
+    rgba(255, 255, 255, 0.04) 20%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.04) 80%,
+    rgba(255, 255, 255, 0.04) 100%
   );
   background-size: 200% 100%;
-  animation: shimmer 1.4s ease-in-out infinite;
+  animation: shimmer 1.9s ease-in-out infinite;
 }
 
 .img {
