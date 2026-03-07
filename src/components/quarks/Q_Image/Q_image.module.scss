@@ -1,0 +1,48 @@
+@use '@/styles/config.scss' as *;
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+  flex: 0 0 auto;
+  line-height: 0;
+  isolation: isolate;
+  background-color: rgba(255, 255, 255, 0.06);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.12) 35%,
+    rgba(255, 255, 255, 0.04) 70%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+.img {
+  display: block;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.wrapper[data-loaded='1'] {
+  background: none;
+  animation: none;
+}
+
+.wrapper[data-loaded='1'] .img {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wrapper {
+    animation: none;
+  }
+}
