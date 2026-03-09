@@ -1,0 +1,13 @@
+{
+  "trailingComma": "none",
+  "useTabs": false,
+  "tabWidth": 2,
+  "proseWrap": "never",
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "bracketSpacing": true,
+  "printWidth": 100,
+  "arrowParens": "always",
+  "bracketSameLine": true
+}
