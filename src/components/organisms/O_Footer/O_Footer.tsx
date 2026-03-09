@@ -75,7 +75,7 @@ const O_Footer = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}></M_Input>
               <button className={classes.btn}>
-                <img src="/icons/Q_Arrow.png" alt="btn" />
+                <img src={`${__PUBLIC_PATH__}icons/Q_Arrow.png`} alt="btn" />
               </button>
             </div>
           </form>

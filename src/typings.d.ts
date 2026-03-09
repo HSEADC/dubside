@@ -18,3 +18,4 @@ declare module '*.svg' {
 }
 
 declare const __PLATFORM__: 'desktop' | 'mobile';
+declare const __PUBLIC_PATH__: string;

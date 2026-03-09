@@ -13,6 +13,9 @@ interface EnvVariables {
 }
 
 export default (env: EnvVariables) => {
+  const rawPublicPath = env.publicPath ?? (env.mode === 'production' ? '/dubside/' : '/');
+  const publicPath = rawPublicPath.endsWith('/') ? rawPublicPath : `${rawPublicPath}/`;
+
   const paths: BuildPaths = {
     output: path.resolve(__dirname, 'docs'),
     entry: path.resolve(__dirname, 'src', 'index.tsx'),
@@ -27,7 +30,7 @@ export default (env: EnvVariables) => {
     paths: paths,
     platform: env.platform ?? 'desktop',
     analyzer: env.analyzer,
-    publicPath: env.publicPath ?? (env.mode === 'production' ? '/dubside/' : '/')
+    publicPath
   });
   return config;
 };

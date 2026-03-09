@@ -157,6 +157,13 @@ async function main() {
   installAtAliasHook();
   installAssetStubs();
 
+  // These globals are normally injected by Webpack's DefinePlugin.
+  // Prerender runs in Node via ts-node, so we provide them manually.
+  (globalThis as unknown as { __PUBLIC_PATH__?: string }).__PUBLIC_PATH__ = `${basename}/`.replace(
+    /\/{2,}/g,
+    '/'
+  );
+
   const templateHtml = loadTemplateHtml();
 
   // Import AFTER hooks are installed (alias + asset stubs)

@@ -18,7 +18,8 @@ export function buildPlugins(params: BuildOptions): Configuration['plugins'] {
       favicon: path.resolve(params.paths.public, 'icons/favicon.svg')
     }),
     new DefinePlugin({
-      __PLATFORM__: JSON.stringify(params.platform)
+      __PLATFORM__: JSON.stringify(params.platform),
+      __PUBLIC_PATH__: JSON.stringify(params.publicPath ?? '/')
     }), // подменяет глобальные переменные на значения которые мы задаем при сборке
     new CopyPlugin({
       patterns: [

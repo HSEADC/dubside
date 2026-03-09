@@ -15,7 +15,7 @@ const SO_HeroBlock = () => {
         медиа-платформа для изучения современной западной хип-хоп культуры и&nbsp;смежных с ней
         жанров
       </p>
-      <img src="/icons/icon.svg" className={classes.icon} />
+      <img src={`${__PUBLIC_PATH__}icons/icon.svg`} className={classes.icon} />
     </section>
   );
 };
