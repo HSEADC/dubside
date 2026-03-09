@@ -7,6 +7,7 @@ import { LazyArticles } from '@/pages/articles/Articles.lazy';
 import { LazyCards } from '@/pages/cards/Cards.lazy';
 import { LazyArticle } from '@/pages/article/Article.lazy';
 import { LazyTest } from '@/pages/test/Test.lazy';
+import A_Loader from '@/components/atoms/A_Loader/A_Loader';
 
 const AppRoutes = [
   {
@@ -16,7 +17,7 @@ const AppRoutes = [
       {
         path: '/',
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<A_Loader />}>
             <LazyGuide />
           </Suspense>
         )
@@ -24,7 +25,7 @@ const AppRoutes = [
       {
         path: '/about',
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<A_Loader />}>
             <LazyAbout />
           </Suspense>
         )
@@ -32,7 +33,7 @@ const AppRoutes = [
       {
         path: '/tests',
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<A_Loader />}>
             <LazyTests />
           </Suspense>
         )
@@ -40,7 +41,7 @@ const AppRoutes = [
       {
         path: '/articles',
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<A_Loader />}>
             <LazyArticles />
           </Suspense>
         )
@@ -48,7 +49,7 @@ const AppRoutes = [
       {
         path: '/cards',
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<A_Loader />}>
             <LazyCards />
           </Suspense>
         )
@@ -56,7 +57,7 @@ const AppRoutes = [
       {
         path: '/articles/:slug',
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<A_Loader />}>
             <LazyArticle />
           </Suspense>
         )
@@ -64,7 +65,7 @@ const AppRoutes = [
       {
         path: '/tests/:id',
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<A_Loader />}>
             <LazyTest />
           </Suspense>
         )

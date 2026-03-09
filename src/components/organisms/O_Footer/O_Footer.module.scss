@@ -1,8 +1,8 @@
 @use '@/styles/config.scss' as *;
 
 .wrapper {
-  margin-top: calc(30px + calc($space * 10));
-  position: relative;
+  bottom: calc(calc(30px + calc(calc($space * 10) + 20vh)) * -1);
+  position: absolute;
   display: flex;
   justify-content: space-between;
   gap: $double-average-gap;

@@ -1,0 +1,28 @@
+@use '@/styles/config.scss' as *;
+
+/* HTML: <div class="loader"></div> */
+
+.wrapper {
+  position: absolute;
+  inset: 0;
+  background: black;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  position: relative;
+  top: 50vh;
+  animation: l1 1s linear infinite alternate;
+}
+.loader:before {
+  position: relative;
+
+  content: 'dubside';
+}
+@keyframes l1 {
+  to {
+    opacity: 0;
+  }
+}
