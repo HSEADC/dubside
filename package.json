@@ -5,6 +5,9 @@
   "scripts": {
     "build:dev": "webpack  --env mode=development",
     "build:prod": "webpack --env mode=production",
+    "prerender:gh": "TS_NODE_TRANSPILE_ONLY=1 ts-node src/scripts/prerender-gh.ts",
+    "build:gh": "webpack --env mode=production publicPath=/dubside/",
+    "build:gh:prerender": "yarn -s build:gh && yarn -s prerender:gh",
     "build:mobile": "webpack --env mode=production platform=mobile",
     "build:desktop": "webpack --env mode=production platform=desktop",
     "start": "webpack serve --env mode=development"
