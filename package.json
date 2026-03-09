@@ -8,8 +8,7 @@
     "prerender:gh": "TS_NODE_TRANSPILE_ONLY=1 ts-node src/scripts/prerender-gh.ts",
     "build:gh": "webpack --env mode=production publicPath=/dubside/",
     "build:gh:prerender": "yarn -s build:gh && yarn -s prerender:gh",
-    "build:mobile": "webpack --env mode=production platform=mobile",
-    "build:desktop": "webpack --env mode=production platform=desktop",
+    "deploy:pages": "gh-pages -d docs",
     "start": "webpack serve --env mode=development"
   },
   "author": "dunchek",
@@ -31,6 +30,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "fork-ts-checker-webpack-plugin": "^9.1.0",
+    "gh-pages": "^6.3.0",
     "globals": "^17.3.0",
     "html-webpack-plugin": "^5.6.6",
     "jiti": "^2.6.1",

@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://hseadc.github.io/dubside/sitemap.xml
