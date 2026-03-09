@@ -13,8 +13,8 @@ const M_FlipCard = ({ nickname, children }: Props) => {
   const flipCardsObj: FlipCardsMap = flipCards;
   const singer: SingerCard = flipCardsObj[nickname];
 
-  const backImgPath = `/images/${nickname}/back.png`;
-  const frontImgPath = `/images/${nickname}/front.png`;
+  const backImgPath = `${__PUBLIC_PATH__}images/${nickname}/back.png`;
+  const frontImgPath = `${__PUBLIC_PATH__}images/${nickname}/front.png`;
 
   return (
     <div className={classes.wrapper}>

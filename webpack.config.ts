@@ -1,11 +1,7 @@
 import webpack from 'webpack';
 
 import { buildWebpack } from './config/build/buildWebpack';
-import {
-  BuildMode,
-  BuildPaths,
-  BuildPlatform
-} from './config/build/types/types';
+import { BuildMode, BuildPaths, BuildPlatform } from './config/build/types/types';
 import path from 'path';
 
 interface EnvVariables {
@@ -13,9 +9,13 @@ interface EnvVariables {
   port?: number;
   analyzer?: boolean;
   platform?: BuildPlatform;
+  publicPath?: string;
 }
 
 export default (env: EnvVariables) => {
+  const rawPublicPath = env.publicPath ?? (env.mode === 'production' ? '/dubside/' : '/');
+  const publicPath = rawPublicPath.endsWith('/') ? rawPublicPath : `${rawPublicPath}/`;
+
   const paths: BuildPaths = {
     output: path.resolve(__dirname, 'docs'),
     entry: path.resolve(__dirname, 'src', 'index.tsx'),
@@ -29,7 +29,8 @@ export default (env: EnvVariables) => {
     mode: env.mode ?? 'development',
     paths: paths,
     platform: env.platform ?? 'desktop',
-    analyzer: env.analyzer
+    analyzer: env.analyzer,
+    publicPath
   });
   return config;
 };
