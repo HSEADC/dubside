@@ -21,7 +21,8 @@ export function buildWebpack(options: BuildOptions): Configuration {
     output: {
       path: paths.output,
       filename: '[name].[contenthash].js',
-      clean: true
+      clean: true,
+      publicPath: options.publicPath //какой “базовый URL” использовать для всех файлов, которые Webpack подключает/подгружает
     },
     plugins: buildPlugins(options),
     devServer: isDev ? buildDevServer(options) : undefined
