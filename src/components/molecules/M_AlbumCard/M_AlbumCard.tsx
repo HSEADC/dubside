@@ -17,7 +17,7 @@ const M_AlbumCard = ({ album }: Props) => {
   return (
     <a href={album.link} target="_blank" rel="noopener noreferrer">
       <div className={classes.album}>
-        <Q_Image src={album.img} alt="album" />
+        <Q_Image src={album.img} alt="album" wrapperClasses={classes.wrapperimg} />
         <div className={classes.grad}></div>
         <div className={classes.albumspans}>
           <span>{album.name}</span>
