@@ -2,7 +2,8 @@
 
 .testbox {
   position: relative;
-  top: 40vh;
+  top: 50vh;
+  transform: translateY(-50%);
   width: 80%;
   margin-inline: auto;
   background: $backgroung-grad-base;
@@ -29,4 +30,9 @@
 
 .result {
   object-fit: cover;
+}
+
+.h3 {
+  margin-top: calc($space * 2);
+  margin-bottom: calc($space * 2);
 }

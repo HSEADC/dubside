@@ -10,7 +10,7 @@ type M_TestResultProps = {
 const M_TestResult = ({ count, length }: M_TestResultProps) => {
   return (
     <div className={classes.testbox}>
-      <h3>
+      <h3 className={classes.h3}>
         Ваш результат: {count}. {checkResult(count, length)[2]}.
       </h3>
       <p className={classes.answers}>{checkResult(count, length)[0]}</p>

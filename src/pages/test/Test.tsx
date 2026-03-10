@@ -62,7 +62,7 @@ const Test = () => {
               вопрос {questionNumber} из {length}
             </span>
 
-            <h3>{test.questions[questionNumber].question}</h3>
+            <h3 className={classes.h3}>{test.questions[questionNumber].question}</h3>
 
             <C_TestAnswers
               test={test}
