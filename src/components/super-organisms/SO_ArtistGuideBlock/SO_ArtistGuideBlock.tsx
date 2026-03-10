@@ -54,8 +54,10 @@ const SO_ArtistGuideBlock = ({ artist, side }: Props) => {
         <div className={isRight ? classes.right : undefined}>
           <div className={classes.breakdiv}></div>
           <h1 className={classes.h1}>{name}</h1>
-          {paragraphs_top.map((p: string) => (
-            <p className={classes.p}>{p}</p>
+          {paragraphs_top.map((p: string, i: number) => (
+            <p key={i} className={classes.p}>
+              {p}
+            </p>
           ))}
         </div>
 
@@ -65,16 +67,16 @@ const SO_ArtistGuideBlock = ({ artist, side }: Props) => {
           <div className={classes.bottompwrap}>
             <M_AlbumCard album={album} />
             <div>
-              {paragraphs_bottom.map((p: string) => (
-                <p>{p}</p>
+              {paragraphs_bottom.map((p: string, i: number) => (
+                <p key={i}>{p}</p>
               ))}
             </div>
           </div>
         ) : (
           <div className={classes.bottompwrap}>
             <div>
-              {paragraphs_bottom.map((p: string) => (
-                <p>{p}</p>
+              {paragraphs_bottom.map((p: string, i: number) => (
+                <p key={i}>{p}</p>
               ))}
             </div>
             <M_AlbumCard album={album} />

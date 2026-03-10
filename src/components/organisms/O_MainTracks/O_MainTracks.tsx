@@ -18,8 +18,8 @@ const O_MainTracks = ({ tracks }: Props) => {
     <div className={classes.trackswrapper}>
       <h4>Ключевые треки</h4>
       <div className={classes.tracks}>
-        {tracks.map((p: Track) => (
-          <M_Track name={p.name} footer={p.footer} img={p.img} link={p.link} />
+        {tracks.map((p: Track, i: number) => (
+          <M_Track key={i} name={p.name} footer={p.footer} img={p.img} link={p.link} />
         ))}
       </div>
     </div>
