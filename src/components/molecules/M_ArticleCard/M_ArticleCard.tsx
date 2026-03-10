@@ -46,7 +46,7 @@ const M_ArticleCard = ({ id, size }: Props) => {
         {!tagsDown ? (
           <div className={classes.label}>{articleData.tags.join(' | ')}</div>
         ) : (
-          <div></div>
+          <div className={classes.label}>{articleData.tags.join(' | ')}</div>
         )}
 
         <div className={classes.buttons}>
@@ -55,11 +55,11 @@ const M_ArticleCard = ({ id, size }: Props) => {
       </div>
 
       <div className={classes.downdiv}>
-        {!tagsDown ? (
+        {/* !tagsDown ? (
           <div></div>
         ) : (
           <div className={classes.label}>{articleData.tags.join(' | ')}</div>
-        )}
+        ) */}
         <h4>{articleData.title}</h4>
         <p className={classes.p}>{articleData.paragraph}</p>
       </div>
