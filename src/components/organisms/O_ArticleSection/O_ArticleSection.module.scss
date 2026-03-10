@@ -67,3 +67,18 @@
 .reverse {
   flex-direction: row-reverse;
 }
+
+@media screen and (max-width: 899px) {
+  .sideswrapper {
+    flex-direction: column;
+  }
+
+  .imgswrapper {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $double-average-gap;
+    margin-top: calc($space * 7);
+  }
+}
