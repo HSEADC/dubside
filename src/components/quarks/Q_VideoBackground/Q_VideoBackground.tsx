@@ -10,7 +10,7 @@ interface Q_VideoBackgroundType {
 const Q_VideoBackground = ({ source, uppergrad }: Q_VideoBackgroundType) => {
   return (
     <div className={classes.wrapper}>
-      <video className={classes.vid} autoPlay loop muted playsInline preload="auto">
+      <video className={classes.vid} preload="metadata" autoPlay loop muted playsInline>
         <source src={source} type="video/mp4" />
       </video>
       <div className={classes.gradientdown}></div>
