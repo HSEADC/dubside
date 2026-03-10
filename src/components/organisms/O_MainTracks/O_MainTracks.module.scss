@@ -7,12 +7,14 @@
   gap: calc($space * 1);
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
-@media (max-width: 499px) {
+@media (max-width: 699px) {
   .tracks {
     grid-template-columns: 1fr; /* 1 колонка */
     grid-template-rows: repeat(8, auto); /* 8 строк */
+    gap: calc($space * 2);
   }
 }
 
