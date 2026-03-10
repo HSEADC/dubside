@@ -89,4 +89,21 @@
 
 .footer1 {
   @include label();
+  display: inline-block;
+  white-space: nowrap; /* Не переносить текст */
+  overflow: hidden; /* Скрыть лишнее */
+  text-overflow: ellipsis; /* Поставить троеточие */
+}
+
+@media screen and (max-width: 499px) {
+  .track {
+    display: flex;
+    align-items: center;
+    gap: calc($space * 3);
+  }
+
+  .img {
+    width: 50px;
+    height: 50px;
+  }
 }

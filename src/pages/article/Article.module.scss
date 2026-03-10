@@ -47,3 +47,10 @@
     pointer-events: none;
   }
 }
+
+@media screen and (max-width: 499px) {
+  .contents {
+    width: 100%;
+    margin-top: calc($space * 8);
+  }
+}

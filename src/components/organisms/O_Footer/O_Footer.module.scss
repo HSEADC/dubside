@@ -59,7 +59,8 @@
 
 .btn {
   position: absolute;
-  top: calc(2 * $space);
+  top: 50%;
+  transform: translateY(-50%);
   right: calc(3 * $space);
   width: calc($space * 3);
   height: calc($space * 3);
@@ -78,4 +79,50 @@
   display: flex;
   gap: calc($space/1);
   flex-direction: column;
+}
+
+@media screen and (max-width: 849px) {
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: $padding;
+    padding-bottom: calc($padding * 2);
+    bottom: clamp(-400px, -55vh, -800px);
+    gap: calc($space * 10);
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 100%;
+    gap: calc($space * 10);
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .text2 {
+    @include label();
+  }
+
+  .form {
+    gap: calc($space * 3);
+  }
+
+  .btn {
+    width: calc($space * 4);
+    height: calc($space * 4);
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

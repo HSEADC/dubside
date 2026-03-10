@@ -26,3 +26,9 @@
   position: relative;
   margin-top: 30vh;
 }
+
+@media screen and (max-width: 499px) {
+  .articleswrapper {
+    gap: calc($padding + calc($space * 1));
+  }
+}

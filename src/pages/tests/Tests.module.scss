@@ -18,3 +18,19 @@
   gap: calc($space * 2);
   margin-top: calc($space * 2);
 }
+
+@media screen and (max-width: 799px) {
+  .buttons {
+    gap: calc($space * 3);
+    margin-top: calc($space * 3);
+  }
+
+  .testswrapper {
+    display: flex;
+    gap: $average-gap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-top: calc($double-average-gap + calc($space * 2));
+  }
+}

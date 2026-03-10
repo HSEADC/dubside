@@ -53,3 +53,36 @@
   object-fit: cover;
   z-index: 1;
 }
+
+@media screen and (max-width: 1199px) {
+  .mini {
+    height: auto;
+    gap: calc($padding + calc($space * 3));
+  }
+  .mid {
+    height: auto;
+    gap: calc($padding + calc($space * 3));
+  }
+  .max {
+    height: auto;
+    gap: calc($padding + calc($space * 3));
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .mini {
+    width: 100%;
+    height: auto;
+    gap: calc($padding + calc($space * 3));
+  }
+  .mid {
+    width: 100%;
+    height: auto;
+    gap: calc($padding + calc($space * 3));
+  }
+  .max {
+    width: 100%;
+    height: auto;
+    gap: calc($padding + calc($space * 3));
+  }
+}

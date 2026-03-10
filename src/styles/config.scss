@@ -25,7 +25,7 @@ $text-2-text-size: 16px;
 $text-1-text-size: clamp(16px, calc(12.818px + 0.282vw), 18px);
 
 $heading-4-text-size: clamp(18px, calc(9.455px + 2.045vw), 23px);
-$heading-3-text-size: clamp(24px, calc(18.182px + 1.818vw), 32px);
+$heading-3-text-size: clamp(20px, calc(14.182px + 1.318vw), 30px);
 $heading-2-text-size: clamp(24px, calc(15.273px + 2.727vw), 48px);
 $heading-1-text-size: clamp(30px, calc(17.636px + 3.864vw), 60px);
 
@@ -34,9 +34,9 @@ $card-line-height: 1.25;
 $h-line-height: 1.1;
 $h3-line-height: 1.3;
 
-$h1-max-width: clamp(35vw, 650px, 80vw);
-$h2-max-width: clamp(35vw, 900px, 80vw);
-$p-max-width: clamp(35vw, 400px, 80vw);
+$h1-max-width: clamp(35vw, 650px, 90vw);
+$h2-max-width: clamp(35vw, 900px, 90vw);
+$p-max-width: clamp(35vw, 400px, 90vw);
 $p-large-max-width: clamp(35vw, 650px, 80vw);
 $p-gap: clamp(24px, 3vw, 40px);
 
@@ -45,7 +45,7 @@ $upper-h1-margin-top: 55vh;
 
 /* MORE */
 
-$track-size: calc(20px + calc(#{$space} * 5));
+$track-size: calc(35px + calc(#{$space} * 2));
 $radius-tracks-img: calc(#{$radius} / 1.65);
 
 $backgroung-grad-base: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.25));
@@ -77,4 +77,10 @@ $backgroung-grad-red: linear-gradient(to top, rgba(108, 0, 0, 0.5), rgba(108, 0,
 
 @mixin card() {
   font-weight: 200;
+}
+
+/* adaptives */
+
+@media screen and (max-width: 499px) {
+  $track-size: 50px;
 }
