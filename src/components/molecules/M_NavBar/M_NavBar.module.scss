@@ -3,11 +3,26 @@
 .nav {
   position: fixed;
   width: 100%;
+  height: calc(#{$space} * 10);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 100%);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
   display: flex;
   justify-content: center;
   gap: $double-average-gap;
-  height: calc(#{$space} * 10);
   padding-top: calc(#{$space} * 2);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 100%);
-  z-index: 999;
+  width: 90vw;
+}
+
+@media screen and (max-width: 499px) {
+  .wrapper {
+    flex-wrap: wrap;
+    height: calc(#{$space} * 5);
+    gap: $average-gap;
+    row-gap: $space;
+  }
 }

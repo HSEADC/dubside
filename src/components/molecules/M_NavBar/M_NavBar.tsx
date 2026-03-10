@@ -36,21 +36,23 @@ const NavBar = () => {
 
   return (
     <nav className={classes.nav}>
-      <A_Link to="/">
-        <A_Button isActive={'/' === isActive}>гайд</A_Button>
-      </A_Link>
-      <A_Link to="/articles">
-        <A_Button isActive={'/articles' === isActive}>статьи</A_Button>
-      </A_Link>
-      <A_Link to="/cards">
-        <A_Button isActive={'/cards' === isActive}>карточки</A_Button>
-      </A_Link>
-      <A_Link to="/tests">
-        <A_Button isActive={'/tests' === isActive}>тесты</A_Button>
-      </A_Link>
-      <A_Link to="/about">
-        <A_Button isActive={'/about' === isActive}>о проекте</A_Button>
-      </A_Link>
+      <div className={classes.wrapper}>
+        <A_Link to="/">
+          <A_Button isActive={'/' === isActive}>гайд</A_Button>
+        </A_Link>
+        <A_Link to="/articles">
+          <A_Button isActive={'/articles' === isActive}>статьи</A_Button>
+        </A_Link>
+        <A_Link to="/cards">
+          <A_Button isActive={'/cards' === isActive}>карточки</A_Button>
+        </A_Link>
+        <A_Link to="/tests">
+          <A_Button isActive={'/tests' === isActive}>тесты</A_Button>
+        </A_Link>
+        <A_Link to="/about">
+          <A_Button isActive={'/about' === isActive}>о проекте</A_Button>
+        </A_Link>
+      </div>
     </nav>
   );
 };
