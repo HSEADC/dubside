@@ -41,7 +41,7 @@ const M_FlipCard = ({ nickname, children }: Props) => {
             <p className={classes.li}>{singer.paragraph}</p>
             <p className={classes.label}>подробнее на сайте</p>
           </div>
-          <div>
+          <div className={classes.songs}>
             {singer.songs.map((s) => (
               <M_Track
                 img={s.img}
