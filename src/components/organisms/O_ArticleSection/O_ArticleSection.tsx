@@ -31,7 +31,8 @@ const O_ArticleSection = ({ section, side, index }: Props) => {
               {section.heading}
             </h3>
           ) : null}
-          {section.paragraphs.map((el: ArticleParagraph) => {
+          {!section.paragraphs ? <p>Элемент не найден</p> : <span></span>}
+          {section.paragraphs?.map((el: ArticleParagraph) => {
             if (typeof el === 'string') {
               return <p className={classes.p}>{el}</p>;
             } else if (typeof el === 'object' && side === 'left') {
@@ -45,7 +46,7 @@ const O_ArticleSection = ({ section, side, index }: Props) => {
         </div>
 
         <div className={classes.imgswrapper}>
-          {section.side_imgs.map((img: SideArticleImg | null) => {
+          {section.side_imgs?.map((img: SideArticleImg | null) => {
             const isNull = typeof img.side_img === 'undefined';
             return isNull ? null : <A_ImgSmall source={img.side_img} footer={img.img_footer} />;
           })}
