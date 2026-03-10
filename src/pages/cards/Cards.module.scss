@@ -14,3 +14,9 @@
   max-width: calc(3 * 300px + 2 * #{$average-gap});
   margin: 0 auto;
 }
+
+@media screen and (max-width: 849px) {
+  .cardswrapper {
+    gap: $padding;
+  }
+}
