@@ -28,3 +28,10 @@
   margin-top: calc($space * 2);
   margin-bottom: calc($space * 3);
 }
+
+@media screen and (max-width: 499px) {
+  .h3 {
+    margin-top: calc($space * 6);
+    margin-bottom: calc($space * 7);
+  }
+}
