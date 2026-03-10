@@ -1,116 +1,445 @@
 {
   "1": {
-    "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
-    "timing": "3 мин",
-    "hardness": "easy",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/alright.jfif",
+    "heading": "Шекспир или Хип-хоп?",
+    "timing": "8 мин",
+    "hardness": "normal",
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/shakespeareOrHipHop.png",
     "questions": [
       {
-        "question": "1&??",
+        "question": "When you do dance, I wish you a wave of the sea (Когда вы танцуете, вы как волна морская)",
         "answers": [
           {
-            "answer": "lala",
+            "answer": "У. Шекспир",
             "count": "1"
           },
           {
-            "answer": "lalaaaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaala",
+            "answer": "Хип-хоп",
             "count": "0"
           }
         ]
       },
       {
-        "question": "2sdkvvm??",
+        "question": "Then I hope this take away from my sins (Тогда я надеюсь, это искупит мои грехи)",
         "answers": [
           {
-            "answer": "lalaebarfva",
-            "count": "1"
-          },
-          {
-            "answer": "lalaabtyjydaaa",
+            "answer": "У. Шекспир",
             "count": "0"
           },
           {
-            "answer": "laaabswjrdla",
+            "answer": "Хип-хоп",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "I never wished to be the burden bearer, but souls need saving (Я никогда не хотел быть тем, кто тащит этот груз, но души нуждаются в спасении»)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "0"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "A heart like yours; that pumps blood and oxygen and insecurities (Сердце, подобное твоему: что качает кровь, кислород и все твои сомнения)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "0"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Men at some time are masters of their fates (Люди иногда своей судьбы хозяева)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "1"
+          },
+          {
+            "answer": "Хип-хоп",
             "count": "0"
           }
         ]
       },
       {
-        "question": "3sdkvvm??",
+        "question": "I set it down that one may smile, and smile, and be a villain (Я нахожу, что можно улыбаться, улыбаться и быть подлецом)",
         "answers": [
           {
-            "answer": "lalaebarfva",
+            "answer": "У. Шекспир",
             "count": "1"
           },
           {
-            "answer": "lalaabtyjydaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaabswjrdla",
+            "answer": "Хип-хоп",
             "count": "0"
           }
         ]
       },
       {
-        "question": "4sdkvvm??",
+        "question": "Count myself a king of infinite space (Величаю себя королём бесконечности)",
         "answers": [
           {
-            "answer": "lalaebarfva",
+            "answer": "У. Шекспир",
             "count": "1"
           },
           {
-            "answer": "lalaabtyjydaaa",
+            "answer": "Хип-хоп",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Done to death by slanderous tongue, was the hero that here lies (Умерщвлён клеветой герой, что здесь лежит)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "1"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Look around this manor and all you will see is ill-mannered people (Оглянись вокруг этого поместья, и всё, что ты увидишь, это невоспитанные люди)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
             "count": "0"
           },
           {
-            "answer": "laaabswjrdla",
+            "answer": "Хип-хоп",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Neither a borrower nor a lender be (Ни заимодавцем, ни должником не будь)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "1"
+          },
+          {
+            "answer": "Хип-хоп",
             "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "I didn't cry, because my anger wouldn't let me feel for a stranger (Я не плакал, потому что злость не позволяла мне сочувствовать чужому человеку)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "0"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "1"
+          }
+        ]
+      },
+
+      {
+        "question": "The marriage of true minds admit impediments (Союз истинных душ не признаёт препятствий)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "1"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Everything you stand for turns on you to spite you? (Всё, за что ты стоишь, оборачивается против тебя, чтобы насолить тебе?)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "0"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "My words fly up, my thoughts remain below (Слова летят, а мысли так низки)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "1"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "This was the most unkindest cut of all (То был удар всех бессердечней)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "1"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "From the other side, what you see: a bunch of nonsens (С другой стороны, всё, что ты видишь, — сплошная бессмыслица)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "0"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Froze up like a mannequin. (Замер, словно манекен)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "0"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "I wonder why we take from our women? (Интересно, почему мы обижаем наших женщин?)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "0"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Desire too much of a good thing? (Желать слишком много хорошего)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "1"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "A sword sliced the air (Меч разрезал воздух)",
+        "answers": [
+          {
+            "answer": "У. Шекспир",
+            "count": "0"
+          },
+          {
+            "answer": "Хип-хоп",
+            "count": "1"
           }
         ]
       }
     ]
   },
   "2": {
-    "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
+    "heading": "Какие альбомы хип-хопа из 2010-х?",
     "timing": "4 мин",
     "hardness": "hard",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/hotline.png",
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/pick2010Albums.png",
     "questions": [
       {
-        "question": "&??",
+        "question": "Какой альбом был выпущен в 2010-2019?",
         "answers": [
           {
-            "answer": "lala",
+            "answer": "Die Lit",
             "count": "1"
           },
           {
-            "answer": "lalaaaaa",
+            "answer": "The Blueprint 3",
             "count": "0"
           },
           {
-            "answer": "laaala",
+            "answer": "American Gangster",
             "count": "0"
           }
         ]
       },
       {
-        "question": "sdkvvm??",
+        "question": "Какой альбом был выпущен в 2010-2019?",
         "answers": [
           {
-            "answer": "lalaebarfva",
-            "count": "1"
-          },
-          {
-            "answer": "lalaabtyjydaaa",
+            "answer": "The Carter III",
             "count": "0"
           },
           {
-            "answer": "laaabswjrdla",
+            "answer": "Flower Boy",
+            "count": "1"
+          },
+          {
+            "answer": "No Said Date",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 2010-2019?",
+        "answers": [
+          {
+            "answer": "The Grind Date",
+            "count": "0"
+          },
+          {
+            "answer": "DS2",
+            "count": "1"
+          },
+          {
+            "answer": "Let’s Get Free",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 2010-2019?",
+        "answers": [
+          {
+            "answer": "Blaqkout",
+            "count": "0"
+          },
+          {
+            "answer": "Born Like This",
+            "count": "0"
+          },
+          {
+            "answer": "Invasion of Privacy",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 2010-2019?",
+        "answers": [
+          {
+            "answer": "4eva Is A Mighty Long Time",
+            "count": "1"
+          },
+          {
+            "answer": "Quality",
+            "count": "0"
+          },
+          {
+            "answer": "The Eminem Show",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 2010-2019?",
+        "answers": [
+          {
+            "answer": "Take Care",
+            "count": "1"
+          },
+          {
+            "answer": "Labor Days",
+            "count": "0"
+          },
+          {
+            "answer": "The Best Part",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 2010-2019?",
+        "answers": [
+          {
+            "answer": "Purple Haze",
+            "count": "0"
+          },
+          {
+            "answer": "Under Construction",
+            "count": "0"
+          },
+          {
+            "answer": "Summertime '06",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 2010-2019?",
+        "answers": [
+          {
+            "answer": "Lupe Fiasco's The Cool",
+            "count": "0"
+          },
+          {
+            "answer": "Before I Self Destruct",
+            "count": "0"
+          },
+          {
+            "answer": "Daytona",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 2010-2019?",
+        "answers": [
+          {
+            "answer": "God’s Son",
+            "count": "0"
+          },
+          {
+            "answer": "The Renaissance",
+            "count": "0"
+          },
+          {
+            "answer": "Long.Live.A$AP",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом или какие альбомы из 2010-2019?",
+        "answers": [
+          {
+            "answer": "Trap Muzik",
+            "count": "0"
+          },
+          {
+            "answer": "Coloring Book",
+            "count": "1"
+          },
+          {
+            "answer": "Оба альбома",
             "count": "0"
           }
         ]
@@ -118,41 +447,160 @@
     ]
   },
   "3": {
-    "heading": "Насколlzlzерь базу",
+    "heading": "Какие альбомы хип-хопа из 90-х?",
     "timing": "4 мин",
     "hardness": "normal",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/nonstop.png",
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/pick1990Albums.jpg",
     "questions": [
       {
-        "question": "&??",
+        "question": "Какой альбом был выпущен в 1990-1999?",
         "answers": [
           {
-            "answer": "lala",
+            "answer": "Illmatic",
             "count": "1"
           },
           {
-            "answer": "lalaaaaa",
+            "answer": "Summertime ’06",
             "count": "0"
           },
           {
-            "answer": "laaala",
+            "answer": "Run the Jewels",
             "count": "0"
           }
         ]
       },
       {
-        "question": "sdkvvm??",
+        "question": "Какой альбом был выпущен в 1990-1999?",
         "answers": [
           {
-            "answer": "lalaebarfva",
-            "count": "1"
-          },
-          {
-            "answer": "lalaabtyjydaaa",
+            "answer": "LONG.LIVE.A$AP",
             "count": "0"
           },
           {
-            "answer": "laaabswjrdla",
+            "answer": "Rodeo",
+            "count": "0"
+          },
+          {
+            "answer": "AmeriKKKa’s Most Wanted",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 1990-1999?",
+        "answers": [
+          {
+            "answer": "Only Built 4 Cuban Linx…",
+            "count": "1"
+          },
+          {
+            "answer": "Nostalgic 64",
+            "count": "0"
+          },
+          {
+            "answer": "Cilvia Demo",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 1990-1999?",
+        "answers": [
+          {
+            "answer": "Live from the Underground",
+            "count": "0"
+          },
+          {
+            "answer": "Ready to Die",
+            "count": "1"
+          },
+          {
+            "answer": " My Name Is My Name",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 1990-1999?",
+        "answers": [
+          {
+            "answer": "The Preface",
+            "count": "0"
+          },
+          {
+            "answer": "The Chronic",
+            "count": "1"
+          },
+          {
+            "answer": "The Renaissanc",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 1990-1999?",
+        "answers": [
+          {
+            "answer": "It’s Dark and Hell Is Hot",
+            "count": "1"
+          },
+          {
+            "answer": "Charity Starts at Home",
+            "count": "0"
+          },
+          {
+            "answer": "Man on the Moon: The End of Day",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 1990-1999?",
+        "answers": [
+          {
+            "answer": "No Pressure",
+            "count": "0"
+          },
+          {
+            "answer": "Paid in Full",
+            "count": "0"
+          },
+          {
+            "answer": "Doggystyle",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Какой альбом был выпущен в 1990-1999?",
+        "answers": [
+          {
+            "answer": "Straight Outta Compton",
+            "count": "0"
+          },
+          {
+            "answer": "Run the Jewels",
+            "count": "0"
+          },
+          {
+            "answer": "A Wolf in Sheep’s Clothing",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Какой или какие альбомы из 1990-1999?",
+        "answers": [
+          {
+            "answer": "93 ’til Infinity",
+            "count": "1"
+          },
+          {
+            "answer": "Bucket List Project",
+            "count": "0"
+          },
+          {
+            "answer": "Оба альбома НЕ из 90-х",
             "count": "0"
           }
         ]
@@ -160,41 +608,177 @@
     ]
   },
   "4": {
-    "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
+    "heading": "Пропущеное слово в названиях треков: Eminem",
     "timing": "3 мин",
     "hardness": "easy",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/alright.jfif",
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/MissingWordEminem.png",
     "questions": [
       {
-        "question": "&??",
+        "question": "___ Yourself",
         "answers": [
           {
-            "answer": "lala",
+            "answer": "Lose",
             "count": "1"
           },
           {
-            "answer": "lalaaaaa",
+            "answer": "Fuck",
             "count": "0"
           },
           {
-            "answer": "laaala",
+            "answer": "Love",
             "count": "0"
           }
         ]
       },
       {
-        "question": "sdkvvm??",
+        "question": "The Real Slim ___",
         "answers": [
           {
-            "answer": "lalaebarfva",
+            "answer": "Shady",
             "count": "1"
           },
           {
-            "answer": "lalaabtyjydaaa",
+            "answer": "Charley",
             "count": "0"
           },
           {
-            "answer": "laaabswjrdla",
+            "answer": "Shadow",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Sing for the ___",
+        "answers": [
+          {
+            "answer": "Her",
+            "count": "0"
+          },
+          {
+            "answer": "Moment",
+            "count": "1"
+          },
+          {
+            "answer": "Future",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Go To __",
+        "answers": [
+          {
+            "answer": "Sleep",
+            "count": "1"
+          },
+          {
+            "answer": "Die",
+            "count": "0"
+          },
+          {
+            "answer": "Her House",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Cleaning Out ___",
+        "answers": [
+          {
+            "answer": "The Past",
+            "count": "0"
+          },
+          {
+            "answer": "My Soul",
+            "count": "0"
+          },
+          {
+            "answer": "My Closet",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Nice ___",
+        "answers": [
+          {
+            "answer": "Day",
+            "count": "0"
+          },
+          {
+            "answer": "Guy",
+            "count": "1"
+          },
+          {
+            "answer": "Girlfriend",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Love the Way __",
+        "answers": [
+          {
+            "answer": "to the Top",
+            "count": "0"
+          },
+          {
+            "answer": "You Lie",
+            "count": "1"
+          },
+          {
+            "answer": "You Look at Me",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "Stronger Than __",
+        "answers": [
+          {
+            "answer": "You",
+            "count": "0"
+          },
+          {
+            "answer": "a Tiger",
+            "count": "0"
+          },
+          {
+            "answer": "I Was",
+            "count": "1"
+          }
+        ]
+      },
+      {
+        "question": "Not ___",
+        "answers": [
+          {
+            "answer": "Alike",
+            "count": "1"
+          },
+          {
+            "answer": "Regret",
+            "count": "0"
+          },
+          {
+            "answer": "Soon",
+            "count": "0"
+          }
+        ]
+      },
+      {
+        "question": "When the ___ Stops",
+        "answers": [
+          {
+            "answer": "Music",
+            "count": "1"
+          },
+          {
+            "answer": "Live",
+            "count": "0"
+          },
+          {
+            "answer": "Future",
             "count": "0"
           }
         ]
@@ -205,585 +789,215 @@
     "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
     "timing": "4 мин",
     "hardness": "hard",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/hotline.png",
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/KendrickLamar-surprise-intimate-show.png",
     "questions": [
       {
-        "question": "&??",
+        "question": "В каком году родился хип-хоп?",
         "answers": [
           {
-            "answer": "lala",
+            "answer": "1973",
             "count": "1"
           },
           {
-            "answer": "lalaaaaa",
+            "answer": "1980",
             "count": "0"
           },
           {
-            "answer": "laaala",
+            "answer": "1968",
+            "count": "0"
+          },
+          {
+            "answer": "1975",
             "count": "0"
           }
         ]
       },
       {
-        "question": "sdkvvm??",
+        "question": "В каком городе и районе родился хип-хоп?",
         "answers": [
           {
-            "answer": "lalaebarfva",
+            "answer": "Лос-Анджелес, Комптон",
+            "count": "0"
+          },
+          {
+            "answer": "Нью-Йорк, Бронкс",
             "count": "1"
           },
           {
-            "answer": "lalaabtyjydaaa",
+            "answer": "Атланта, Декейт",
             "count": "0"
           },
           {
-            "answer": "laaabswjrdla",
-            "count": "0"
-          }
-        ]
-      }
-    ]
-  },
-  "6": {
-    "heading": "Насколlzlzерь базу",
-    "timing": "4 мин",
-    "hardness": "normal",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/nonstop.png",
-    "questions": [
-      {
-        "question": "&??",
-        "answers": [
-          {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaala",
+            "answer": "Чикаго, Саутсайд",
             "count": "0"
           }
         ]
       },
       {
-        "question": "sdkvvm??",
+        "question": "Что НЕ входит в четыре столпа хип-хопа?",
         "answers": [
           {
-            "answer": "lalaebarfva",
+            "answer": "MCing",
+            "count": "0"
+          },
+          {
+            "answer": "Граффити",
+            "count": "0"
+          },
+          {
+            "answer": "Мода",
             "count": "1"
           },
           {
-            "answer": "lalaabtyjydaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaabswjrdla",
-            "count": "0"
-          }
-        ]
-      }
-    ]
-  },
-  "7": {
-    "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
-    "timing": "3 мин",
-    "hardness": "easy",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/alright.jfif",
-    "questions": [
-      {
-        "question": "&??",
-        "answers": [
-          {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaala",
+            "answer": "DJing",
             "count": "0"
           }
         ]
       },
       {
-        "question": "sdkvvm??",
+        "question": "Кто считается «отцом хип-хопа»?",
         "answers": [
           {
-            "answer": "lalaebarfva",
+            "answer": "Grandmaster Flash",
+            "count": "0"
+          },
+          {
+            "answer": "DJ Kool Herc",
+            "count": "0"
+          },
+          {
+            "answer": "Afrika Bambaataa",
             "count": "1"
           },
           {
-            "answer": "lalaabtyjydaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaabswjrdla",
-            "count": "0"
-          }
-        ]
-      }
-    ]
-  },
-  "8": {
-    "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
-    "timing": "4 мин",
-    "hardness": "hard",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/hotline.png",
-    "questions": [
-      {
-        "question": "&??",
-        "answers": [
-          {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaala",
+            "answer": "Rakim",
             "count": "0"
           }
         ]
       },
       {
-        "question": "sdkvvm??",
+        "question": "Как называется техника быстрой перемотки пластин диджеем?",
         "answers": [
           {
-            "answer": "lalaebarfva",
+            "answer": "Sampling",
+            "count": "0"
+          },
+          {
+            "answer": "Scratching",
             "count": "1"
           },
           {
-            "answer": "lalaabtyjydaaa",
+            "answer": "Looping",
             "count": "0"
           },
           {
-            "answer": "laaabswjrdla",
-            "count": "0"
-          }
-        ]
-      }
-    ]
-  },
-  "9": {
-    "heading": "Насколlzlzерь базу",
-    "timing": "4 мин",
-    "hardness": "normal",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/nonstop.png",
-    "questions": [
-      {
-        "question": "&??",
-        "answers": [
-          {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaala",
+            "answer": "Mixing",
             "count": "0"
           }
         ]
       },
       {
-        "question": "sdkvvm??",
+        "question": "Что такое «freestyle»?",
         "answers": [
           {
-            "answer": "lalaebarfva",
+            "answer": "Исполнение без подготовки",
             "count": "1"
           },
           {
-            "answer": "lalaabtyjydaaa",
+            "answer": "Трек с чужим битом",
             "count": "0"
           },
           {
-            "answer": "laaabswjrdla",
-            "count": "0"
-          }
-        ]
-      }
-    ]
-  },
-  "10": {
-    "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
-    "timing": "3 мин",
-    "hardness": "easy",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/alright.jfif",
-    "questions": [
-      {
-        "question": "&??",
-        "answers": [
-          {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
+            "answer": "Песня без бита",
             "count": "0"
           },
           {
-            "answer": "laaala",
+            "answer": "Коллаб нескольких рэперов",
             "count": "0"
           }
         ]
       },
       {
-        "question": "sdkvvm??",
+        "question": "Какой рэпер выпустил альбом «To Pimp a Butterfly»?",
         "answers": [
           {
-            "answer": "lalaebarfva",
+            "answer": "J. Cole",
+            "count": "0"
+          },
+          {
+            "answer": "Kendrick Lamar",
             "count": "1"
           },
           {
-            "answer": "lalaabtyjydaaa",
+            "answer": "Drake",
             "count": "0"
           },
           {
-            "answer": "laaabswjrdla",
-            "count": "0"
-          }
-        ]
-      }
-    ]
-  },
-  "11": {
-    "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
-    "timing": "4 мин",
-    "hardness": "hard",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/hotline.png",
-    "questions": [
-      {
-        "question": "&??",
-        "answers": [
-          {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaala",
+            "answer": "Tyler, The Creator",
             "count": "0"
           }
         ]
       },
       {
-        "question": "sdkvvm??",
+        "question": "Какой альбом считается величайшим в истории хип-хопа по версии Rolling Stone?",
         "answers": [
           {
-            "answer": "lalaebarfva",
+            "answer": "The Chronic – Dr. Dre",
+            "count": "0"
+          },
+          {
+            "answer": "Illmatic – Nas",
+            "count": "0"
+          },
+          {
+            "answer": "The Miseducation of Lauryn Hill",
+            "count": "0"
+          },
+          {
+            "answer": "Ready to Die – The Notorious B.I.G.",
             "count": "1"
-          },
-          {
-            "answer": "lalaabtyjydaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaabswjrdla",
-            "count": "0"
           }
         ]
-      }
-    ]
-  },
-  "12": {
-    "heading": "Насколlzlzерь базу",
-    "timing": "4 мин",
-    "hardness": "normal",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/nonstop.png",
-    "questions": [
+      },
       {
-        "question": "&??",
+        "question": "Что такое «808» в музыке?",
         "answers": [
           {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
+            "answer": "Год основания хип-хопа",
             "count": "0"
           },
           {
-            "answer": "laaala",
+            "answer": "Барабанный синтезатор",
+            "count": "1"
+          },
+          {
+            "answer": "Номер студии Дрейка",
+            "count": "0"
+          },
+          {
+            "answer": "Прозвище рэпера",
             "count": "0"
           }
         ]
       },
       {
-        "question": "sdkvvm??",
+        "question": "Откуда родом drill-музыка?",
         "answers": [
           {
-            "answer": "lalaebarfva",
+            "answer": "Атланта",
+            "count": "0"
+          },
+          {
+            "answer": "Лондон",
+            "count": "0"
+          },
+          {
+            "answer": "Чикаго",
+            "count": "0"
+          },
+          {
+            "answer": "Все вышеперечисленные",
             "count": "1"
-          },
-          {
-            "answer": "lalaabtyjydaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaabswjrdla",
-            "count": "0"
-          }
-        ]
-      }
-    ]
-  },
-  "13": {
-    "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
-    "timing": "3 мин",
-    "hardness": "easy",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/alright.jfif",
-    "questions": [
-      {
-        "question": "&??",
-        "answers": [
-          {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaala",
-            "count": "0"
-          }
-        ]
-      },
-      {
-        "question": "sdkvvm??",
-        "answers": [
-          {
-            "answer": "lalaebarfva",
-            "count": "1"
-          },
-          {
-            "answer": "lalaabtyjydaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaabswjrdla",
-            "count": "0"
-          }
-        ]
-      }
-    ]
-  },
-  "14": {
-    "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
-    "timing": "4 мин",
-    "hardness": "hard",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/hotline.png",
-    "questions": [
-      {
-        "question": "&??",
-        "answers": [
-          {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaala",
-            "count": "0"
-          }
-        ]
-      },
-      {
-        "question": "sdkvvm??",
-        "answers": [
-          {
-            "answer": "lalaebarfva",
-            "count": "1"
-          },
-          {
-            "answer": "lalaabtyjydaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaabswjrdla",
-            "count": "0"
-          }
-        ]
-      }
-    ]
-  },
-  "15": {
-    "heading": "Насколlzlzерь базу",
-    "timing": "4 мин",
-    "hardness": "normal",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/nonstop.png",
-    "questions": [
-      {
-        "question": "&??",
-        "answers": [
-          {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaala",
-            "count": "0"
-          }
-        ]
-      },
-      {
-        "question": "sdkvvm??",
-        "answers": [
-          {
-            "answer": "lalaebarfva",
-            "count": "1"
-          },
-          {
-            "answer": "lalaabtyjydaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaabswjrdla",
-            "count": "0"
-          }
-        ]
-      }
-    ]
-  },
-  "16": {
-    "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
-    "timing": "3 мин",
-    "hardness": "easy",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/alright.jfif",
-    "questions": [
-      {
-        "question": "&??",
-        "answers": [
-          {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaala",
-            "count": "0"
-          }
-        ]
-      },
-      {
-        "question": "sdkvvm??",
-        "answers": [
-          {
-            "answer": "lalaebarfva",
-            "count": "1"
-          },
-          {
-            "answer": "lalaabtyjydaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaabswjrdla",
-            "count": "0"
-          }
-        ]
-      }
-    ]
-  },
-  "17": {
-    "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
-    "timing": "4 мин",
-    "hardness": "hard",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/hotline.png",
-    "questions": [
-      {
-        "question": "&??",
-        "answers": [
-          {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaala",
-            "count": "0"
-          }
-        ]
-      },
-      {
-        "question": "sdkvvm??",
-        "answers": [
-          {
-            "answer": "lalaebarfva",
-            "count": "1"
-          },
-          {
-            "answer": "lalaabtyjydaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaabswjrdla",
-            "count": "0"
-          }
-        ]
-      }
-    ]
-  },
-  "18": {
-    "heading": "Насколlzlzерь базу",
-    "timing": "4 мин",
-    "hardness": "normal",
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/nonstop.png",
-    "questions": [
-      {
-        "question": "&??",
-        "answers": [
-          {
-            "answer": "lala",
-            "count": "1"
-          },
-          {
-            "answer": "lalaaaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaala",
-            "count": "0"
-          }
-        ]
-      },
-      {
-        "question": "sdkvvm??",
-        "answers": [
-          {
-            "answer": "lalaebarfva",
-            "count": "1"
-          },
-          {
-            "answer": "lalaabtyjydaaa",
-            "count": "0"
-          },
-          {
-            "answer": "laaabswjrdla",
-            "count": "0"
           }
         ]
       }
