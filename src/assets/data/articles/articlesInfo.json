@@ -1,25 +1,25 @@
 [
   {
     "id": 0,
-    "title": "Что такое флоу и почему он важнее текста",
-    "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
-    "slug": "flow-and-text",
-    "date": "2025-10-27",
-    "timing": "10мин",
-    "tags": ["бронкс", "история"],
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
-    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
+    "title": "О “скучности” простых битов",
+    "paragraph": "В мире хип-хопа давно сложился стереотип, что простые биты скучные и примитивные. Но так ли это..?",
+    "slug": "about-boring-bits",
+    "date": "2025-03-08",
+    "timing": "12 мин",
+    "tags": ["звук", "техническое"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/aboutBoringBitsAricle/aboutBoringBitsBanner.jpg",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/aboutBoringBitsAricle.json"
   },
   {
     "id": 1,
-    "title": "Ники Минаж",
-    "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
-    "slug": "flow-and-text2",
-    "date": "2025-10-23",
-    "timing": "10мин",
-    "tags": ["вестсайд", "артист"],
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
-    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
+    "title": "Самоцензура в американском хип-хопе и рэпе",
+    "paragraph": "В последние месяцы музыка в России всё чаще подвергается цензуре. В статье расскажем, как ограничивали хип-хоп 80-х и 90-х в США",
+    "slug": "american-musicians-selfcensorship-in-the-90s",
+    "date": "2025-03-09",
+    "timing": "12 мин",
+    "tags": ["история"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/selfcensorshipArticle/selfcensershipBanner.jpg",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/selfcensorshipArticle.json"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
     "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
     "slug": "flow-and-text3",
     "date": "2025-10-13",
-    "timing": "10мин",
+    "timing": "10 мин",
     "tags": ["бронкс", "ньюскул"],
     "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
     "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
@@ -38,7 +38,7 @@
     "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
     "slug": "flow-and-text4",
     "date": "2025-10-14",
-    "timing": "10мин",
+    "timing": "10 мин",
     "tags": ["звук", "техническое"],
     "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
     "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
@@ -49,7 +49,7 @@
     "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
     "slug": "flow-and-text3",
     "date": "2025-10-13",
-    "timing": "10мин",
+    "timing": "10 мин",
     "tags": ["бронкс", "ньюскул"],
     "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
     "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
@@ -60,7 +60,7 @@
     "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
     "slug": "flow-and-text4",
     "date": "2025-10-14",
-    "timing": "10мин",
+    "timing": "10 мин",
     "tags": ["звук", "техническое"],
     "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
     "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
