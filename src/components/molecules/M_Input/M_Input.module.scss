@@ -44,9 +44,6 @@
   @include input();
 }
 
-.input:disabled {
-}
-
 .input:placeholder-shown,
 .input:enabled,
 .input:required,
