@@ -23,46 +23,24 @@
   },
   {
     "id": 2,
-    "title": "Начало хип-хоп культуры",
-    "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
-    "slug": "flow-and-text3",
-    "date": "2025-10-13",
+    "title": "Что такое флоу и почему он важнее текста",
+    "paragraph": "Ты можешь не понять ни слова, но по интонации уже чувствуешь всё. Разбираемся, почему флоу работает сильнее любого текста — и где в паузе больше смысла, чем в целом куплете.",
+    "slug": "flow-and-text",
+    "date": "27.10.2025",
     "timing": "10 мин",
-    "tags": ["бронкс", "ньюскул"],
+    "tags": ["история", "звук"],
     "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
     "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
   },
   {
     "id": 3,
-    "title": "Что такое флоу и почему он важнее текста 4",
-    "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
-    "slug": "flow-and-text4",
-    "date": "2025-10-14",
-    "timing": "10 мин",
-    "tags": ["звук", "техническое"],
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
-    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
-  },
-  {
-    "id": 4,
-    "title": "Начало хип-хоп культуры",
-    "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
-    "slug": "flow-and-text3",
-    "date": "2025-10-13",
-    "timing": "10 мин",
-    "tags": ["бронкс", "ньюскул"],
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
-    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
-  },
-  {
-    "id": 5,
-    "title": "Что такое флоу и почему он важнее текста 4",
-    "paragraph": "Здесь что-то о статье, мини-содержание или завелкалочка. Фотка может меняться каждые неск секунд",
-    "slug": "flow-and-text4",
-    "date": "2025-10-14",
-    "timing": "10 мин",
-    "tags": ["звук", "техническое"],
-    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/drake.png",
-    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/flow.json"
+    "title": "Эффект нового и старого Канье",
+    "paragraph": "Двадцать лет, десять альбомов, одно имя — и два совершенно разных человека. Разбираемся, что случилось с Канье Уэстом, почему это больно слушать и можно ли вообще отделить художника от человека.",
+    "slug": "effect-kanye",
+    "date": "11.03.2026",
+    "timing": "8 мин",
+    "tags": ["артист", "история"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/effectKanye/effect_kanye.jpg",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/effectKanye.json"
   }
 ]
