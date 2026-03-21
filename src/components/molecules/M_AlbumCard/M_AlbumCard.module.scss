@@ -24,12 +24,19 @@
   bottom: calc($space * 2);
   left: calc($space * 2);
   z-index: 10;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .album {
   position: relative;
   width: 30vw;
+  max-width: calc(calc($max-width - $p-max-width) - calc($space * 1.5));
+
   height: 30vw;
+  max-height: calc(calc($max-width - $p-max-width) - calc($space * 1.5));
+
   display: block;
   border-radius: $radius;
   overflow: hidden;
