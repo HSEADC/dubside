@@ -18,17 +18,17 @@ const Cards = () => {
           <M_FlipCard nickname="drake" />
           <M_FlipCard nickname="kendrick" />
 
-          <M_FlipCard nickname="emenem" />
-          <M_FlipCard nickname="jay-z" />
+          <M_FlipCard nickname="eminem" />
+          <M_FlipCard nickname="jayz" />
           <M_FlipCard nickname="nicki" />
 
           <M_FlipCard nickname="travis" />
-          <M_FlipCard nickname="50-cent" />
+          <M_FlipCard nickname="50cent" />
           <M_FlipCard nickname="carti" />
 
           <M_FlipCard nickname="future" />
           <M_FlipCard nickname="wayne" />
-          <M_FlipCard nickname="cole" />
+          <M_FlipCard nickname="jcole" />
         </div>
       </W_SectionElementsWrapper>
     </div>

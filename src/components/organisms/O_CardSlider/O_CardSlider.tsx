@@ -12,15 +12,15 @@ const O_CardSlider = ({ className }: Proos) => {
       { id: 0, nickname: 'kendrick' },
       { id: 1, nickname: 'drake' },
       { id: 2, nickname: 'kanye' },
-      { id: 3, nickname: 'emenem' },
-      { id: 4, nickname: 'jay-z' },
+      { id: 3, nickname: 'eminem' },
+      { id: 4, nickname: 'jayz' },
       { id: 5, nickname: 'nicki' },
       { id: 6, nickname: 'travis' },
-      { id: 7, nickname: '50-cent' },
+      { id: 7, nickname: '50cent' },
       { id: 8, nickname: 'carti' },
       { id: 9, nickname: 'future' },
       { id: 10, nickname: 'wayne' },
-      { id: 11, nickname: 'cole' }
+      { id: 11, nickname: 'jcole' }
     ],
     []
   );
@@ -80,7 +80,7 @@ const O_CardSlider = ({ className }: Proos) => {
         const posIndex = (index + offset) % items.length;
         return (
           <div key={item.id} className={`${classes.card} ${posClasses[posIndex]}`}>
-            <M_FlipCard nickname={item.nickname}>
+            <M_FlipCard isAddInfoShown={true} nickname={item.nickname}>
               <div className={classes.innerdiv}></div>
             </M_FlipCard>
           </div>
