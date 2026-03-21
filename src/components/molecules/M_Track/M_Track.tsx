@@ -54,7 +54,7 @@ const M_Track = ({ name, footer, img, link }: Track) => {
         onLoad={(e) => onLoad(e)}
       />
       <div className={classes.trackinfo}>
-        <div>{name}</div>
+        <div className={classes.title}>{name}</div>
         <div className={classes.footer1}>{footer}</div>
       </div>
     </a>

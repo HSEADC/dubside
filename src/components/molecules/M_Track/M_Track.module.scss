@@ -75,9 +75,12 @@
 
 .trackinfo {
   display: flex;
+  width: 90%;
   flex-direction: column;
   justify-content: center;
   z-index: 2;
+  flex: 1;
+  min-width: 0;
 }
 
 .img {
@@ -87,12 +90,17 @@
   z-index: 2;
 }
 
+.title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .footer1 {
   @include label();
-  display: inline-block;
-  white-space: nowrap; /* Не переносить текст */
-  overflow: hidden; /* Скрыть лишнее */
-  text-overflow: ellipsis; /* Поставить троеточие */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 499px) {
