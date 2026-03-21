@@ -51,11 +51,11 @@ const SO_ArtistGuideBlock = ({ artist, side }: Props) => {
       <Q_VideoBackground source={video} uppergrad={true}></Q_VideoBackground>
 
       <W_SectionElementsWrapper>
-        <div className={isRight ? classes.right : undefined}>
+        <div className={classes.grid}>
           <div className={classes.breakdiv}></div>
-          <h1 className={classes.h1}>{name}</h1>
+          <h1 className={isRight ? classes.h1 : null}>{name}</h1>
           {paragraphs_top.map((p: string, i: number) => (
-            <p key={i} className={classes.p}>
+            <p key={i} className={isRight ? classes.parright : classes.parleft}>
               {p}
             </p>
           ))}
@@ -66,7 +66,7 @@ const SO_ArtistGuideBlock = ({ artist, side }: Props) => {
         {isRight ? (
           <div className={classes.bottompwrap}>
             <M_AlbumCard album={album} />
-            <div>
+            <div className={classes.pright}>
               {paragraphs_bottom.map((p: string, i: number) => (
                 <p key={i}>{p}</p>
               ))}
@@ -74,7 +74,7 @@ const SO_ArtistGuideBlock = ({ artist, side }: Props) => {
           </div>
         ) : (
           <div className={classes.bottompwrap}>
-            <div>
+            <div className={classes.pright}>
               {paragraphs_bottom.map((p: string, i: number) => (
                 <p key={i}>{p}</p>
               ))}

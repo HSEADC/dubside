@@ -23,10 +23,12 @@
 
 html {
   scrollbar-gutter: stable;
+  scroll-behavior: smooth;
 }
 
 body {
   background: black;
+  scroll-behavior: smooth;
 }
 
 h1 {

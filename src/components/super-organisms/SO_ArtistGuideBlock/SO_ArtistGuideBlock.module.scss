@@ -17,16 +17,25 @@
 .bottompwrap {
   display: flex;
   justify-content: space-between;
+  gap: calc($space * 3);
 }
 
-.right {
+.grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 колонки */
   gap: $space;
 }
 
-.p {
+.parright {
   grid-column: 2;
+}
+
+.parleft {
+  grid-column: 1;
+}
+
+.pright {
+  width: 50%;
 }
 
 @media screen and (max-width: 699px) {
