@@ -7,9 +7,10 @@ import M_Track from '../M_Track/M_Track';
 type Props = {
   nickname: string;
   children?: React.ReactNode;
+  isAddInfoShown?: boolean;
 };
 
-const M_FlipCard = ({ nickname, children }: Props) => {
+const M_FlipCard = ({ nickname, isAddInfoShown, children }: Props) => {
   const flipCardsObj: FlipCardsMap = flipCards;
   const singer: SingerCard = flipCardsObj[nickname];
 
@@ -39,7 +40,11 @@ const M_FlipCard = ({ nickname, children }: Props) => {
           <div className={classes.backdiv} />
           <div>
             <p className={classes.li}>{singer.paragraph}</p>
-            <p className={classes.label}>подробнее на сайте</p>
+            {isAddInfoShown ? (
+              <a href={`#${nickname}`} className={classes.label}>
+                подробнее на сайте
+              </a>
+            ) : null}
           </div>
           <div className={classes.songs}>
             {singer.songs.map((s) => (

@@ -47,7 +47,7 @@ const SO_ArtistGuideBlock = ({ artist, side }: Props) => {
   const isRight = side === 'right';
 
   return (
-    <section className={classes.wrapper}>
+    <section className={classes.wrapper} id={artist}>
       <Q_VideoBackground source={video} uppergrad={true}></Q_VideoBackground>
 
       <W_SectionElementsWrapper>
