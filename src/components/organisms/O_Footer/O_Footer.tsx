@@ -13,7 +13,7 @@ const O_Footer = () => {
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setStatus('Отправялем...');
+    setStatus('Отправляем...');
 
     const formData = new FormData();
     formData.append('email', email);
@@ -30,9 +30,9 @@ const O_Footer = () => {
         setEmail('');
         return;
       }
-      setStatus('Ошибка отправки. Попробуй позже.');
+      setStatus('Ошибка отправки. Попробуйте позже.');
     } catch {
-      setStatus('Сеть/сервер недоступны. Попробуй позже.');
+      setStatus('Сеть/сервер недоступны. Попробуйте позже.');
     }
   }
   return (

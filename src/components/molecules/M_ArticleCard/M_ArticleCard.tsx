@@ -20,19 +20,15 @@ const M_ArticleCard = ({ id, size }: Props) => {
 
   let wrapper;
   let grad;
-  let tagsDown: boolean;
   if (size === 'mini') {
     wrapper = classes.mini;
     grad = classes.gradtop;
-    tagsDown = true;
   } else if (size === 'max') {
     wrapper = classes.max;
     grad = classes.gradright;
-    tagsDown = false;
   } else {
     wrapper = classes.mid;
     grad = classes.gradright;
-    tagsDown = false;
   }
 
   const navigate = useNavigate();
@@ -43,11 +39,7 @@ const M_ArticleCard = ({ id, size }: Props) => {
       <div className={grad}></div>
 
       <div className={classes.upperdiv}>
-        {!tagsDown ? (
-          <div className={classes.label}>{articleData.tags.join(' | ')}</div>
-        ) : (
-          <div className={classes.label}>{articleData.tags.join(' | ')}</div>
-        )}
+        <div className={classes.label}>{articleData.tags.join(' | ')}</div>
 
         <div className={classes.buttons}>
           <A_Badge>{articleData.timing}</A_Badge>
@@ -55,11 +47,6 @@ const M_ArticleCard = ({ id, size }: Props) => {
       </div>
 
       <div className={classes.downdiv}>
-        {/* !tagsDown ? (
-          <div></div>
-        ) : (
-          <div className={classes.label}>{articleData.tags.join(' | ')}</div>
-        ) */}
         <h4>{articleData.title}</h4>
         <p className={classes.p}>{articleData.paragraph}</p>
       </div>

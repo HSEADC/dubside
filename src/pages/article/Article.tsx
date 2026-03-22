@@ -44,7 +44,6 @@ const Article = () => {
     return () => controller.abort();
   }, [articleInfo.contentLink]);
 
-  console.log(articleContent, articleInfo);
   const imgLink = articleInfo.img;
 
   return (

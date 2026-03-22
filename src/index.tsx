@@ -9,7 +9,7 @@ import AppRoutes from './app/routes';
 const root = document.getElementById('root');
 
 if (!root) {
-  throw new Error('root now found');
+  throw new Error('root not found');
 }
 
 let basename = '';

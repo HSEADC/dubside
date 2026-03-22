@@ -31,16 +31,20 @@ const O_ArticleSection = ({ section, side, index }: Props) => {
               {section.heading}
             </h3>
           ) : null}
-          {!section.paragraphs ? <p>Элемент не найден</p> : <span></span>}
-          {section.paragraphs?.map((el: ArticleParagraph) => {
+          {!section.paragraphs ? <p>Элемент не найден</p> : null}
+          {section.paragraphs?.map((el: ArticleParagraph, i: number) => {
             if (typeof el === 'string') {
-              return <p className={classes.p}>{el}</p>;
+              return (
+                <p key={i} className={classes.p}>
+                  {el}
+                </p>
+              );
             } else if (typeof el === 'object' && side === 'left') {
-              return <A_ImgLarge source={el.big_img} footer={el.img_footer} />;
+              return <A_ImgLarge source={el.big_img} footer={el.img_footer} key={i} />;
             } else if (typeof el === 'object' && side === 'right') {
               return null;
             } else {
-              return <p>Элемент не найден</p>;
+              return <p key={i}>Элемент не найден</p>;
             }
           })}
         </div>

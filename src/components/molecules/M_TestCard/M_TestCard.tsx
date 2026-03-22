@@ -3,7 +3,6 @@ import React from 'react';
 import classes from '@/components/molecules/M_TestCard/M_TestCard.module.scss';
 import A_Badge from '@/components/atoms/A_Badge/A_Badge';
 import testsDataRaw from '@/assets/data/tests/tests.json';
-// import A_Link from '@/components/atoms/A_Link/A_Link';
 import { useNavigate } from 'react-router';
 
 interface Props {

@@ -1,5 +1,4 @@
 import React from 'react';
-// import effect from '@/assets/images/Q_HeroEffect.png';
 import classes from '@/components/quarks/Q_ImageBackground/Q_ImageBackground.module.scss';
 
 interface Q_ImageBackground {

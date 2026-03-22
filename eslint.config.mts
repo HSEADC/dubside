@@ -8,7 +8,7 @@ import prettier from 'eslint-config-prettier';
 export default [
   // 1) Игнорируем мусор
   {
-    ignores: ['dist/**', 'build/**', 'coverage/**', 'node_modules/**']
+    ignores: ['docs/**', 'build/**', 'coverage/**', 'node_modules/**']
   },
 
   // 2) Базовые правила JS (для всех)
