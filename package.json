@@ -1,7 +1,6 @@
 {
   "name": "react-dubside",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "build:dev": "webpack  --env mode=development",
     "build:prod": "webpack --env mode=production",
@@ -11,7 +10,7 @@
     "deploy:pages": "gh-pages -d docs",
     "start": "webpack serve --env mode=development"
   },
-  "author": "dunchek",
+  "author": "dunchek (vasilevaevdokia875@gmail.com)",
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9",
