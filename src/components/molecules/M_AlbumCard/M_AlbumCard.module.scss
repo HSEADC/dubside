@@ -66,9 +66,11 @@
   height: 100%;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 699px) {
   .album {
     width: 90vw;
     height: 90vw;
+    max-width: 90vw;
+    max-height: 90vw;
   }
 }
