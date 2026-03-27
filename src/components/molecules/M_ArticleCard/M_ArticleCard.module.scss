@@ -9,6 +9,7 @@
   justify-content: space-between;
   height: 25vw;
   overflow: hidden;
+  cursor: pointer;
 
   &::before {
     @include border();
@@ -88,12 +89,15 @@
 @media screen and (max-width: 1199px) {
   .mini {
     height: auto;
+    padding: $padding;
   }
   .mid {
     height: auto;
+    padding: $padding;
   }
   .max {
     height: auto;
+    padding: $padding;
   }
 }
 

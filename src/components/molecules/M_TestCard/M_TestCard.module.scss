@@ -9,6 +9,7 @@
   justify-content: space-between;
   height: 20vw;
   overflow: hidden;
+  cursor: pointer;
 
   &::before {
     @include border();
