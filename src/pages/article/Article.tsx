@@ -1,7 +1,7 @@
 import W_SectionElementsWrapper from '@/components/wrappers/W_SectionElementsWrapper/W_SectionElementsWrapper';
 import classes from '@/pages/article/Article.module.scss';
-import { Link, useParams } from 'react-router';
-import { useEffect, useState, useMemo } from 'react';
+import { useLocation, useNavigate, useParams } from 'react-router';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { getArticleContent } from '@/shared/api/articles';
 import { ArticleContent } from '@/shared/types/articles';
 import ArticlesDataRaw from '@/assets/data/articles/articlesInfo.json';
@@ -13,6 +13,8 @@ import Q_ImageBackground from '@/components/quarks/Q_ImageBackground/Q_ImageBack
 const Article = () => {
   const params = useParams();
   const slug = params.slug;
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const articlesData = useMemo(() => {
     return ArticlesDataRaw as Article[];
@@ -46,6 +48,24 @@ const Article = () => {
 
   const imgLink = articleInfo.img;
 
+  const scrollToId = useCallback((id: string, behavior: ScrollBehavior) => {
+    const element = document.getElementById(id);
+    if (!element) return false;
+    element.scrollIntoView({ behavior, block: 'start' });
+    return true;
+  }, []);
+
+  useLayoutEffect(() => {
+    if (!articleContent) return;
+    if (!location.hash) return;
+
+    const id = location.hash.slice(1);
+    if (!id) return;
+
+    // контент подгружается асинхронно, поэтому скроллим только после отрисовки секций
+    scrollToId(id, 'auto');
+  }, [articleContent, location.hash, scrollToId]);
+
   return (
     <div>
       <Q_ImageBackground source={imgLink} uppergrad={false} />
@@ -60,9 +80,20 @@ const Article = () => {
         <div className={classes.contents}>
           <span className={classes.label}>Содержание</span>
           {contents.map(({ id, heading }) => (
-            <Link key={id} to={`#${id}`}>
+            <a
+              key={id}
+              href={`#${id}`}
+              onClick={(e) => {
+                e.preventDefault();
+                navigate(
+                  { pathname: location.pathname, search: location.search, hash: `#${id}` },
+                  { replace: true }
+                );
+                scrollToId(id, 'smooth');
+              }}
+            >
               {heading}
-            </Link>
+            </a>
           ))}
         </div>
 
