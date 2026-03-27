@@ -46,9 +46,18 @@
     gap: $double-average-gap;
   }
 
-  .right {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* 2 колонки */
-    gap: $space;
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .breakdiv,
+  .h1,
+  .parright,
+  .parleft {
+    grid-column: 1;
+  }
+
+  .pright {
+    width: 100%;
   }
 }
