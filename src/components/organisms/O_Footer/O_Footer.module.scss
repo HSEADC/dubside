@@ -11,6 +11,7 @@
   background: $backgroung-grad-base;
   height: 20vh;
   border-radius: $radius $radius 0 0;
+  max-width: $max-width;
 
   &::before {
     @include border();
@@ -27,7 +28,7 @@
 .info {
   display: flex;
   gap: $average-gap;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .left {
@@ -46,7 +47,7 @@
 
 .text2 {
   @include label();
-  opacity: 1;
+  // opacity: 1;
 }
 
 .input {

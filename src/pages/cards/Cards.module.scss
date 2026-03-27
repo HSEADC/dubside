@@ -12,7 +12,7 @@
   gap: $average-gap;
   width: 100%;
   max-width: calc(3 * 300px + 2 * #{$average-gap});
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 @media screen and (max-width: 849px) {
