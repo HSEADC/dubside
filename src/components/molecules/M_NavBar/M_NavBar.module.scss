@@ -1,13 +1,47 @@
 @use '@/styles/config.scss' as *;
 
 .nav {
+  --nav-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 100%);
+
   position: fixed;
   width: 100%;
   height: calc(#{$space} * 10);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 100%);
+  background: var(--nav-overlay);
   z-index: 999;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px);
+
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 35%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 35%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: var(--nav-overlay);
+  }
 }
 
 .wrapper {
@@ -15,14 +49,22 @@
   justify-content: center;
   gap: $double-average-gap;
   padding-top: calc(#{$space} * 2);
-  width: 90vw;
+  width: 95vw;
+  position: relative;
+  z-index: 1;
 }
 
 @media screen and (max-width: 499px) {
   .wrapper {
     flex-wrap: wrap;
     height: calc(#{$space} * 5);
+
     gap: $average-gap;
-    row-gap: $space;
+    row-gap: 0;
+  }
+
+  .nav {
+    --nav-overlay: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 100%);
+    height: calc(#{$space} * 18);
   }
 }
