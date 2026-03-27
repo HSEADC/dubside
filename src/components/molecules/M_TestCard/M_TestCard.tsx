@@ -46,7 +46,9 @@ const M_TestCard = ({ id, size }: Props) => {
       <div className={classes.grad}></div>
       <div className={classes.buttons}>
         <A_Badge>{testData.timing}</A_Badge>
-        <A_Badge color={color}>{testData.hardness}</A_Badge>
+        <A_Badge color={color}>
+          {testData.hardness.charAt(0).toUpperCase() + testData.hardness.slice(1)}
+        </A_Badge>
       </div>
       <h4>{testData.heading}</h4>
     </div>
