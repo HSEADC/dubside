@@ -3,6 +3,7 @@ import classes from '@/pages/test/MultipleTest.module.scss';
 import boxClasses from '@/pages/test/Test.module.scss';
 import { MultipleOutcome, MultipleTestData } from '@/shared/types/test';
 import M_MultipleTestResult from '@/components/molecules/M_MultipleTestResult/M_MultipleTestResult';
+import { shuffleArray } from '@/shared/utils/shuffleArray';
 
 type Props = {
   test: MultipleTestData;
@@ -21,6 +22,9 @@ const MultipleTest = ({ test }: Props) => {
 
   const length = test.questions.length;
   const question = test.questions[questionNumber];
+  const shuffledAnswers = useMemo(() => {
+    return question ? shuffleArray(question.answers) : [];
+  }, [question]);
 
   const result = useMemo<MultipleOutcome | null>(() => {
     if (!isDone) return null;
@@ -61,7 +65,7 @@ const MultipleTest = ({ test }: Props) => {
       <h3 className={boxClasses.h3}>{question.question}</h3>
 
       <div className={classes.answers}>
-        {question.answers.map((answer, index) => {
+        {shuffledAnswers.map((answer, index) => {
           return (
             <button
               className={classes.answer}
