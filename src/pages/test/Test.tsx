@@ -59,7 +59,7 @@ const Test = () => {
         ) : test ? (
           <div className={classes.testbox}>
             <span className={classes.span}>
-              вопрос {questionNumber} из {length}
+              вопрос {questionNumber + 1} из {length}
             </span>
 
             <h3 className={classes.h3}>{test.questions[questionNumber].question}</h3>
