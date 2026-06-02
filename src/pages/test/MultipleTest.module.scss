@@ -21,10 +21,6 @@
     background 300ms ease,
     opacity 300ms ease;
 
-  &::before {
-    @include border();
-  }
-
   &:hover,
   &:focus,
   &:focus-visible {
