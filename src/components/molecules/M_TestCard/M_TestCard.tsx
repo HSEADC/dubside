@@ -4,21 +4,19 @@ import classes from '@/components/molecules/M_TestCard/M_TestCard.module.scss';
 import A_Badge from '@/components/atoms/A_Badge/A_Badge';
 import testsDataRaw from '@/assets/data/tests/tests.json';
 import { useNavigate } from 'react-router';
+import { Hardness, TestId } from '@/shared/types/test';
 
 interface Props {
   id: TestId;
   size: 'mini' | 'mid' | 'max';
 }
 
-type TestId = keyof typeof testsDataRaw;
-
 type Color = 'red' | 'blue' | 'green';
-type Hardness = 'normal' | 'hard' | 'easy';
 type TestData = {
   hardness: Hardness;
   timing: string;
   heading: string;
-  img: string;
+  img?: string;
 };
 
 const testsData = testsDataRaw as Record<TestId, TestData>;
@@ -36,18 +34,21 @@ const M_TestCard = ({ id, size }: Props) => {
   const testData = testsData[id];
 
   const hardness: Hardness = testData.hardness;
-  const color: Color = hardness === 'normal' ? 'blue' : hardness === 'hard' ? 'red' : 'green';
+  const color: Color | undefined =
+    hardness === 'normal' ? 'blue' : hardness === 'hard' ? 'red' : hardness === 'easy' ? 'green' : undefined;
 
   const navigate = useNavigate();
 
   return (
     <div className={wrapper} onClick={() => navigate(`/tests/${id}`)}>
-      <img className={classes.img} src={testData.img} alt="img" />
+      {testData.img ? <img className={classes.img} src={testData.img} alt="img" /> : null}
       <div className={classes.grad}></div>
       <div className={classes.buttons}>
         <A_Badge>{testData.timing}</A_Badge>
         <A_Badge color={color}>
-          {testData.hardness.charAt(0).toUpperCase() + testData.hardness.slice(1)}
+          {hardness === 'multiple'
+            ? 'Multiple'
+            : testData.hardness.charAt(0).toUpperCase() + testData.hardness.slice(1)}
         </A_Badge>
       </div>
       <h4>{testData.heading}</h4>

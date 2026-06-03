@@ -107,6 +107,15 @@ const Article = () => {
             />
           );
         })}
+
+        <button
+          type="button"
+          className={classes.totop}
+          aria-label="Наверх"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
+          ↑
+        </button>
       </W_SectionElementsWrapper>
     </div>
   );

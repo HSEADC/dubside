@@ -1,5 +1,6 @@
 {
   "1": {
+    "type": "classic",
     "heading": "Шекспир или Хип-хоп?",
     "timing": "8 мин",
     "hardness": "normal",
@@ -269,6 +270,7 @@
     ]
   },
   "2": {
+    "type": "classic",
     "heading": "Какие альбомы хип-хопа из 2010-х?",
     "timing": "4 мин",
     "hardness": "hard",
@@ -447,6 +449,7 @@
     ]
   },
   "3": {
+    "type": "classic",
     "heading": "Какие альбомы хип-хопа из 90-х?",
     "timing": "4 мин",
     "hardness": "normal",
@@ -608,6 +611,7 @@
     ]
   },
   "4": {
+    "type": "classic",
     "heading": "Пропущеное слово в названиях треков: Eminem",
     "timing": "3 мин",
     "hardness": "easy",
@@ -786,6 +790,7 @@
     ]
   },
   "5": {
+    "type": "classic",
     "heading": "Насколько ты шаришь в хип-хопе? Проверь базу",
     "timing": "4 мин",
     "hardness": "hard",
@@ -999,6 +1004,311 @@
             "answer": "Все вышеперечисленные",
             "count": "1"
           }
+        ]
+      }
+    ]
+  },
+  "6": {
+    "type": "multiple",
+    "heading": "Какой ты рэпер?",
+    "timing": "6 мин",
+    "hardness": "multiple",
+    "outcomes": [
+      {
+        "id": "drake",
+        "title": "Ты Drake",
+        "description": "Тебе важно звучать широко, цеплять людей с первого хука и превращать эмоции в хит.",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/drake.jpg"
+      },
+      {
+        "id": "kendrick",
+        "title": "Ты Kendrick Lamar",
+        "description": "Тебе ближе вес текста, культурный контекст и ощущение, что музыка должна что-то менять.",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/kendrick.jpg"
+      },
+      {
+        "id": "kanye",
+        "title": "Ты Kanye West",
+        "description": "Ты мыслишь идеями, любишь масштаб и хочешь не просто попасть в игру, а менять ее правила.",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/kanye.jpg"
+      },
+      {
+        "id": "travis",
+        "title": "Ты Travis Scott",
+        "description": "Тебя тянет к атмосфере, культавости и музыке как к состоянию, в которое хочется провалиться.",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/travis.jpg"
+      },
+      {
+        "id": "tyler",
+        "title": "Ты Tyler, The Creator",
+        "description": "У тебя сильное чувство собственного мира, вкуса и странности, которую не хочется сглаживать.",
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/tyler.jpg"
+      }
+    ],
+    "questions": [
+      {
+        "question": "Чего хочешь от своей карьеры исполнителя?",
+        "answers": [
+          { "answer": "Хочу быть везде: в чартах, сторис, клубах и головах бывших.", "outcomeId": "drake", "score": 1 },
+          { "answer": "Хочу говорить о важном так, чтобы это нельзя было проигнорировать.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Хочу придумать новый язык, а потом заставить всех на нем говорить.", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Хочу создать состояние, в которое люди проваливаются с головой.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Хочу построить свой красивый мир и жить по его правилам.", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "Что для тебя главный показатель успеха?",
+        "answers": [
+          { "answer": "Быть №1, звучать из каждого утюга.", "outcomeId": "drake", "score": 1 },
+          { "answer": "Высочайшие оценки критиков.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Изменение правил игры!", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Собрать вокруг себя фанатский культ.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Наличие фанатов, выкупающих мою нишевость.", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "Популярность для тебя — это…",
+        "answers": [
+          { "answer": "Возможность красиво жить.", "outcomeId": "drake", "score": 1 },
+          { "answer": "Ответственность.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Рычаг власти.", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Способ показать многим личную темноту.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Свобода делать концептуальные вещи без страха проголодаться.", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "Какими бы ты хотел видеть свои треки?",
+        "answers": [
+          { "answer": "Мелодичными и запоминающимися.", "outcomeId": "drake", "score": 1 },
+          { "answer": "Насыщенными смыслом.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Большими и неожиданными.", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Темными и объемными, окутывающими.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Стильными, неровными, смешными и нежными.", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "Что самое важное в треке?",
+        "answers": [
+          { "answer": "Припев, мелодия и моментальная прилипаемость.", "outcomeId": "drake", "score": 1 },
+          { "answer": "Смысл и конфликт. Точная формулировка.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Продакшен и идея.", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Саунд-дизайн, атмосфера, ощущение полета/провала.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Вкус. Необычная форма. Странная гармония.", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "В тексте ты в первую очередь обращаешь внимание на…",
+        "answers": [
+          { "answer": "Эмоциональную узнаваемость: «да, у меня тоже так было».", "outcomeId": "drake", "score": 1 },
+          { "answer": "Наличие важных в культуре тем.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Общую концепцию, работу строк на большой авторский миф.", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Не столько слова, сколько общее настроение.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Интонацию, юмор, художественность образов.", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "Если бы ты делал альбом, ты бы в первую очередь старался сделать его…",
+        "answers": [
+          { "answer": "Хитовым.", "outcomeId": "drake", "score": 1 },
+          { "answer": "Концептуальным.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Революционным.", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Атмосферным.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Нишевым.", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "О чем ты бы хотел читать на хип-хоп-медиа?",
+        "answers": [
+          { "answer": "Разбор мейнстрима!", "outcomeId": "drake", "score": 1 },
+          { "answer": "Про связь жанра с культурным и историческим контекстом.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Про будущее жанра.", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Как устроены альт-поджанры внутри хип-хопа.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Про авторские миры отдельных артистов.", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "Твой пост в Twitter/X на многомиллионную аудиторию",
+        "answers": [
+          { "answer": "«Я снова пропал на 3 дня. Был занят: думал, почему она не ответила на мое “ок”.»", "outcomeId": "drake", "score": 1 },
+          { "answer": "«Иногда самый громкий ответ — это молчание.»", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "«Я только что понял, что диваны — это архитектурная форма смирения.»", "outcomeId": "kanye", "score": 1 },
+          { "answer": "«Сегодня ночью город звучит так, будто у него включен автотюн.»", "outcomeId": "travis", "score": 1 },
+          { "answer": "«Люди покупают плохие стулья и потом удивляются, почему у них нет вкуса к жизни.»", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "Твой пост в Twitter/X на многомиллионную аудиторию — все варианты странные, броские или глупые",
+        "answers": [
+          { "answer": "«Бывшая поставила лайк. Экономика снова растет.»", "outcomeId": "drake", "score": 1 },
+          { "answer": "«Перед тем как спорить со мной, спроси себя: ты вообще прочитал...»", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "«I’M A NAZI» («Я НАЦИСТ»)", "outcomeId": "kanye", "score": 1 },
+          { "answer": "«Если бас достаточно громкий, налоговая не найдет твои чувства.»", "outcomeId": "travis", "score": 1 },
+          { "answer": "«Запретите людям в плохих худи говорить слово “эстетика”.»", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "Какой визуальный стиль тебе ближе?",
+        "answers": [
+          { "answer": "Ночной luxury: кожа, мягкий свет, дорогой бар, город.", "outcomeId": "drake", "score": 1 },
+          { "answer": "Монохромность, символьность, архаичность, серьезный тон.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Футуристичный и масштабный.", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Темный рейв.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Винтаж и намеренно неидеальная картинка.", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "Твое идеальное выступление — какое?",
+        "answers": [
+          { "answer": "Большой зал поет вместе с тобой, а ты держишь публику. Все знают слова.", "outcomeId": "drake", "score": 1 },
+          { "answer": "Напряженное: зрители слушают, ведь это не просто концерт, а твое высказывание.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Масштабное художественное событие.", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Огромный хаотичный рейв, где басы физически давят в грудь.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Странный спектакль с костюмами, персонажем, шутками и режиссурой.", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "Любимая еда — что выбираешь?",
+        "answers": [
+          { "answer": "Итальянский ресторан, вино, я тут постоянный гость.", "outcomeId": "drake", "score": 1 },
+          { "answer": "Бургер из локального места или хлопья.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Визионерская картошка фри с мороженым.", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Макдак. Комбо со спрайтом.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Вафли с сиропом, бекон, что-то сладко-соленое. С претензией.", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "В личной жизни ты скорее…",
+        "answers": [
+          { "answer": "Романтик с тяжелой историей переписок.", "outcomeId": "drake", "score": 1 },
+          { "answer": "Закрытый человек. Контролирую, что говорю и кому.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Веселый разведенчик с дитятей.", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Депрессивная одиночка в шумной толпе~~~.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Актерище погорелого театра: никогда не снимаешь масок.", "outcomeId": "tyler", "score": 1 }
+        ]
+      },
+      {
+        "question": "Что тебя больше всего бесит?",
+        "answers": [
+          { "answer": "Когда тебя недооценивают, хотя все пользуются твоей формулой.", "outcomeId": "drake", "score": 1 },
+          { "answer": "Фальшь, глупость и люди, которые не видят реальных проблем.", "outcomeId": "kendrick", "score": 1 },
+          { "answer": "Когда маленькие люди пытаются ограничить большую идею.", "outcomeId": "kanye", "score": 1 },
+          { "answer": "Скука и отсутствие масштаба.", "outcomeId": "travis", "score": 1 },
+          { "answer": "Безвкусица, банальность и отсутствие воображения.", "outcomeId": "tyler", "score": 1 }
+        ]
+      }
+    ]
+  },
+  "7": {
+    "type": "multiple",
+    "heading": "Какой поджанр хип-хопа тебе ближе?",
+    "timing": "4 мин",
+    "hardness": "multiple",
+    "outcomes": [
+      {
+        "id": "boom-bap",
+        "title": "Тебе ближе boom bap",
+        "description": "Тебя тянет к четкому ритму, фокусному тексту и классической собранности формы."
+      },
+      {
+        "id": "trap",
+        "title": "Тебе ближе trap",
+        "description": "Для тебя важны энергия, упругий бас и ощущение, что трек должен качать сразу."
+      },
+      {
+        "id": "jazz-rap",
+        "title": "Тебе ближе jazz rap",
+        "description": "Ты ищешь мягкость, музыкальность и пространство, где мысль звучит не менее важно, чем флоу."
+      },
+      {
+        "id": "experimental",
+        "title": "Тебе ближе experimental hip-hop",
+        "description": "Тебя интересуют сдвиги формы, странные решения и музыка, которая выбивает из привычной колеи."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Какой бит цепляет тебя быстрее всего?",
+        "answers": [
+          { "answer": "Сухой, грувовый и собранный.", "outcomeId": "boom-bap", "score": 1 },
+          { "answer": "Тяжелый, басовый и наглый.", "outcomeId": "trap", "score": 1 },
+          { "answer": "Теплый, музыкальный и дышащий.", "outcomeId": "jazz-rap", "score": 1 },
+          { "answer": "Ломаный, странный и непредсказуемый.", "outcomeId": "experimental", "score": 1 }
+        ]
+      },
+      {
+        "question": "Что важнее всего в хорошем треке?",
+        "answers": [
+          { "answer": "Текст и подача.", "outcomeId": "boom-bap", "score": 1 },
+          { "answer": "Импульс и вайб.", "outcomeId": "trap", "score": 1 },
+          { "answer": "Музыкальность и настроение.", "outcomeId": "jazz-rap", "score": 1 },
+          { "answer": "Новая форма и риск.", "outcomeId": "experimental", "score": 1 }
+        ]
+      },
+      {
+        "question": "Какую сцену ты бы выбрал для идеального лайва?",
+        "answers": [
+          { "answer": "Небольшой зал, где слышно каждое слово.", "outcomeId": "boom-bap", "score": 1 },
+          { "answer": "Клуб с дымом и перегруженным сабом.", "outcomeId": "trap", "score": 1 },
+          { "answer": "Фестиваль на закате с живыми инструментами.", "outcomeId": "jazz-rap", "score": 1 },
+          { "answer": "Иммерсивный перформанс в странном индустриальном месте.", "outcomeId": "experimental", "score": 1 }
+        ]
+      },
+      {
+        "question": "Что ты скорее поставишь на репит?",
+        "answers": [
+          { "answer": "Трек, где каждый панч хочется разбирать.", "outcomeId": "boom-bap", "score": 1 },
+          { "answer": "Трек, который мгновенно раскачивает.", "outcomeId": "trap", "score": 1 },
+          { "answer": "Трек, который мягко втягивает в себя.", "outcomeId": "jazz-rap", "score": 1 },
+          { "answer": "Трек, который сначала бесит, а потом открывается.", "outcomeId": "experimental", "score": 1 }
+        ]
+      }
+    ]
+  },
+  "8": {
+    "type": "multiple",
+    "heading": "Какую роль в хип-хоп-медиа тебе ближе играть?",
+    "timing": "3 мин",
+    "hardness": "multiple",
+    "outcomes": [
+      {
+        "id": "critic",
+        "title": "Ты критик",
+        "description": "Тебе важно разбирать, структурировать и доводить суждение до точной формулировки."
+      },
+      {
+        "id": "curator",
+        "title": "Ты куратор",
+        "description": "Ты любишь собирать контекст, связывать артистов между собой и прокладывать маршруты для читателя."
+      },
+      {
+        "id": "reporter",
+        "title": "Ты репортер",
+        "description": "Тебе ближе живой материал, сцена, разговоры и ощущение, что ты находишься внутри процесса."
+      }
+    ],
+    "questions": [
+      {
+        "question": "Что тебе интереснее всего в новом релизе?",
+        "answers": [
+          { "answer": "Насколько он выдерживает серьезный разбор.", "outcomeId": "critic", "score": 1 },
+          { "answer": "Куда он встраивается внутри большой картины жанра.", "outcomeId": "curator", "score": 1 },
+          { "answer": "Какие истории стоят за его появлением.", "outcomeId": "reporter", "score": 1 }
+        ]
+      },
+      {
+        "question": "Какой формат тебе ближе?",
+        "answers": [
+          { "answer": "Развернутая рецензия.", "outcomeId": "critic", "score": 1 },
+          { "answer": "Подборка, гид или карта влияний.", "outcomeId": "curator", "score": 1 },
+          { "answer": "Интервью, репортаж или полевой текст.", "outcomeId": "reporter", "score": 1 }
+        ]
+      },
+      {
+        "question": "Что ты хочешь дать читателю в первую очередь?",
+        "answers": [
+          { "answer": "Оценку и аргумент.", "outcomeId": "critic", "score": 1 },
+          { "answer": "Контекст и навигацию.", "outcomeId": "curator", "score": 1 },
+          { "answer": "Присутствие и живую фактуру.", "outcomeId": "reporter", "score": 1 }
         ]
       }
     ]

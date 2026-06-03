@@ -6,16 +6,15 @@ import M_TestCard from '@/components/molecules/M_TestCard/M_TestCard';
 import testsDataRaw from '@/assets/data/tests/tests.json';
 import A_BadgeLikeButton from '@/components/atoms/A_BadgeLikeButton/A_BadgeLikeButton';
 import calcTestCardSize from '@/shared/utils/calcTestCardSize';
+import { Hardness, TestId } from '@/shared/types/test';
 
-type TestId = keyof typeof testsDataRaw;
-type Hardness = 'normal' | 'hard' | 'easy';
-type ActiveButton = 'all' | 'easy' | 'normal' | 'hard';
+type ActiveButton = 'all' | Hardness;
 
 type TestData = {
   hardness: Hardness;
   timing: string;
   heading: string;
-  img: string;
+  img?: string;
 };
 
 type TestWithId = TestData & { id: TestId };
@@ -55,26 +54,31 @@ const Tests = () => {
         </p>
 
         <div className={classes.buttons}>
-          <A_BadgeLikeButton disabled={activeButton !== 'all'} onClick={() => selectTests('all')}>
+          <A_BadgeLikeButton disabled={activeButton === 'all'} onClick={() => selectTests('all')}>
             All
           </A_BadgeLikeButton>
           <A_BadgeLikeButton
             color="green"
-            disabled={activeButton !== 'easy'}
+            disabled={activeButton === 'easy'}
             onClick={() => selectTests('easy')}>
             Easy
           </A_BadgeLikeButton>
           <A_BadgeLikeButton
             color="blue"
-            disabled={activeButton !== 'normal'}
+            disabled={activeButton === 'normal'}
             onClick={() => selectTests('normal')}>
             Normal
           </A_BadgeLikeButton>
           <A_BadgeLikeButton
             color="red"
-            disabled={activeButton !== 'hard'}
+            disabled={activeButton === 'hard'}
             onClick={() => selectTests('hard')}>
             Hard
+          </A_BadgeLikeButton>
+          <A_BadgeLikeButton
+            disabled={activeButton === 'multiple'}
+            onClick={() => selectTests('multiple')}>
+            Multiple
           </A_BadgeLikeButton>
         </div>
 
