@@ -18,7 +18,6 @@
 .resultimg {
   position: relative;
   width: calc(200px + #{$space} * 3);
-  height: calc(200px + #{$space} * 7);
   margin-inline: auto;
   margin-top: calc($space * 3);
   border-radius: $radius;
@@ -29,7 +28,9 @@
 }
 
 .result {
-  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .h3 {
