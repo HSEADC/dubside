@@ -1018,31 +1018,31 @@
         "id": "drake",
         "title": "Ты Drake",
         "description": "Тебе важно звучать широко, цеплять людей с первого хука и превращать эмоции в хит.",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/KendrickLamar-surprise-intimate-show.png"
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/drake.jpg"
       },
       {
         "id": "kendrick",
         "title": "Ты Kendrick Lamar",
         "description": "Тебе ближе вес текста, культурный контекст и ощущение, что музыка должна что-то менять.",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/pick1990Albums.jpg"
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/kendrick.jpg"
       },
       {
         "id": "kanye",
         "title": "Ты Kanye West",
         "description": "Ты мыслишь идеями, любишь масштаб и хочешь не просто попасть в игру, а менять ее правила.",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/pick2010Albums.png"
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/kanye.jpg"
       },
       {
         "id": "travis",
         "title": "Ты Travis Scott",
         "description": "Тебя тянет к атмосфере, культавости и музыке как к состоянию, в которое хочется провалиться.",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/shakespeareOrHipHop.png"
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/travis.jpg"
       },
       {
         "id": "tyler",
         "title": "Ты Tyler, The Creator",
         "description": "У тебя сильное чувство собственного мира, вкуса и странности, которую не хочется сглаживать.",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/MissingWordEminem.png"
+        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/test-imgs/tyler.jpg"
       }
     ],
     "questions": [
