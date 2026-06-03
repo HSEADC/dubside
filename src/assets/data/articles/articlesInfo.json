@@ -42,5 +42,16 @@
     "tags": ["артист", "история"],
     "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/effectKanye/effect_kanye.jpg",
     "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/effectKanye.json"
+  },
+  {
+    "id": 4,
+    "title": "BULLY: новый альбом Ye между покаянием и скандалом",
+    "paragraph": "Разбираемся, каким получился BULLY: от концепции с Saint West и черно-белой визуальной кампании до звука, коллабораций и реакции критиков.",
+    "slug": "bully",
+    "date": "03-06-2026",
+    "timing": "10 мин",
+    "tags": ["артист", "звук"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/bully/thoth2.webp",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/bully.json"
   }
 ]
