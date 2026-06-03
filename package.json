@@ -1,11 +1,11 @@
 {
   "name": "react-dubside",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "build:dev": "webpack  --env mode=development",
     "build:prod": "webpack --env mode=production",
     "prerender:gh": "TS_NODE_TRANSPILE_ONLY=1 ts-node src/scripts/prerender-gh.ts",
-    "build:gh": "webpack --env mode=production publicPath=/dubside/",
+    "build:gh": "webpack --env mode=production publicPath=/",
     "build:gh:prerender": "yarn -s build:gh && yarn -s prerender:gh",
     "deploy:pages": "gh-pages -d docs",
     "start": "webpack serve --env mode=development"

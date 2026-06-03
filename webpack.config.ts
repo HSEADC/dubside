@@ -13,7 +13,8 @@ interface EnvVariables {
 }
 
 export default (env: EnvVariables) => {
-  const rawPublicPath = env.publicPath ?? (env.mode === 'production' ? '/dubside/' : '/');
+  // const rawPublicPath = env.publicPath ?? (env.mode === 'production' ? '/dubside/' : '/');
+  const rawPublicPath = env.publicPath ?? (env.mode === 'production' ? '/' : '/');
   const publicPath = rawPublicPath.endsWith('/') ? rawPublicPath : `${rawPublicPath}/`;
 
   const paths: BuildPaths = {
