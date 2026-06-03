@@ -2,7 +2,6 @@
 
 .imgwrapper {
   max-width: 100%;
-  height: 30vh;
   position: relative;
   border-radius: $radius;
   overflow: hidden;
@@ -14,9 +13,9 @@
 }
 
 .img {
-  object-fit: cover;
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   z-index: 0;
   position: relative;
 }
@@ -42,5 +41,7 @@
   position: absolute;
   z-index: 5;
   left: $padding-mid;
+  right: $padding-mid;
   bottom: $padding-mid;
+  max-width: calc(100% - ($padding-mid * 2));
 }
