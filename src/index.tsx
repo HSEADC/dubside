@@ -13,11 +13,13 @@ if (!root) {
 }
 
 let basename = '';
-if (window.location.pathname.startsWith('/dubside/')) basename = '/dubside';
+// if (window.location.pathname.startsWith('/dubside/')) basename = '/dubside';
+if (window.location.pathname.startsWith('/dubside/')) basename = '';
 
-// `public/404.html` redirects unknown paths to `/dubside/?p=<encoded_route>`
+// `public/404.html` redirects unknown paths to `/?p=<encoded_route>`
 // so we restore the original path before React Router boots.
-if (basename === '/dubside') {
+// if (basename === '/dubside') {
+if (basename === '') {
   const params = new URLSearchParams(window.location.search);
   const p = params.get('p');
   if (p) {

@@ -31,7 +31,8 @@ const srcRoot = path.join(projectRoot, 'src');
 const outDir = path.join(projectRoot, 'docs');
 
 // GitHub Pages project site base path (https://hseadc.github.io/dubside/)
-const basename = '/dubside';
+// const basename = '/dubside';
+const basename = '';
 
 const prerenderPaths = ['/', '/about', '/articles', '/cards', '/tests'] as const;
 
