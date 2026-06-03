@@ -8,13 +8,16 @@
   </head>
   <body>
     <script>
-      // SPA fallback for GitHub Pages (project site).
+      // SPA fallback for GitHub Pages custom domain.
       // Redirect unknown paths back to the app entry while preserving the route.
       //
-      // Repo base path:
+      // Previous repo base path:
       //   https://hseadc.github.io/dubside/
+      // Current custom domain root:
+      //   https://dubside.adc.ac/
       (function () {
-        const base = '/dubside/';
+        // const base = '/dubside/';
+        const base = '/';
         const l = window.location;
 
         // Keep pathname+search+hash, but remove the base prefix from the stored route.
