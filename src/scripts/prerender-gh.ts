@@ -21,6 +21,7 @@ import {
 //   - docs/articles/index.html
 //   - docs/cards/index.html
 //   - docs/tests/index.html
+//   - docs/styleguide/index.html
 //
 // Run:
 //   yarn ts-node src/scripts/prerender-gh.ts
@@ -34,7 +35,7 @@ const outDir = path.join(projectRoot, 'docs');
 // const basename = '/dubside';
 const basename = '';
 
-const prerenderPaths = ['/', '/about', '/articles', '/cards', '/tests'] as const;
+const prerenderPaths = ['/', '/about', '/articles', '/cards', '/tests', '/styleguide'] as const;
 
 function installAtAliasHook() {
   const modAny = Module as unknown as {
@@ -174,6 +175,7 @@ async function main() {
   const { default: Articles } = await import('../pages/articles/Articles');
   const { default: Cards } = await import('../pages/cards/Cards');
   const { default: Tests } = await import('../pages/tests/Tests');
+  const { default: Styleguide } = await import('../pages/styleguide/Styleguide');
 
   const routes: RouteObject[] = [
     {
@@ -184,7 +186,8 @@ async function main() {
         { path: 'about', element: React.createElement(About) },
         { path: 'tests', element: React.createElement(Tests) },
         { path: 'articles', element: React.createElement(Articles) },
-        { path: 'cards', element: React.createElement(Cards) }
+        { path: 'cards', element: React.createElement(Cards) },
+        { path: 'styleguide', element: React.createElement(Styleguide) }
       ]
     }
   ];
