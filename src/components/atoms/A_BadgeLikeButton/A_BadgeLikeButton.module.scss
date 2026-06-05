@@ -17,6 +17,11 @@
   padding: calc($padding-mini * 0.5) $padding-mini;
   background: $backgroung-grad-base;
   transition: all 500ms ease;
+  opacity: 0.45;
+
+  &:hover {
+    opacity: 0.72;
+  }
 }
 
 .default {
@@ -55,14 +60,9 @@
 }
 
 .disabled {
-  color: rgba(255, 255, 255, 0.8);
-  opacity: 0.5;
-  &::before {
-    @include border();
-    border-radius: $radius-tracks-img;
-  }
+  opacity: 1;
+
   &:hover {
-    color: rgba(255, 255, 255, 0.75);
     opacity: 1;
   }
 }
