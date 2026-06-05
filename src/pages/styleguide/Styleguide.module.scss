@@ -1,0 +1,9 @@
+@use '@/styles/config.scss' as *;
+
+.breakdiv {
+  height: 25vh;
+}
+
+.title {
+  max-width: $p-large-max-width;
+}
