@@ -11,7 +11,17 @@ import M_ArticleCard from '@/components/molecules/M_ArticleCard/M_ArticleCard';
 import calcTestCardSize from '@/shared/utils/calcTestCardSize';
 import { filterArticles } from '@/shared/utils/filterArticles';
 
-const tags = ['звук', 'история', 'техническое', 'артист', 'канье'];
+const tags = [
+  'звук',
+  'история',
+  'техническое',
+  'артист',
+  'канье',
+  'легенды',
+  'битмейкеры',
+  'андеграунд',
+  'альбом'
+];
 const articlesData = ArticlesDataRaw as Article[];
 const videoLink = videosGuideMap.articles;
 
