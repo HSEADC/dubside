@@ -5,6 +5,7 @@ export const videosGuideMap: videosGuideMapType = {
   cards: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/hero.mp4',
   about: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/hero.mp4',
   articles: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/hero.mp4',
+  styleguide: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/hero.mp4',
   kendrick: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/kendrick.mp4',
   drake: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/drake.mp4',
   '50cent': 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/50cent.mp4',

@@ -11,11 +11,12 @@ interface Track {
 
 interface Props {
   tracks: Track[];
+  className?: string;
 }
 
-const O_MainTracks = ({ tracks }: Props) => {
+const O_MainTracks = ({ tracks, className }: Props) => {
   return (
-    <div className={classes.trackswrapper}>
+    <div className={[classes.trackswrapper, className].join(' ')}>
       <h4>Ключевые треки</h4>
       <div className={classes.tracks}>
         {tracks.map((p: Track, i: number) => (
