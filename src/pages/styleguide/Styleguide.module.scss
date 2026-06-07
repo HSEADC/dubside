@@ -33,7 +33,7 @@
 
 .h3 {
   margin-bottom: calc($space * 4);
-  margin-top: calc($space * 1);
+  margin-top: calc($space * 1.5);
 }
 
 .wrapperright {
@@ -74,7 +74,7 @@
   position: relative;
   border-radius: $radius;
   margin-top: calc($space * 5);
-  width: 40%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   gap: calc($space * 2);
@@ -134,35 +134,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: calc($space * 3);
+  gap: calc($space * 1);
 }
 
 .typecardtext1,
 .typecardtext2 {
   min-height: calc($space * 19);
-}
-
-.typeheading1 {
-  font-size: clamp(3.5rem, 6vw, 5.5rem);
-}
-
-.typeheading2 {
-  font-size: clamp(2.8rem, 4.8vw, 4.25rem);
-}
-
-.typeheading3 {
-  margin: 0;
-  font-size: clamp(2.2rem, 3.8vw, 3.3rem);
-}
-
-.typeheading4 {
-  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
-}
-
-.typecaption {
-  margin: 0;
-  max-width: 18rem;
-  line-height: 1.1;
 }
 
 .typenote {
@@ -206,30 +183,17 @@
 .typetextgroup {
   display: flex;
   flex-direction: column;
-  gap: calc($space * 2);
+  gap: calc($space * 3);
 }
 
-.typetexttitle,
-.typetextbody,
-.typetextbodylarge,
-.typelabelcopy {
-  margin: 0;
+.typetext2 {
+  font-size: $text-2-text-size;
 }
 
-.typetexttitle {
-  line-height: 1.05;
-}
-
-.typetextbodylarge {
-  max-width: 24rem;
-  font-size: clamp(1.25rem, 1.8vw, 1.75rem);
-  line-height: 1.08;
-}
-
-.typetextbody {
-  max-width: 22rem;
-  font-size: clamp(1rem, 1.35vw, 1.25rem);
-  line-height: 1.12;
+.labelwhite {
+  @include label();
+  opacity: 100%;
+  margin-top: calc($space * -2);
 }
 
 .totop {
@@ -251,6 +215,75 @@
   }
 }
 
+.photo1 {
+  width: 100%;
+  margin-bottom: $padding-mid;
+}
+
+.grids {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: $padding-mid;
+  align-items: stretch;
+  margin-bottom: calc($space * 2);
+}
+
+.tracks {
+  grid-column: 1 / -1;
+  // display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  // gap: $padding-mid;
+  // align-items: stretch;
+}
+
+.examplecards {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, auto) minmax(14rem, 20rem);
+  align-items: flex-start;
+  gap: $padding-mid;
+  // height: min(370px, 90vw);
+}
+
+.examplecardslist {
+  display: flex;
+  gap: $padding-mid;
+}
+
+.examplelabels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+}
+
+.elementcardplain {
+  position: relative;
+  // min-height: clamp(18rem, 28vw, 24rem);
+  border-radius: $radius;
+  padding: $padding-mid;
+  display: flex;
+  align-items: flex-end;
+  background: $backgroung-grad-base;
+  overflow: hidden;
+
+  &::before {
+    @include border();
+    pointer-events: none;
+  }
+}
+
+.elementcardlabel {
+  // @include label();
+  position: relative;
+  z-index: 1;
+}
+
+.photo {
+  align-self: start;
+}
+
 @media screen and (max-width: 699px) {
   .contents {
     width: 100%;
@@ -262,8 +295,23 @@
   }
 
   .typographyhero,
-  .typographygrid {
+  .typographygrid,
+  .tracks {
     grid-template-columns: 1fr;
+  }
+
+  .examplecardslist {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .examplecards {
+    grid-template-columns: 1fr;
+  }
+
+  .examplelabels {
+    min-height: 370px;
   }
 
   .typecardstack {
@@ -281,7 +329,7 @@
   }
 
   .typecardcontent {
-    min-height: calc($space * 12);
+    min-height: calc($space * 8);
   }
 
   .typeheading1 {

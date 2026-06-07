@@ -4,9 +4,13 @@ import Q_VideoBackground from '@/components/quarks/Q_VideoBackground/Q_VideoBack
 import W_SectionElementsWrapper from '@/components/wrappers/W_SectionElementsWrapper/W_SectionElementsWrapper';
 import { videosGuideMap } from '@/shared/constants/videoGuideMap';
 import classes from '@/pages/styleguide/Styleguide.module.scss';
-// import O_MainTracks from '@/components/organisms/O_MainTracks/O_MainTracks';
+import O_MainTracks from '@/components/organisms/O_MainTracks/O_MainTracks';
+import A_ImgSmall from '@/components/atoms/A_ImgSmall/A_ImgSmall';
+import M_FlipCard from '@/components/molecules/M_FlipCard/M_FlipCard';
+import artistGuideBlockInfo from '@/assets/data/guideArtistInfo/guideArtistInfo.json';
 
 const videoLink = videosGuideMap.styleguide;
+const kanyeTracks = artistGuideBlockInfo.kanye.tracks;
 
 const Styleguide = () => {
   const { hash } = useLocation();
@@ -172,10 +176,29 @@ const Styleguide = () => {
           </div>
         </W_SectionElementsWrapper>
 
-        <W_SectionElementsWrapper className={classes.wrapper}>
-          <img src="" alt="" className={classes.image1} />
-          <img src="" alt="" />
-          <img src="" alt="" />
+        <W_SectionElementsWrapper>
+          <div className={classes.photo1}>
+            <A_ImgSmall
+              source="https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/bully/theeth.png"
+              footer="Фотография + градиент + подпись"
+              alt="Черно-белая фотография для примера плашки"
+              // wrapperClassName={classes.photo1}
+            />
+          </div>
+          <div className={classes.grids}>
+            <A_ImgSmall
+              source="https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/bully/theeth.png"
+              footer="Фотография + градиент + подпись"
+              alt="Черно-белая фотография для примера плашки"
+              wrapperClassName={classes.photo}
+            />
+            <A_ImgSmall
+              source="https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/bully/theeth.png"
+              footer="Фотография + градиент + подпись"
+              alt="Черно-белая фотография для примера плашки"
+              wrapperClassName={classes.photo}
+            />
+          </div>
         </W_SectionElementsWrapper>
 
         <W_SectionElementsWrapper className={classes.wrapper}>
@@ -193,8 +216,8 @@ const Styleguide = () => {
             <div className={classes.typographyhero}>
               <div className={`${classes.typecard} ${classes.typecardlarge}`}>
                 <div className={classes.typecardcontent}>
-                  <h1 className={classes.typeheading1}>H1</h1>
-                  <p className={classes.typecaption}>
+                  <h1>Heading 1</h1>
+                  <p className={classes.label}>
                     64 | expanded
                     <br />
                     Заголовки
@@ -205,8 +228,8 @@ const Styleguide = () => {
               <div className={classes.typecardstack}>
                 <div className={`${classes.typecard} ${classes.typecardmedium}`}>
                   <div className={classes.typecardcontent}>
-                    <h2 className={classes.typeheading2}>H2</h2>
-                    <p className={classes.typecaption}>
+                    <h2>Heading 2</h2>
+                    <p className={classes.label}>
                       48 | expanded
                       <br />
                       Подзаголовки
@@ -216,8 +239,8 @@ const Styleguide = () => {
 
                 <div className={`${classes.typecard} ${classes.typecardsmall}`}>
                   <div className={classes.typecardcontent}>
-                    <h3 className={classes.typeheading3}>Heading 3</h3>
-                    <p className={classes.typecaption}>
+                    <h3>Heading 3</h3>
+                    <p className={classes.label}>
                       32 | expanded
                       <br />
                       Подзаголовки
@@ -241,8 +264,8 @@ const Styleguide = () => {
             <div className={classes.typographygrid}>
               <div className={`${classes.typecard} ${classes.typecardsubheading}`}>
                 <div className={classes.typecardcontent}>
-                  <h3 className={classes.typeheading4}>Heading 4 (subheading)</h3>
-                  <p className={classes.typecaption}>
+                  <h4>Heading 4 (subheading)</h4>
+                  <p className={classes.label}>
                     24 | expanded
                     <br />
                     Подзаголовки
@@ -253,13 +276,16 @@ const Styleguide = () => {
               <div className={`${classes.typecard} ${classes.typecardtext2}`}>
                 <div className={classes.typecardcontent}>
                   <div className={classes.typetextgroup}>
-                    <p className={classes.typetexttitle}>Text 2</p>
-                    <p className={classes.typetextbody}>
-                      Пластинка построена как серия экзистенциальных дилемм и допускает нелинейное
-                      прочтение, что усиливает её нарративную плотность.
+                    <p className={classes.typetexttitle}>
+                      Text 2<br />
+                      <br />
+                      <span className={classes.typetext2}>
+                        Пластинка построена как серия экзистенциальных дилемм и допускает нелинейное
+                        прочтение, что усиливает её нарративную плотность.
+                      </span>
                     </p>
                   </div>
-                  <p className={classes.typecaption}>
+                  <p className={classes.label}>
                     16 | extended
                     <br />
                     Подписи / дополнения / навигация
@@ -270,13 +296,14 @@ const Styleguide = () => {
               <div className={`${classes.typecard} ${classes.typecardtext1}`}>
                 <div className={classes.typecardcontent}>
                   <div className={classes.typetextgroup}>
-                    <p className={classes.typetexttitle}>Text 1</p>
-                    <p className={classes.typetextbodylarge}>
+                    <p className={classes.typetexttitle}>
+                      Text 1<br />
+                      <br />
                       Пластинка построена как серия экзистенциальных дилемм и допускает нелинейное
                       прочтение, что усиливает её нарративную плотность.
                     </p>
                   </div>
-                  <p className={classes.typecaption}>
+                  <p className={classes.label}>
                     20 | extended
                     <br />
                     Наборный текст
@@ -288,60 +315,96 @@ const Styleguide = () => {
                 <div className={classes.typecardcontent}>
                   <div className={classes.typetextgroup}>
                     <p className={classes.typetexttitle}>label</p>
-                    <p className={classes.typelabelcopy}>
+                    <span className={classes.labelwhite}>
                       Совсем маленький мини-текст :) Opacity 55%
+                    </span>
+                    <p className={classes.label}>
+                      14 | extended
+                      <br />
+                      Подписи
                     </p>
                   </div>
-                  <p className={classes.typecaption}>
-                    14 | extended
-                    <br />
-                    Подписи
-                  </p>
                 </div>
               </div>
             </div>
           </div>
           <h3 className={classes.h3}>(2) Пример использования</h3>
-          <div>
-            <img src="" alt="" />
+          <div className={classes.examplecards}>
+            <div className={classes.examplecardslist}>
+              <M_FlipCard nickname="future" />
+              <M_FlipCard nickname="carti" />
+            </div>
+            <div className={classes.examplelabels}>
+              <div>
+                <div>— Основной текст, 20 (вторая сторона)</div>
+              </div>
+              <div>
+                <div>— Подзаголовок, 24</div>
+                <br />
+                <div>— Дополнение, 16</div>
+                <br />
+                <div>— Подпись, 14</div>
+              </div>
+            </div>
           </div>
         </W_SectionElementsWrapper>
+
         <W_SectionElementsWrapper className={classes.wrapper}>
-          <h2 id="color-light" className={classes.anchorHeading}>
-            Цвет
-          </h2>
-          <p>
-            Хип-хоп слишком яркое и многогранное движение само по себе, поэтому было принято решение
-            не замыкаться в цветовой палитре.{' '}
-          </p>
-          <p>
-            Если нам необходим цвет, мы берем его прямо из той культурной точки, о которой идет
-            речь! Наведите на любой трек.
-          </p>
-          {/* <O_MainTracks tracks={}></O_MainTracks> */}
-        </W_SectionElementsWrapper>
-        <W_SectionElementsWrapper className={classes.wrapper}>
-          <h2 id="elements" className={classes.anchorHeading}>
-            Элементы
-          </h2>
-          <p>В качесвте основных элементов мы используем тексты и плашки. </p>
-          <p>
-            Любой блок-плашка содержит растворяющуюся обводку и фон. Фон может быть фотографией или
-            пустым черным блоком, полупрозрачным сверху.{' '}
-          </p>
-          <p>
-            Если мы используем фотографию, то для подписи кладем сверху градиент (он идет снизу или
-            слева)
-          </p>
-          <div>
-            <div></div>
-            <div></div>
+          <div className={classes.wrapperleft}>
+            <h2 id="color-light" className={classes.anchorHeading}>
+              Цвет
+            </h2>
+            <div>
+              <p>
+                Хип-хоп слишком яркое и многогранное движение само по себе, поэтому было принято
+                решение не замыкаться в цветовой палитре.
+              </p>
+              <p>
+                Если нам необходим цвет, мы берем его прямо из той культурной точки, о которой идет
+                речь! Наведите на любой трек.
+              </p>
+            </div>
           </div>
-          <p>Главная метафора нашего дизайна — это свет.</p>
-          <p>
-            Градиенты и переходность отсылает к свету софитов, плавно растворяющемуся в тьме вокруг
-            сцены. Дизайн подсвечивает агентов того движения, о котором мы рассказываем.
-          </p>
+          <O_MainTracks tracks={kanyeTracks} className={classes.tracks}></O_MainTracks>
+        </W_SectionElementsWrapper>
+
+        <W_SectionElementsWrapper className={classes.wrapper}>
+          <div className={classes.wrapperleft}>
+            <h2 id="elements" className={classes.anchorHeading}>
+              Элементы
+            </h2>
+            <div>
+              <p>В качесвте основных элементов мы используем тексты и плашки. </p>
+              <p>
+                Любой блок-плашка содержит растворяющуюся обводку и фон. Фон может быть фотографией
+                или пустым черным блоком, полупрозрачным сверху.{' '}
+              </p>
+              <p>
+                Если мы используем фотографию, то для подписи кладем сверху градиент (он идет снизу
+                или слева)
+              </p>
+            </div>
+          </div>
+
+          <div className={classes.grids}>
+            <A_ImgSmall
+              source="https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/bully/theeth.png"
+              footer="Фотография + градиент + подпись"
+              alt="Черно-белая фотография для примера плашки"
+              wrapperClassName={classes.photo}
+            />
+            <div className={classes.elementcardplain}>
+              <span className={classes.elementcardlabel}>Блок без фотографии + фон</span>
+            </div>
+          </div>
+
+          <div>
+            <p>Главная метафора нашего дизайна — это свет.</p>
+            <p>
+              Градиенты и переходность отсылает к свету софитов, плавно растворяющемуся в тьме
+              вокруг сцены. Дизайн подсвечивает агентов того движения, о котором мы рассказываем.
+            </p>
+          </div>
         </W_SectionElementsWrapper>
       </W_SectionElementsWrapper>
     </div>
