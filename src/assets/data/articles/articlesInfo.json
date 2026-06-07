@@ -53,5 +53,60 @@
     "tags": ["артист", "звук", "канье"],
     "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/bully/theeth.png",
     "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/bully.json"
+  },
+  {
+    "id": 5,
+    "title": "Кто такой MAVI и почему стоит послушать Shadowbox",
+    "paragraph": "Артист почти десять лет в деле, но широкая публика его всё ещё не знает. Рассказываем про MAVI и его самый сильный альбом.",
+    "slug": "mavi-shadowbox",
+    "date": "2025-02-21",
+    "timing": "6мин",
+    "tags": ["андеграунд", "альбом"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/mavi-shadowbox-banner.jpg",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/mavi-shadowbox.json"
+  },
+  {
+    "id": 6,
+    "title": "MF DOOM: любимый рэпер твоего любимого рэпера",
+    "paragraph": "Человек в железной маске, который перевернул рэп, отказавшись играть по правилам. История главного суперзлодея жанра.",
+    "slug": "mf-doom",
+    "date": "2025-03-14",
+    "timing": "7мин",
+    "tags": ["андеграунд", "легенды"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/mf-doom-banner.jpg",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/mf-doom.json"
+  },
+  {
+    "id": 7,
+    "title": "Как 808s & Heartbreak придумал эмо-рэп",
+    "paragraph": "В 2008-м над этим альбомом смеялись все. А через несколько лет выяснилось, что с него начался целый пласт современного рэпа.",
+    "slug": "808s-and-heartbreak",
+    "date": "2025-05-24",
+    "timing": "7мин",
+    "tags": ["история", "альбом"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/808s-and-heartbreak-banner.jpg",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/808s-and-heartbreak.json"
+  },
+  {
+    "id": 8,
+    "title": "The Alchemist: почему все хотят его биты",
+    "paragraph": "Продюсер, которого знают не по хитам, а по уважению. Разбираемся, почему за его биты выстраивается очередь из лучших людей в жанре.",
+    "slug": "the-alchemist",
+    "date": "2025-05-29",
+    "timing": "6мин",
+    "tags": ["легенды", "битмейкеры"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/the-alchemist-banner.png",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/the-alchemist.json"
+  },
+  {
+    "id": 9,
+    "title": "Адлибы: зачем рэперу второй голос",
+    "paragraph": "Те самые «skrrt» и «yeah» на фоне куплета. Кажется мелочью, но убери их — и трек развалится. Объясняем, как это работает.",
+    "slug": "adlibs",
+    "date": "2025-06-04",
+    "timing": "6мин",
+    "tags": ["техническое", "звук"],
+    "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/imgs/adlibs-banner.jpg",
+    "contentLink": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/articles/data/adlibs.json"
   }
 ]
