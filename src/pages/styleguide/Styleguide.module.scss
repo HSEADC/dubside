@@ -285,9 +285,43 @@
 }
 
 @media screen and (max-width: 699px) {
+  .mainwrapper {
+    gap: calc($padding * 4.2);
+  }
+
+  .wrapper,
+  .grids {
+    grid-template-columns: 1fr;
+    gap: calc($padding-mid * 1.4);
+  }
+
+  .wrapperleft,
+  .wrapperright {
+    width: 100%;
+  }
+
+  .wrapperright {
+    align-items: flex-start;
+    gap: calc($padding * 1.4);
+  }
+
+  .wrapperright img {
+    max-width: 100%;
+    height: auto;
+  }
+
   .contents {
     width: 100%;
     margin-top: calc($space * 8);
+  }
+
+  .wrapperleft {
+    gap: calc($padding * 2.1);
+  }
+
+  .h3 {
+    margin-top: calc($space * 2.2);
+    margin-bottom: calc($space * 5.6);
   }
 
   .anchorHeading {
@@ -300,6 +334,18 @@
     grid-template-columns: 1fr;
   }
 
+  .typographygrid {
+    gap: calc($padding-mid * 1.2);
+  }
+
+  .typographyhero > *,
+  .typographygrid > * {
+    width: 100%;
+    min-width: 0;
+    grid-column: auto;
+    grid-row: auto;
+  }
+
   .examplecardslist {
     width: 100%;
     flex-wrap: wrap;
@@ -310,21 +356,48 @@
     grid-template-columns: 1fr;
   }
 
+  .elementcardplain {
+    min-height: clamp(8.5rem, 28vw, 11rem);
+  }
+
   .examplelabels {
-    min-height: 370px;
+    display: none;
+  }
+
+  .examplelabels {
+    min-height: auto;
+    gap: $padding;
+  }
+
+  .tracks {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    padding-right: 0;
+
+    > h4 {
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+
+    > div {
+      width: 100%;
+      min-width: 0;
+      grid-template-columns: 1fr;
+    }
+
+    a {
+      min-width: 0;
+    }
   }
 
   .typecardstack {
     grid-template-rows: auto;
   }
 
-  .typecardtext1,
-  .typecardtext2 {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
   .typecard {
+    width: 100%;
+    min-width: 0;
     padding: $padding;
   }
 
