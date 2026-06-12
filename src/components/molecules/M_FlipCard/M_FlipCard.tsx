@@ -3,6 +3,7 @@ import classes from '@/components/molecules/M_FlipCard/M_FlipCard.module.scss';
 import flipCards from '@/assets/data/flipCards/flipCards.json';
 import { FlipCardsMap, SingerCard } from '@/shared/types/cards';
 import M_Track from '../M_Track/M_Track';
+import { useLogoAnimation } from '@/shared/contexts/logoAnimationContext';
 
 type Props = {
   nickname: string;
@@ -13,12 +14,16 @@ type Props = {
 const M_FlipCard = ({ nickname, isAddInfoShown, children }: Props) => {
   const flipCardsObj: FlipCardsMap = flipCards;
   const singer: SingerCard = flipCardsObj[nickname];
+  const { playLogoAnimation } = useLogoAnimation();
 
   const backImgPath = `${__PUBLIC_PATH__}images/${nickname}/back.png`;
   const frontImgPath = `${__PUBLIC_PATH__}images/${nickname}/front.png`;
 
   return (
-    <div className={classes.wrapper}>
+    <div
+      className={classes.wrapper}
+      onMouseEnter={playLogoAnimation}
+      onTouchStart={playLogoAnimation}>
       <div className={classes.inner}>
         <div className={classes.front}>
           {/* <!-- Лицевая сторона --> */}
