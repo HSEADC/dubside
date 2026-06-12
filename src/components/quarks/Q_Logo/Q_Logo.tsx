@@ -1,4 +1,4 @@
-import React, { forwardRef, useId, useImperativeHandle, useRef } from 'react';
+import React, { forwardRef, useEffect, useId, useImperativeHandle, useRef } from 'react';
 import classes from '@/components/quarks/Q_Logo/Q_Logo.module.scss';
 
 export type Q_LogoHandle = {
@@ -6,43 +6,72 @@ export type Q_LogoHandle = {
 };
 
 type SVGAnimationNode = SVGAnimationElement | null;
+const ANIMATION_DURATION_MS = 800;
 
 const Q_Logo = forwardRef<Q_LogoHandle>(function Q_Logo(_, ref) {
   const clipPathId = useId();
   const animationRefs = useRef<SVGAnimationNode[]>([]);
   const isAnimatingRef = useRef(false);
   const animationTimeoutRef = useRef<number | null>(null);
+  const hoverIntervalRef = useRef<number | null>(null);
 
   const setAnimationRef = (index: number) => (node: SVGAnimationNode) => {
     animationRefs.current[index] = node;
   };
 
+  const playAnimation = () => {
+    if (isAnimatingRef.current) return;
+
+    isAnimatingRef.current = true;
+    animationRefs.current.forEach((node) => {
+      node?.beginElement();
+    });
+
+    if (animationTimeoutRef.current) {
+      window.clearTimeout(animationTimeoutRef.current);
+    }
+
+    animationTimeoutRef.current = window.setTimeout(() => {
+      isAnimatingRef.current = false;
+      animationTimeoutRef.current = null;
+    }, ANIMATION_DURATION_MS);
+  };
+
+  const stopHoverLoop = () => {
+    if (hoverIntervalRef.current) {
+      window.clearInterval(hoverIntervalRef.current);
+      hoverIntervalRef.current = null;
+    }
+  };
+
+  useEffect(() => {
+    return () => {
+      stopHoverLoop();
+
+      if (animationTimeoutRef.current) {
+        window.clearTimeout(animationTimeoutRef.current);
+      }
+    };
+  }, []);
+
   useImperativeHandle(
     ref,
     () => ({
-      playAnimation: () => {
-        if (isAnimatingRef.current) return;
-
-        isAnimatingRef.current = true;
-        animationRefs.current.forEach((node) => {
-          node?.beginElement();
-        });
-
-        if (animationTimeoutRef.current) {
-          window.clearTimeout(animationTimeoutRef.current);
-        }
-
-        animationTimeoutRef.current = window.setTimeout(() => {
-          isAnimatingRef.current = false;
-          animationTimeoutRef.current = null;
-        }, 800);
-      }
+      playAnimation
     }),
     []
   );
 
   return (
-    <div className={classes.wrapper} aria-hidden="true">
+    <div
+      className={classes.wrapper}
+      aria-hidden="true"
+      onMouseEnter={() => {
+        playAnimation();
+        stopHoverLoop();
+        hoverIntervalRef.current = window.setInterval(playAnimation, ANIMATION_DURATION_MS);
+      }}
+      onMouseLeave={stopHoverLoop}>
       <svg
         className={classes.logo}
         viewBox="0 0 100 100"
