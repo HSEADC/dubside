@@ -1,0 +1,12 @@
+@use '@/styles/config.scss' as *;
+
+.gradient {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
