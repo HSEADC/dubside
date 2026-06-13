@@ -18,6 +18,9 @@ const NavBar = () => {
     case '/about':
       isActive = '/about';
       break;
+    case '/special-project':
+      isActive = '/special-project';
+      break;
     case '/articles':
       isActive = '/articles';
       break;
@@ -51,6 +54,9 @@ const NavBar = () => {
         </A_Link>
         <A_Link to="/about">
           <A_Button isActive={'/about' === isActive}>о проекте</A_Button>
+        </A_Link>
+        <A_Link to="/special-project">
+          <A_Button isActive={'/special-project' === isActive}>🔥</A_Button>
         </A_Link>
       </div>
     </nav>
