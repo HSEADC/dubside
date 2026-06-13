@@ -1,5 +1,16 @@
 @use '@/styles/config.scss' as *;
 
+.page {
+  position: relative;
+  min-height: 100vh;
+  color: $text-color-white;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
 .breakdiv {
   height: 47vh;
 }
