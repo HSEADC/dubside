@@ -8,6 +8,7 @@ import { LazyCards } from '@/pages/cards/Cards.lazy';
 import { LazyArticle } from '@/pages/article/Article.lazy';
 import { LazyTest } from '@/pages/test/Test.lazy';
 import { LazyStyleguide } from '@/pages/styleguide/Styleguide.lazy';
+import { LazySpecialProject } from '@/pages/special-project/SpecialProject.lazy';
 import A_Loader from '@/components/atoms/A_Loader/A_Loader';
 
 const AppRoutes = [
@@ -60,6 +61,14 @@ const AppRoutes = [
         element: (
           <Suspense fallback={<A_Loader />}>
             <LazyStyleguide />
+          </Suspense>
+        )
+      },
+      {
+        path: '/special-project',
+        element: (
+          <Suspense fallback={<A_Loader />}>
+            <LazySpecialProject />
           </Suspense>
         )
       },
