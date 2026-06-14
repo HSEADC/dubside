@@ -1,0 +1,59 @@
+@use '@/styles/config.scss' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  // gap: calc($space * 0);
+  width: 47%;
+  padding-left: calc($space * 2.7);
+  border-left: 1px solid rgba($text-color-white, 0.8);
+}
+
+.answer {
+  opacity: 1;
+  align-self: flex-start;
+}
+
+.question {
+  opacity: 0.6;
+  align-self: flex-end;
+}
+
+.answerBig {
+  width: 80%;
+  margin-top: calc($space * 3);
+  margin-bottom: calc($space * 3);
+  opacity: 1;
+  align-self: center;
+}
+
+.comment {
+  width: 47%;
+  padding-left: 0;
+  border-left: 0;
+  opacity: 1;
+  align-self: flex-end;
+}
+
+.quote {
+  line-height: 0.8;
+}
+
+.content {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .wrapper,
+  .answerBig,
+  .comment {
+    width: 100%;
+  }
+
+  .answer,
+  .question,
+  .answerBig,
+  .comment {
+    align-self: stretch;
+  }
+}
