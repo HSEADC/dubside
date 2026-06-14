@@ -4,13 +4,24 @@ import { DisplacementFilter } from '@pixi/filter-displacement';
 import classes from './Q_SpecialProjectGradient.module.scss';
 import { addGrain, clamp01, seededRng } from '@/shared/utils/specialProjectGradient';
 
+// const COLORS = {
+//   color1: '#000000',
+//   color2: '#3a3100',
+//   color3: '#000000',
+//   // color3: '#ffc800',
+//   color4: '#1c1700',
+//   color5: '#271d00',
+//   background: '#000000'
+// } as const;
+
 const COLORS = {
-  color1: '#0e1c3f',
-  color2: '#23418a',
-  color3: '#aadfd9',
-  color4: '#e64f0f',
-  color5: '#000000',
-  background: '#050505'
+  color1: '#ffaa00',
+  color2: '#3a2500',
+  color3: '#000000',
+  // color3: '#ffc800',
+  color4: '#1c1400',
+  color5: '#ffaa00',
+  background: '#000000'
 } as const;
 
 const Q_SpecialProjectGradient = () => {
@@ -222,7 +233,10 @@ const Q_SpecialProjectGradient = () => {
     const buildDisplacement = (seed: number) => {
       const rendererWidth = app.renderer.width;
       const rendererHeight = app.renderer.height;
-      const scale = Math.min(1, displacementTextureMaxSize / Math.max(rendererWidth, rendererHeight));
+      const scale = Math.min(
+        1,
+        displacementTextureMaxSize / Math.max(rendererWidth, rendererHeight)
+      );
       const width = Math.max(256, Math.floor(rendererWidth * scale));
       const height = Math.max(256, Math.floor(rendererHeight * scale));
 
@@ -350,7 +364,10 @@ const Q_SpecialProjectGradient = () => {
         const maskScale = Math.max(width / maskWidth, height / maskHeight);
 
         maskSprite.scale.set(maskScale);
-        maskSprite.position.set((width - maskWidth * maskScale) / 2, (height - maskHeight * maskScale) / 2);
+        maskSprite.position.set(
+          (width - maskWidth * maskScale) / 2,
+          (height - maskHeight * maskScale) / 2
+        );
       }
     };
 
@@ -423,9 +440,13 @@ const Q_SpecialProjectGradient = () => {
       if (displacementSprite) {
         const signedY = (displacementNy - 0.5) * 2;
         displacementShiftYTarget = signedY * displacementShiftMax * displacementShiftAmount;
-        displacementShiftY += (displacementShiftYTarget - displacementShiftY) * displacementShiftSmooth;
+        displacementShiftY +=
+          (displacementShiftYTarget - displacementShiftY) * displacementShiftSmooth;
 
-        const clampedShift = Math.max(-displacementShiftMax, Math.min(displacementShiftMax, displacementShiftY));
+        const clampedShift = Math.max(
+          -displacementShiftMax,
+          Math.min(displacementShiftMax, displacementShiftY)
+        );
         displacementSprite.x = displacementBaseX;
         displacementSprite.y = displacementBaseY + clampedShift;
       }
