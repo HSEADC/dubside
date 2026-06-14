@@ -4,6 +4,9 @@
   position: relative;
   min-height: 100vh;
   color: $text-color-white;
+  display: flex;
+  flex-direction: column;
+  gap: calc($padding * 3);
 }
 
 .content {
@@ -13,4 +16,166 @@
 
 .breakdiv {
   height: 47vh;
+}
+
+.h2 {
+  margin-bottom: calc($space * 5);
+}
+
+.h3 {
+  margin-bottom: calc($space * 4);
+}
+
+.label {
+  @include label();
+}
+
+.contents {
+  position: relative;
+  border-radius: $radius;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: calc($space * 1.5);
+  padding: calc($padding-mid * 1.15);
+  background: $backgroung-grad-base;
+
+  &::before {
+    @include border();
+    pointer-events: none;
+  }
+
+  a {
+    width: fit-content;
+    max-width: 100%;
+    color: $text-color-white;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.contentsIntro,
+.contentsOutro {
+  padding-left: calc($space * 0.25);
+}
+
+.contentsList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: calc($space * 1.5);
+  margin: calc($space * 0.5) 0;
+  padding-left: calc($space * 1.5);
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc($space * 0.15);
+    bottom: calc($space * 0.15);
+    width: 1px;
+    background-color: rgba($text-color-white, 0.7);
+  }
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: calc($space * 3);
+  padding: $padding;
+  border-radius: $radius;
+  // background-color: #ffc303;
+
+  &::before {
+    @include border();
+    pointer-events: none;
+  }
+}
+
+.heroImage,
+.heroGradient {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.heroImage {
+  z-index: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.heroGradient {
+  z-index: 1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.5) 70%);
+  backdrop-filter: blur(5px);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: calc($space * 3);
+}
+
+.heroblocks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: calc($space * 3);
+}
+
+.heroblocks p {
+  max-width: none;
+}
+
+.interview {
+  display: flex;
+  flex-direction: column;
+  gap: calc($space * 6);
+  z-index: 2;
+  margin-bottom: calc($padding * 1.5);
+}
+
+.interview p + p {
+  margin-top: calc(0.7 * $p-gap);
+}
+
+@media (max-width: 900px) {
+  .contents {
+    width: 100%;
+    padding: $padding-mid;
+  }
+
+  .contents a {
+    font-size: calc($space * 1.2);
+  }
+
+  .heroImage {
+    background-size: auto 75%;
+    background-position: center 35%;
+  }
+
+  .heroGradient {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 195, 3, 0.78) 0%,
+        rgba(255, 195, 3, 0.28) 22%,
+        rgba(0, 0, 0, 0.5) 52%,
+        rgba(0, 0, 0, 0.92) 100%
+      ),
+      linear-gradient(to top, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0) 70%);
+  }
+
+  .heroblocks {
+    grid-template-columns: 1fr;
+  }
+
 }
