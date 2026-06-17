@@ -20,11 +20,12 @@
 }
 
 .answerBig {
-  width: 80%;
+  width: 78%;
   margin-top: calc($space * 3);
   margin-bottom: calc($space * 3);
   opacity: 1;
-  align-self: center;
+  margin-left: 11%;
+  // background: red;
 }
 
 .comment {
