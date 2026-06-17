@@ -24,16 +24,29 @@
 
 .h3 {
   margin-bottom: calc($space * 4);
+  margin-top: calc($space * 10);
+}
+
+.h3break {
+  margin-bottom: calc($space * 4);
+  // margin-top: calc($space * 15);
 }
 
 .label {
   @include label();
 }
 
+.inlineLink {
+  font: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .contents {
   position: relative;
   border-radius: $radius;
   width: 50%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: calc($space * 1.5);
@@ -48,6 +61,7 @@
   a {
     width: fit-content;
     max-width: 100%;
+    font-size: $text-1-text-size;
     color: $text-color-white;
     text-decoration: none;
     transition: opacity 0.2s ease;
@@ -142,20 +156,72 @@
   gap: calc($space * 6);
   z-index: 2;
   margin-bottom: calc($padding * 1.5);
+  // margin-top: calc($padding * 1.5);
 }
 
 .interview p + p {
   margin-top: calc(0.7 * $p-gap);
 }
 
+.recommendationsSection {
+  display: flex;
+  flex-direction: column;
+  gap: calc($space * 4);
+}
+
+.recommendations {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: calc($space * 3);
+  padding: $padding;
+  border-radius: $radius;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.5) 70%);
+  backdrop-filter: blur(5px);
+
+  &::before {
+    @include border();
+    pointer-events: none;
+  }
+}
+.recommendationsList p + p {
+  margin: 0;
+}
+.recommendationsList {
+  margin-top: calc($space * 2);
+  display: flex;
+  flex-direction: column;
+  gap: calc($space * 3);
+}
+
+.recommendationsList p {
+  max-width: none;
+}
+
+.recommendationsList a {
+  width: fit-content;
+  max-width: 100%;
+  color: $text-color-white;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contents {
+    width: 65%;
+  }
+}
+
 @media (max-width: 900px) {
   .contents {
-    width: 100%;
+    width: 80%;
     padding: $padding-mid;
-  }
-
-  .contents a {
-    font-size: calc($space * 1.2);
   }
 
   .heroImage {
@@ -178,4 +244,24 @@
     grid-template-columns: 1fr;
   }
 
+  .recommendations {
+    width: 100%;
+    padding: $padding-mid;
+  }
+}
+
+@media (max-width: 640px) {
+  .contents {
+    width: 100%;
+    padding: $padding;
+  }
+
+  .contentsList {
+    gap: $average-gap;
+    padding-left: 0;
+  }
+
+  .contentsList::before {
+    display: none;
+  }
 }

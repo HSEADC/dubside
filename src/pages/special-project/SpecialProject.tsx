@@ -5,6 +5,47 @@ import Q_SpecialProjectGradient from '@/components/quarks/Q_SpecialProjectGradie
 import Q_AnswerQuestion from '@/components/quarks/Q_AnswerQuestion/Q_AnswerQuestion';
 // import uhImage from '@/assets/images/uh.png';
 
+const nikitaRecommendations = [
+  {
+    name: 'Даня Порнорэп',
+    link: 'https://t.me/trap_critics'
+  },
+  {
+    name: 'Аркадий Романов',
+    link: 'https://t.me/arkadybazarish'
+  },
+  {
+    name: 'книга «Это было в России»',
+    link: 'https://books.yandex.ru/books/yRjtQWuE'
+  },
+  {
+    name: '«nktn печатает» Андрея Никитина',
+    link: 'https://t.me/nktnpcht'
+  },
+  {
+    name: 'Коля Редькин «Сломанные пляски»',
+    link: 'https://t.me/brokendance'
+  },
+  {
+    name: 'Big Baby Take Кирилла Бусаренко',
+    link: 'https://t.me/bigbabytake'
+  },
+  {
+    name: 'Fild of Pikes Петра Полищука',
+    link: 'https://t.me/fieldofpikes'
+  },
+  {
+    name: '«Другое поле» Полины Другомиловой',
+    link: 'https://t.me/rifmabit'
+  },
+  {
+    name: 'статья «В чём разница между протестным хип-хопом США и России?» в журнале «Рембодлер»',
+    link: 'https://www.podpisnie.ru/books/rembodler-2/'
+  }
+] as const;
+
+const hipHopChannelLink = 'https://t.me/ugolokhiphop';
+
 const SpecialProject = () => {
   const scrollToHash = (targetHash: string) => {
     const id = targetHash.replace('#', '');
@@ -29,11 +70,28 @@ const SpecialProject = () => {
       <Q_SpecialProjectGradient />
       <W_SectionElementsWrapper className={classes.content}>
         <div className={classes.breakdiv}></div>
-        <h2 className={classes.h2}>Интервью с Никитой, автором тг-канала «Уголок Хип-хопа»</h2>
+        <h2 className={classes.h2}>
+          Интервью с Никитой, автором тг-канала <br />
+          <a
+            href={hipHopChannelLink}
+            target="_blank"
+            rel="noreferrer"
+            className={classes.inlineLink}>
+            «Уголок хип-хопа»
+          </a>
+        </h2>
         <p>
-          Автор телеграм-канала «Уголок Хип-хопа» о границе между музыкальной журналистикой и
-          авторским блогом, коллекционировании физических носителей, российской музыкальной
-          индустрии и людях, которые помогают не застревать в собственном пузыре.
+          Автор телеграм-канала{' '}
+          <a
+            href={hipHopChannelLink}
+            target="_blank"
+            rel="noreferrer"
+            className={classes.inlineLink}>
+            «Уголок хип-хопа»
+          </a>{' '}
+          о границе между музыкальной журналистикой и авторским блогом, коллекционировании
+          физических носителей, российской музыкальной индустрии и людях, которые помогают не
+          застревать в собственном пузыре.
         </p>
       </W_SectionElementsWrapper>
 
@@ -95,16 +153,23 @@ const SpecialProject = () => {
       </W_SectionElementsWrapper>
 
       <W_SectionElementsWrapper className={classes.content}>
-        <h3 className={classes.h3}>Вступление</h3>
+        <h3 className={classes.h3break}>Вступление</h3>
         <p>
           Мы не профессиональные музыкальные журналисты и только учимся работать с этой темой.
           Поэтому нам было важно поговорить с человеком, который давно слушает хип-хоп,
           систематически пишет о нём и имеет вокруг своего проекта активное сообщество.
         </p>
         <p>
-          Так, мы обратились к Никите — автору телеграм-канала «Уголок Хип-хопа». Он согласился
-          созвониться, ответить на наши вопросы и помочь превратить разговор в отдельный спецпроект
-          Dubside.
+          Так, мы обратились к Никите — автору телеграм-канала{' '}
+          <a
+            href={hipHopChannelLink}
+            target="_blank"
+            rel="noreferrer"
+            className={classes.inlineLink}>
+            «Уголок хип-хопа»
+          </a>
+          . Он согласился созвониться, ответить на наши вопросы и помочь превратить разговор в
+          отдельный спецпроект Dubside.
         </p>
       </W_SectionElementsWrapper>
       <W_SectionElementsWrapper className={classes.content}>
@@ -120,10 +185,17 @@ const SpecialProject = () => {
             <div className={classes.heroblocks}>
               <div>
                 <p>
-                  Автор телеграм-канала «Уголок Хип-хопа», на который подписаны почти четыре тысячи
-                  человек. Канал существует с января 2022 года и представляет собой авторский блог о
-                  хип-хопе: его истории, отдельных артистах и альбомах, физических носителях и
-                  музыкальном коллекционировании.
+                  Автор телеграм-канала{' '}
+                  <a
+                    href={hipHopChannelLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={classes.inlineLink}>
+                    «Уголок хип-хопа»
+                  </a>
+                  , на который подписаны почти четыре тысячи человек. Канал существует с января 2022
+                  года и представляет собой авторский блог о хип-хопе: его истории, отдельных
+                  артистах и альбомах, физических носителях и музыкальном коллекционировании.
                 </p>
               </div>
               <div>
@@ -157,13 +229,13 @@ const SpecialProject = () => {
               вообще человек, склонный изучать вещи и копать глубоко. Мои увлечения редко бывают
               поверхностными, поэтому с хип-хопом сложилась такая долгая связь.
             </p>
-            <Q_AnswerQuestion type="answer-big">
-              <p>
-                Этот жанр привлекает меня тем, что в нём всегда есть что изучать, в нём постоянно
-                происходят живые процессы и есть интересное прошлое, которое невозможно познать до
-                конца.
-              </p>
-            </Q_AnswerQuestion>
+          </Q_AnswerQuestion>
+          <Q_AnswerQuestion type="answer-big">
+            <h4>
+              Этот жанр привлекает меня тем, что в нём всегда есть что изучать, в нём постоянно
+              происходят живые процессы и есть интересное прошлое, которое невозможно познать до
+              конца.
+            </h4>
           </Q_AnswerQuestion>
           <Q_AnswerQuestion type="question">
             <p>До «Уголка Хип-хопа» ты писал о музыке или участвовал в других медиапроектах?</p>
@@ -190,7 +262,15 @@ const SpecialProject = () => {
           <Q_AnswerQuestion type="question">
             <p>
               В одном из первых постов ты объяснял, зачем создаёшь канал. За четыре года изменилось
-              ли твоё представление о том, каким должен быть «Уголок Хип-хопа»?
+              ли твоё представление о том, каким должен быть{' '}
+              <a
+                href={hipHopChannelLink}
+                target="_blank"
+                rel="noreferrer"
+                className={classes.inlineLink}>
+                «Уголок хип-хопа»
+              </a>
+              ?
             </p>
           </Q_AnswerQuestion>
           <Q_AnswerQuestion type="answer">
@@ -209,27 +289,36 @@ const SpecialProject = () => {
               последний год рост сильно замедлился, потому что я не занимаюсь рекламой и
               продвижением, а из-за основной работы стал уделять каналу меньше времени.
             </p>
-            <Q_AnswerQuestion type="answer-big">
-              <p>
-                По большому счёту, я доволен тем, что получилось. Это моя зона комфорта, куда я могу
-                прийти и написать любые мысли, которые у меня возникли.
-              </p>
-            </Q_AnswerQuestion>
+          </Q_AnswerQuestion>
+          <Q_AnswerQuestion type="answer-big">
+            <h4>
+              По большому счёту, я доволен тем, что получилось. Это моя зона комфорта, куда я могу
+              прийти и написать любые мысли, которые у меня возникли.
+            </h4>
+          </Q_AnswerQuestion>
+          <Q_AnswerQuestion type="answer">
             <p>
               Иногда с другой стороны давит контент-план, нужно приходить и что-то публиковать, даже
               когда времени немного. Но с этим я мирюсь.
             </p>
             <p>
-              «Уголок Хип-хопа» — нишевый и достаточно андеграундный проект по самой своей задумке.
-              Это не большой ресурс с коллективом сотрудников, как Fast Food Music, и не новостное
-              медиа, где каждый день выходит по несколько постов. Это авторский блог.
+              <a
+                href={hipHopChannelLink}
+                target="_blank"
+                rel="noreferrer"
+                className={classes.inlineLink}>
+                «Уголок хип-хопа»
+              </a>{' '}
+              — нишевый и достаточно андеграундный проект по самой своей задумке. Это не большой
+              ресурс с коллективом сотрудников, как Fast Food Music, и не новостное медиа, где
+              каждый день выходит по несколько постов. Это авторский блог.
             </p>
-            <Q_AnswerQuestion type="answer-big">
-              <p>
-                Если получится и дальше развивать канал, не меняя его формат, не отказываясь от себя
-                и первоначального замысла, будет здорово.
-              </p>
-            </Q_AnswerQuestion>
+          </Q_AnswerQuestion>
+          <Q_AnswerQuestion type="answer-big">
+            <h4>
+              Если получится и дальше развивать канал, не меняя его формат, не отказываясь от себя и
+              первоначального замысла, будет здорово.
+            </h4>
           </Q_AnswerQuestion>
         </div>
         <div className={classes.interview}>
@@ -276,13 +365,16 @@ const SpecialProject = () => {
               не всегда готов выходить за их пределы. Я слишком заинтересован в определённых
               сегментах жанра, мне нравится в них возиться и о них писать.
             </p>
-            <Q_AnswerQuestion type="answer-big">
-              <p>
-                Музыкального журналиста, как мне кажется, характеризует умение посмотреть в будущее
-                и написать о музыке, которая будет завтра, послезавтра или через год. Он видит, что
-                происходит сейчас, понимает прошлое, но лучше всего пишет о будущем.
-              </p>
-            </Q_AnswerQuestion>
+          </Q_AnswerQuestion>
+
+          <Q_AnswerQuestion type="answer-big">
+            <h4>
+              Музыкального журналиста, как мне кажется, характеризует умение посмотреть в будущее и
+              написать о музыке, которая будет завтра, послезавтра или через год. Он видит, что
+              происходит сейчас, понимает прошлое, но лучше всего пишет о будущем.
+            </h4>
+          </Q_AnswerQuestion>
+          <Q_AnswerQuestion type="answer">
             <p>
               Такой человек способен давать прогнозы и постоянно находиться на острие. Для меня это
               настоящий ценный музыкальный журналист. Такие авторы у нас есть, и я их очень уважаю.
@@ -361,11 +453,11 @@ const SpecialProject = () => {
             </p>
           </Q_AnswerQuestion>
           <Q_AnswerQuestion type="answer-big">
-            <p>
+            <h4>
               Многие музыкальные каналы нужны мне именно для того, чтобы не засиживаться в
               собственном пузыре. Моя зона комфорта — это одно, а читать умные мысли умных людей о
               другой классной музыке — совсем другое. Это ценно и интересно.
-            </p>
+            </h4>
           </Q_AnswerQuestion>
         </div>
         <div className={classes.interview}>
@@ -406,12 +498,12 @@ const SpecialProject = () => {
             </p>
           </Q_AnswerQuestion>
           <Q_AnswerQuestion type="answer-big">
-            <p>
+            <h4>
               Когда ты покупаешь физическую копию, ты как будто не просто говоришь, что любишь
               артиста. ты выражаешь уважение к конкретному альбому — к вещи, которая когда-то на
               тебя повлияла и с которой связан твой эмоциональный опыт. Ты буквально хочешь
               поставить эту вещь себе на полку.
-            </p>
+            </h4>
           </Q_AnswerQuestion>
           <Q_AnswerQuestion type="comment">
             <p>
@@ -541,11 +633,11 @@ const SpecialProject = () => {
             </p>
           </Q_AnswerQuestion>
           <Q_AnswerQuestion type="answer-big">
-            <p>
+            <h4>
               Мы не делаем универсальную музыку — мы делаем свою музыку, которая хорошо приживается
               здесь, когда находит здесь признание. А музыка для экспорта — это совсем другая
               история.
-            </p>
+            </h4>
           </Q_AnswerQuestion>
         </div>
         <div className={classes.interview}>
@@ -594,14 +686,24 @@ const SpecialProject = () => {
         </div>
       </W_SectionElementsWrapper>
       <W_SectionElementsWrapper className={classes.content}>
-        <h3 className={classes.h3}>Заключение</h3>
+        <h3 className={classes.h3break}>Заключение</h3>
+        <br />
+        <br />
         <p>
           Разговор с Никитой помог нам точнее увидеть разницу между музыкальным медиа и личным
-          авторским проектом. «Уголок Хип-хопа» не пытается оперативно охватывать всю сцену или
-          ежедневно сообщать новости. Его ценность строится на другом: на последовательном интересе
-          автора, внимании к прошлому жанра и готовности долго разбираться в узких темах. Никита
-          называет это музыкальной публицистикой и не скрывает ограниченность собственного взгляда,
-          но именно эта открытая субъективность формирует характер канала.
+          авторским проектом.{' '}
+          <a
+            href={hipHopChannelLink}
+            target="_blank"
+            rel="noreferrer"
+            className={classes.inlineLink}>
+            «Уголок хип-хопа»
+          </a>{' '}
+          не пытается оперативно охватывать всю сцену или ежедневно сообщать новости. Его ценность
+          строится на другом: на последовательном интересе автора, внимании к прошлому жанра и
+          готовности долго разбираться в узких темах. Никита называет это музыкальной публицистикой
+          и не скрывает ограниченность собственного взгляда, но именно эта открытая субъективность
+          формирует характер канала.
         </p>
         <p>
           Отдельной темой стала материальность музыки. Физический носитель для Никиты — не просто
@@ -617,6 +719,23 @@ const SpecialProject = () => {
           интересов. Ниже мы собрали рекомендации Никиты — каналы, журналисты и другие проекты, к
           которым он сам обращается за новым контекстом.
         </p>
+      </W_SectionElementsWrapper>
+      <W_SectionElementsWrapper className={classes.content}>
+        <div id="nikita-recommendations" className={classes.recommendationsSection}>
+          <h3 className={classes.h3break}>Что рекомендует Никита</h3>
+          <div className={classes.recommendations}>
+            <h4>Авторы, каналы и проекты, упомянутые во время разговора:</h4>
+            <div className={classes.recommendationsList}>
+              {nikitaRecommendations.map((recommendation) => (
+                <p key={recommendation.link}>
+                  <a href={recommendation.link} target="_blank" rel="noreferrer">
+                    {recommendation.name}
+                  </a>
+                </p>
+              ))}
+            </div>
+          </div>
+        </div>
       </W_SectionElementsWrapper>
     </div>
   );
