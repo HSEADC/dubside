@@ -2,7 +2,7 @@
 
 Dubside — медиа о зарубежном хип-хопе
 
-React-приложение (TypeScript) с роутингом на `react-router`, сборкой на Webpack и деплоем на GitHub Pages. Вывод сборки — в папку `docs/`.
+React-приложение (TypeScript) с роутингом на `react-router`, сборкой на Webpack и статическим деплоем из папки `docs/`. Сейчас конфигурация ориентирована на корень домена (в проекте уже лежит `public/CNAME` для кастомного домена), но сама схема деплоя остаётся совместимой с GitHub Pages.
 
 ### Стек
 
@@ -27,7 +27,7 @@ Dev-сервер по умолчанию открывается сам и раб
 - `yarn start` — dev-сервер (`webpack-dev-server`) с HMR.
 - `yarn build:dev` — сборка в development-режиме.
 - `yarn build:prod` — production-сборка (вывод в `docs/`).
-- `yarn build:gh` — production-сборка под GitHub Pages (с `publicPath=/dubside/`, вывод в `docs/`).
+- `yarn build:gh` — production-сборка для статического хостинга/GitHub Pages (текущий `publicPath=/`, вывод в `docs/`).
 - `yarn prerender:gh` — пререндерит несколько маршрутов в статические HTML внутри `docs/` (запускать после `build:gh`).
 - `yarn build:gh:prerender` — `build:gh` + `prerender:gh`.
 - `yarn deploy:pages` — публикует содержимое `docs/` через `gh-pages`.
@@ -36,7 +36,7 @@ Dev-сервер по умолчанию открывается сам и раб
 
 ## Особенности проекта
 
-### Пререндер (SSG-подобный для GitHub Pages)
+### Пререндер (SSG-подобный для статической публикации)
 
 Скрипт `src/scripts/prerender-gh.ts` запускается через `ts-node` и:
 
@@ -49,20 +49,22 @@ Dev-сервер по умолчанию открывается сам и раб
   - `docs/articles/index.html`
   - `docs/cards/index.html`
   - `docs/tests/index.html`
+  - `docs/styleguide/index.html`
 
 Ограничения/нюансы:
 
-- пререндерятся только фиксированные маршруты (динамические вроде `/articles/:slug` и `/tests/:id` остаются CSR).
+- пререндерятся только фиксированные маршруты (`/`, `/about`, `/articles`, `/cards`, `/tests`, `/styleguide`); динамические вроде `/articles/:slug`, `/tests/:id` и текущий `/special-project` остаются CSR.
 - для работы нужен Node.js 18+ (в скрипте проверяется наличие глобального `Request`).
 - скрипт делает хук для алиаса `@/` и заглушки для импортов ассетов/стилей, чтобы Node мог импортировать компоненты.
 - `__PUBLIC_PATH__` вручную задаётся в `globalThis`, потому что в Node его не инжектит Webpack `DefinePlugin`.
 
 
-### GitHub Pages: SPA-роутинг и базовый путь `/dubside`
+### SPA fallback и базовый путь
 
-- В прод-сборке для Pages используется `publicPath=/dubside/` (см. `webpack.config.ts` и скрипт `build:gh`).
-- `public/404.html` — SPA fallback для GitHub Pages: неизвестные пути редиректятся на `/dubside/?p=<route>`.
+- В текущей прод-сборке используется корневой `publicPath=/` (см. `webpack.config.ts` и скрипт `build:gh`).
+- `public/404.html` — SPA fallback для статического хостинга/GitHub Pages: неизвестные пути редиректятся на `/?p=<route>`.
 - `src/index.tsx` при старте восстанавливает исходный путь из query-параметра `p`, чтобы React Router корректно поднялся на нужном роуте.
+- В коде сохранены комментарии про старый base path `/dubside`: это след от прежней схемы деплоя, сейчас активна конфигурация для корня домена.
 
 
 ### Ассеты: `__PUBLIC_PATH__` и копирование из `public/`
@@ -108,7 +110,11 @@ Webpack копирует содержимое `public/` в `docs/` (кроме `
 
 > Чтобы webpack нарезал страницы на отдельные чанки и не тащил весь код всех страниц в первый main.js. Пока чанк страницы догружается, показывается лоадер
 >
-> (Пререндер один раз в Node генерит готовые HTML-файлы, там lazy/Suspense не используются: скрипт импортирует страницы напрямую. Пользователь, который заходит на GitHub Pages, сначала получает пререндеренный HTML (видит контент сразу), но затем всё равно скачивается и запускается JS-бандл, и приложение “гидратируется”, начинает работать как SPA. Когда пользователь переходит между страницами внутри сайта, роутер в браузере будет грузить страницы лениво (чанками) через \*.lazy.tsx.)
+> (Пререндер один раз в Node генерит готовые HTML-файлы, там lazy/Suspense не используются: скрипт импортирует страницы напрямую. Пользователь сначала получает уже заполненный HTML и видит контент сразу, а затем в браузере монтируется клиентское SPA-приложение с тем же роутингом. Когда пользователь переходит между страницами внутри сайта, роутер будет грузить страницы лениво (чанками) через \*.lazy.tsx.)
+
+В `special-project` есть отдельный декоративный слой на `pixi.js`: `Q_SpecialProjectGradient` рисует фоновый градиент через canvas/WebGL, добавляет displacement-эффект и лёгкий grain. Вспомогательные функции для шума, clamp и seeded-random вынесены в `src/shared/utils/specialProjectGradient.ts`.
+
+Это изолированная визуальная часть страницы спецпроекта: остальной UI не завязан на Pixi и продолжает жить в обычных React-компонентах и SCSS-модулях.
 
 ---
 
@@ -137,12 +143,13 @@ react-dubside/
 
   public/                        — статические файлы, копируются в docs/ при сборке
     index.html                   — HTML-шаблон (HtmlWebpackPlugin), содержит meta/OG
-    404.html                     — SPA fallback для GitHub Pages (редирект на /dubside/?p=...)
+    404.html                     — SPA fallback для неизвестных путей (редирект на /?p=...)
     robots.txt                   — robots (для индексации и SEO)
     sitemap.xml                  — sitemap (для индексации и SEO)
+    CNAME                        — кастомный домен для GitHub Pages
     icons/
 
-    images/                      — локальные изображения (используются через __PUBLIC_PATH__), для флип-карточек
+    images/                      — локальные изображения артистов для флип-карточек (используются через __PUBLIC_PATH__)
 
   src/                           — исходники
     index.tsx                    — entrypoint: RouterProvider + восстановление маршрута для GH Pages
@@ -150,9 +157,14 @@ react-dubside/
 
     app/                         — app-shell и маршрутизация
       App.tsx                    — layout: NavBar + Outlet + Footer + ScrollToTop
-      routes.tsx                 — массив роутов для createBrowserRouter (+ lazy pages)
+      routes.tsx                 — массив роутов для createBrowserRouter (+ lazy pages, включая special-project и styleguide)
 
     pages/                       — страницы (в каждой .tsx, .lazy.tsx, .module.scss)
+      guide/                     — главная страница
+      article/                   — страница отдельной статьи (`/articles/:slug`)
+      test/                      — страница отдельного теста (`/tests/:id`)
+      special-project/           — спецпроект с интервью и pixi-градиентом
+      styleguide/                — внутренняя витрина компонентов/стилей
 
     components/                  — UI-компоненты (Atomic-ish)
       atoms/
@@ -193,6 +205,7 @@ react-dubside/
         calcArticleSide.ts       — утилита для блоков статьи (по очереди с разных сторон)
         calcTestCardSize.ts      — выбор размера карточек (три вида, используется в статьях и тестах)
         checkResult.ts           — внешние картинки good/ok/bad для результата
+        specialProjectGradient.ts — утилиты для canvas-градиента спецпроекта (grain, seeded rng, clamp)
 
     styles/                      — глобальные стили
       global.scss                — подключается в entry, общий интер всех файлов стилей
