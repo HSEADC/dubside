@@ -22,7 +22,6 @@ import {
 //   - docs/cards/index.html
 //   - docs/tests/index.html
 //   - docs/styleguide/index.html
-//   - docs/special-project/index.html
 //
 // Run:
 //   yarn ts-node src/scripts/prerender-gh.ts
@@ -42,8 +41,7 @@ const prerenderPaths = [
   '/articles',
   '/cards',
   '/tests',
-  '/styleguide',
-  '/special-project'
+  '/styleguide'
 ] as const;
 
 function installAtAliasHook() {
@@ -185,7 +183,6 @@ async function main() {
   const { default: Cards } = await import('../pages/cards/Cards');
   const { default: Tests } = await import('../pages/tests/Tests');
   const { default: Styleguide } = await import('../pages/styleguide/Styleguide');
-  const { default: SpecialProject } = await import('../pages/special-project/SpecialProject');
 
   const routes: RouteObject[] = [
     {
@@ -197,8 +194,7 @@ async function main() {
         { path: 'tests', element: React.createElement(Tests) },
         { path: 'articles', element: React.createElement(Articles) },
         { path: 'cards', element: React.createElement(Cards) },
-        { path: 'styleguide', element: React.createElement(Styleguide) },
-        { path: 'special-project', element: React.createElement(SpecialProject) }
+        { path: 'styleguide', element: React.createElement(Styleguide) }
       ]
     }
   ];
