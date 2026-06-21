@@ -15,7 +15,7 @@ const nikitaRecommendations = [
     link: 'https://t.me/arkadybazarish'
   },
   {
-    name: 'книга «Это было в России»',
+    name: 'Книга «Это было в России»',
     link: 'https://books.yandex.ru/books/yRjtQWuE'
   },
   {
@@ -39,7 +39,7 @@ const nikitaRecommendations = [
     link: 'https://t.me/rifmabit'
   },
   {
-    name: 'статья «В чём разница между протестным хип-хопом США и России?» в журнале «Рембодлер»',
+    name: 'Статья «В чём разница между протестным хип-хопом США и России?» в журнале «Рембодлер»',
     link: 'https://www.podpisnie.ru/books/rembodler-2/'
   }
 ] as const;
@@ -736,6 +736,17 @@ const SpecialProject = () => {
             </div>
           </div>
         </div>
+      </W_SectionElementsWrapper>
+      <W_SectionElementsWrapper className={classes.content}>
+        <h2 className={classes.h2}>
+          <a
+            href={hipHopChannelLink}
+            target="_blank"
+            rel="noreferrer"
+            className={`${classes.inlineLink} ${classes.headingLink}`}>
+            Телеграмм канал «Уголок хип-хопа» ←
+          </a>
+        </h2>
       </W_SectionElementsWrapper>
     </div>
   );
