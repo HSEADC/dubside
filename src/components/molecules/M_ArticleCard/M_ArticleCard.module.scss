@@ -4,10 +4,12 @@
   position: relative;
   border-radius: $radius;
   padding: $padding-mid;
+  aspect-ratio: 16 / 9;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 25vw;
+  min-height: 260px;
   overflow: hidden;
   cursor: pointer;
 
@@ -89,14 +91,17 @@
 @media screen and (max-width: 1199px) {
   .mini {
     height: auto;
+    min-height: 280px;
     padding: $padding;
   }
   .mid {
     height: auto;
+    min-height: 280px;
     padding: $padding;
   }
   .max {
     height: auto;
+    min-height: 280px;
     padding: $padding;
   }
 }
@@ -105,16 +110,19 @@
   .mini {
     width: 100%;
     height: auto;
+    min-height: 260px;
     gap: calc($padding + calc($space * 3));
   }
   .mid {
     width: 100%;
     height: auto;
+    min-height: 260px;
     gap: calc($padding + calc($space * 3));
   }
   .max {
     width: 100%;
     height: auto;
+    min-height: 260px;
     gap: calc($padding + calc($space * 3));
   }
   .downdiv {

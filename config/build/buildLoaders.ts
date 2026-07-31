@@ -9,7 +9,7 @@ export function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
   const styleOrExtract = isDev ? 'style-loader' : MiniCssExtractPlugin.loader;
 
   const accetLoader = {
-    test: /\.(png|jpg|jpeg|gif)$/i,
+    test: /\.(png|jpg|jpeg|gif|webp)$/i,
     type: 'asset/resource'
   };
 

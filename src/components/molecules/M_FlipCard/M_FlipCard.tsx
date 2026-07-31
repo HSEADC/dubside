@@ -16,8 +16,7 @@ const M_FlipCard = ({ nickname, isAddInfoShown, children }: Props) => {
   const singer: SingerCard = flipCardsObj[nickname];
   const { playLogoAnimation } = useLogoAnimation();
 
-  const backImgPath = `${__PUBLIC_PATH__}images/${nickname}/back.png`;
-  const frontImgPath = `${__PUBLIC_PATH__}images/${nickname}/front.png`;
+  const frontImgPath = `${__PUBLIC_PATH__}images/${nickname}/front.webp`;
 
   return (
     <div
@@ -27,7 +26,15 @@ const M_FlipCard = ({ nickname, isAddInfoShown, children }: Props) => {
       <div className={classes.inner}>
         <div className={classes.front}>
           {/* <!-- Лицевая сторона --> */}
-          <img src={frontImgPath} alt="frontImg" className={classes.img} />
+          <img
+            src={frontImgPath}
+            alt={singer.name}
+            className={classes.img}
+            loading="lazy"
+            decoding="async"
+            width="699"
+            height="863"
+          />
           <h4 className={classes.h4}>{singer.name}</h4>
           <ul>
             {singer.points.map((p) => (
@@ -41,7 +48,6 @@ const M_FlipCard = ({ nickname, isAddInfoShown, children }: Props) => {
         </div>
         <div className={classes.back}>
           {/* <!-- Обратная сторона (другая верстка) --> */}
-          <img src={backImgPath} alt="backImg" className={classes.img} />
           <div className={classes.backdiv} />
           <div>
             <p className={classes.li}>{singer.paragraph}</p>

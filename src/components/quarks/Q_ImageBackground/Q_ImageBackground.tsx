@@ -9,9 +9,16 @@ interface Q_ImageBackground {
 const Q_ImageBackground = ({ source, uppergrad }: Q_ImageBackground) => {
   return (
     <div className={classes.wrapper}>
-      <img src={source} className={classes.vid} />
+      <img
+        src={source}
+        className={classes.vid}
+        alt=""
+        loading="eager"
+        decoding="async"
+        fetchPriority="high"
+      />
       <div className={classes.gradientdown}></div>
-      <div className={uppergrad ? classes.gradientup : undefined}></div>
+      {uppergrad ? <div className={classes.gradientup}></div> : null}
     </div>
   );
 };

@@ -35,7 +35,13 @@ const M_ArticleCard = ({ id, size }: Props) => {
 
   return (
     <div className={wrapper} onClick={() => navigate(`/articles/${slug}`)}>
-      <img className={classes.img} src={articleData.img} alt="img" />
+      <img
+        className={classes.img}
+        src={articleData.img}
+        alt={articleData.title}
+        loading="lazy"
+        decoding="async"
+      />
       <div className={grad}></div>
 
       <div className={classes.upperdiv}>

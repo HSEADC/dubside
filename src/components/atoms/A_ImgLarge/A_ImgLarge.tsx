@@ -6,10 +6,17 @@ type Props = {
   footer: string;
 } & React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>;
 
-const A_ImgLarge = ({ source, footer, ...rest }: Props) => {
+const A_ImgLarge = ({ source, footer, loading = 'lazy', decoding = 'async', ...rest }: Props) => {
   return (
     <div className={classes.imgwrapper}>
-      <img className={classes.img} src={source} alt="large-img" {...rest} />
+      <img
+        className={classes.img}
+        src={source}
+        alt="large-img"
+        loading={loading}
+        decoding={decoding}
+        {...rest}
+      />
       <div className={classes.grad}></div>
       <span className={classes.footer}>{footer}</span>
     </div>
