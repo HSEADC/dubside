@@ -21,8 +21,24 @@ export function buildWebpack(options: BuildOptions): Configuration {
     output: {
       path: paths.output,
       filename: '[name].[contenthash].js',
+      chunkFilename: '[name].[contenthash].js',
       clean: true,
       publicPath: options.publicPath //какой “базовый URL” использовать для всех файлов, которые Webpack подключает/подгружает
+    },
+    optimization: {
+      runtimeChunk: 'single',
+      splitChunks: {
+        chunks: 'all',
+        cacheGroups: {
+          default: false,
+          defaultVendors: false,
+          vendor: {
+            test: /[\\/]node_modules[\\/]/,
+            name: 'vendors',
+            chunks: 'initial'
+          }
+        }
+      }
     },
     plugins: buildPlugins(options),
     devServer: isDev ? buildDevServer(options) : undefined
