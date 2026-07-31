@@ -26,7 +26,15 @@ const M_FlipCard = ({ nickname, isAddInfoShown, children }: Props) => {
       <div className={classes.inner}>
         <div className={classes.front}>
           {/* <!-- Лицевая сторона --> */}
-          <img src={frontImgPath} alt="frontImg" className={classes.img} />
+          <img
+            src={frontImgPath}
+            alt={singer.name}
+            className={classes.img}
+            loading="lazy"
+            decoding="async"
+            width="699"
+            height="863"
+          />
           <h4 className={classes.h4}>{singer.name}</h4>
           <ul>
             {singer.points.map((p) => (
