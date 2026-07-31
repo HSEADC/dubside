@@ -9,15 +9,20 @@ type Props = {
   nickname: string;
   children?: React.ReactNode;
   isAddInfoShown?: boolean;
+  enableTrackDynamicColor?: boolean;
 };
 
-const M_FlipCard = ({ nickname, isAddInfoShown, children }: Props) => {
+const M_FlipCard = ({
+  nickname,
+  isAddInfoShown,
+  children,
+  enableTrackDynamicColor = true
+}: Props) => {
   const flipCardsObj: FlipCardsMap = flipCards;
   const singer: SingerCard = flipCardsObj[nickname];
   const { playLogoAnimation } = useLogoAnimation();
 
-  const backImgPath = `${__PUBLIC_PATH__}images/${nickname}/back.png`;
-  const frontImgPath = `${__PUBLIC_PATH__}images/${nickname}/front.png`;
+  const frontImgPath = `${__PUBLIC_PATH__}images/${nickname}/front.webp`;
 
   return (
     <div
@@ -41,7 +46,6 @@ const M_FlipCard = ({ nickname, isAddInfoShown, children }: Props) => {
         </div>
         <div className={classes.back}>
           {/* <!-- Обратная сторона (другая верстка) --> */}
-          <img src={backImgPath} alt="backImg" className={classes.img} />
           <div className={classes.backdiv} />
           <div>
             <p className={classes.li}>{singer.paragraph}</p>
@@ -58,6 +62,7 @@ const M_FlipCard = ({ nickname, isAddInfoShown, children }: Props) => {
                 link={s.link}
                 name={s.name}
                 footer={s.footer}
+                enableDynamicColor={enableTrackDynamicColor}
                 key={s.name}></M_Track>
             ))}
           </div>

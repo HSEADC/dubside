@@ -61,6 +61,7 @@
   @include face();
   transform: rotateY(180deg);
   justify-content: space-between;
+  background: #000;
 }
 
 .back::before {
@@ -93,7 +94,7 @@
   z-index: -1;
   inset: 0;
   width: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0.7) 100%);
+  background: #000;
 }
 
 .h4 {
