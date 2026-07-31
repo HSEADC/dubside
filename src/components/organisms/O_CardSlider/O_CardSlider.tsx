@@ -80,10 +80,7 @@ const O_CardSlider = ({ className }: Proos) => {
         const posIndex = (index + offset) % items.length;
         return (
           <div key={item.id} className={`${classes.card} ${posClasses[posIndex]}`}>
-            <M_FlipCard
-              isAddInfoShown={true}
-              nickname={item.nickname}
-              enableTrackDynamicColor={false}>
+            <M_FlipCard isAddInfoShown={true} nickname={item.nickname}>
               <div className={classes.innerdiv}></div>
             </M_FlipCard>
           </div>
