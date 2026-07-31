@@ -7,10 +7,24 @@ type Props = {
   wrapperClassName?: string;
 } & React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>;
 
-const A_ImgSmall = ({ source, footer, wrapperClassName, ...rest }: Props) => {
+const A_ImgSmall = ({
+  source,
+  footer,
+  wrapperClassName,
+  loading = 'lazy',
+  decoding = 'async',
+  ...rest
+}: Props) => {
   return (
     <div className={[classes.imgwrapper, wrapperClassName].filter(Boolean).join(' ')}>
-      <img src={source} alt="side-img" {...rest} className={classes.img} />
+      <img
+        src={source}
+        alt="side-img"
+        loading={loading}
+        decoding={decoding}
+        {...rest}
+        className={classes.img}
+      />
       <div className={classes.grad}></div>
       <span className={classes.footer}>{footer}</span>
     </div>

@@ -3,6 +3,7 @@
 .imgwrapper {
   /* width: calc(100% + $p-large-max-width-bleed); */
   width: $max-width;
+  aspect-ratio: 16 / 9;
   position: relative;
   border-radius: $radius;
 
@@ -19,7 +20,8 @@
 .img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   z-index: 0;
   position: relative;
 }
