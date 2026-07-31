@@ -9,15 +9,9 @@ type Props = {
   nickname: string;
   children?: React.ReactNode;
   isAddInfoShown?: boolean;
-  enableTrackDynamicColor?: boolean;
 };
 
-const M_FlipCard = ({
-  nickname,
-  isAddInfoShown,
-  children,
-  enableTrackDynamicColor = true
-}: Props) => {
+const M_FlipCard = ({ nickname, isAddInfoShown, children }: Props) => {
   const flipCardsObj: FlipCardsMap = flipCards;
   const singer: SingerCard = flipCardsObj[nickname];
   const { playLogoAnimation } = useLogoAnimation();
@@ -62,7 +56,6 @@ const M_FlipCard = ({
                 link={s.link}
                 name={s.name}
                 footer={s.footer}
-                enableDynamicColor={enableTrackDynamicColor}
                 key={s.name}></M_Track>
             ))}
           </div>
