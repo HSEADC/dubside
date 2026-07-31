@@ -1,10 +1,13 @@
 import classes from '@/components/molecules/M_Track/M_Track.module.scss';
-import { getColor, getSwatches } from 'colorthief';
 import React, { useState } from 'react';
 import { Track } from '@/shared/types/cards';
 import Q_Image from '@/components/quarks/Q_Image/Q_image';
 
-const M_Track = ({ name, footer, img, link }: Track) => {
+type Props = Track & {
+  enableDynamicColor?: boolean;
+};
+
+const M_Track = ({ name, footer, img, link, enableDynamicColor = true }: Props) => {
   const [color, setColor] = useState('100 100 100');
 
   function isTooDarkOrLight(rgb: [number, number, number], { dark = 0.3, light = 0.9 } = {}) {
@@ -25,7 +28,10 @@ const M_Track = ({ name, footer, img, link }: Track) => {
   };
 
   async function onLoad(e: React.SyntheticEvent<HTMLImageElement>) {
+    if (!enableDynamicColor) return;
+
     try {
+      const { getColor, getSwatches } = await import('colorthief');
       const imgEl = e.currentTarget;
       const dominant = (await getColor(imgEl)).array() as [number, number, number];
 
