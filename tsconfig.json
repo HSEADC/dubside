@@ -19,7 +19,8 @@
   "include": ["src", "config", "webpack.config.ts", "eslint.config.mts", "scripts"],
   "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS"
+      "module": "CommonJS",
+      "moduleResolution": "node"
     }
   }
 }
