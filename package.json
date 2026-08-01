@@ -2,6 +2,10 @@
   "name": "react-dubside",
   "version": "2.1.0",
   "scripts": {
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0",
+    "build": "yarn -s build:prod",
+    "ci": "yarn -s lint && yarn -s type-check && yarn -s build",
     "build:dev": "webpack  --env mode=development",
     "build:prod": "webpack --env mode=production",
     "prerender:gh": "TS_NODE_TRANSPILE_ONLY=1 ts-node src/scripts/prerender-gh.ts",
