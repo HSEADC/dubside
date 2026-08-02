@@ -7,6 +7,7 @@ import testsDataRaw from '@/assets/data/tests/tests.json';
 import { isClassicTest, isMultipleTest, TestData, TestId } from '@/shared/types/test';
 import ClassicTest from '@/pages/test/ClassicTest';
 import MultipleTest from '@/pages/test/MultipleTest';
+import { videosGuideMap } from '@/shared/constants/videoGuideMap';
 
 const isTestId = (value: string | undefined): value is TestId => {
   return !!value && value in testsDataRaw;
@@ -19,7 +20,7 @@ const Test = () => {
     return testsDataRaw[params.id] as TestData;
   }, [params.id]);
 
-  const videoLink = 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/tests.mp4';
+  const videoLink = videosGuideMap.kanye;
 
   useEffect(() => {
     const prev = document.body.style.overflowY;

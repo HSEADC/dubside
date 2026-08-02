@@ -7,6 +7,7 @@ import testsDataRaw from '@/assets/data/tests/tests.json';
 import A_BadgeLikeButton from '@/components/atoms/A_BadgeLikeButton/A_BadgeLikeButton';
 import calcTestCardSize from '@/shared/utils/calcTestCardSize';
 import { Hardness, TestId } from '@/shared/types/test';
+import { videosGuideMap } from '@/shared/constants/videoGuideMap';
 
 type ActiveButton = 'all' | Hardness;
 
@@ -20,7 +21,7 @@ type TestData = {
 type TestWithId = TestData & { id: TestId };
 
 const Tests = () => {
-  const videoLink = 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/tests.mp4';
+  const videoLink = videosGuideMap.kanye;
 
   const testsEntries = useMemo(() => {
     const testsData = testsDataRaw as Record<TestId, TestData>;
