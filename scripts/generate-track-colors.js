@@ -94,8 +94,16 @@ async function fetchBuffer(url) {
   }
 }
 
+async function readImageBuffer(source) {
+  if (source.startsWith('/')) {
+    return fs.readFile(path.join(rootDir, 'public', source.slice(1)));
+  }
+
+  return fetchBuffer(source);
+}
+
 async function getImageColor(url) {
-  const imageBuffer = await fetchBuffer(url);
+  const imageBuffer = await readImageBuffer(url);
   const { dominant } = await sharp(imageBuffer).resize(64, 64, { fit: 'inside' }).stats();
   const rgb = normalizeRgb([dominant.r, dominant.g, dominant.b]);
   return rgb.join(' ');
