@@ -1,6 +1,6 @@
 type videosGuideMapType = Record<string, string>;
 
-const VIDEO_BASE_URL = 'https://bucket-993992.s3-website.cloud.ru/dubside/videos';
+const VIDEO_BASE_URL = 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos';
 const getVideoUrl = (name: string) => `${VIDEO_BASE_URL}/${name}.mp4`;
 
 export const videosGuideMap: videosGuideMapType = {
