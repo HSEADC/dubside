@@ -31,6 +31,10 @@ Dev-сервер по умолчанию открывается сам и раб
 - `yarn prerender:gh` — пререндерит несколько маршрутов в статические HTML внутри `docs/` (запускать после `build:gh`).
 - `yarn build:gh:prerender` — `build:gh` + `prerender:gh`.
 - `yarn deploy:pages` — публикует содержимое `docs/` через `gh-pages`.
+- `yarn type-check` — проверка TypeScript без сборки.
+- `yarn lint` — ESLint по проекту.
+- `yarn ci` — `lint` + `type-check` + production-сборка.
+- `yarn track-colors:generate` — пересобирает `src/assets/data/trackColors/trackColors.json` по картинкам треков из `flipCards.json` и `guideArtistInfo.json`.
 
 ---
 
@@ -74,24 +78,47 @@ Webpack копирует содержимое `public/` в `docs/` (кроме `
 В коде `__PUBLIC_PATH__` используется для ссылок на ассеты из `public/`, например:
 
 - `public/icons/*` (иконки, стрелки)
-- `public/images/<artist>/{front,back}.png` (картинки для карточек)
+- `public/images/<artist>/front.webp` (портреты артистов для флип-карточек)
+
+Картинки треков лежат локально в `public/tracks-imgs/<artist>/*.webp` и подключаются из JSON как абсолютные пути от корня сайта:
+
+```json
+"/tracks-imgs/kanye/power.webp"
+```
+
+Сейчас эти картинки приведены к `100x100px` в WebP. Если меняются картинки или ссылки на них, после правок нужно запускать:
+
+```bash
+yarn track-colors:generate
+```
+
+`trackColors.json` ключуется по точной строке `img`, поэтому при смене URL/расширения без регенерации цвета треков могут уйти в дефолт.
+
+Видео-фоны задаются в `src/shared/constants/videoGuideMap.ts` как `.mp4` URL. Компонент `Q_VideoBackground` автоматически пробует `.webm` с тем же именем первым source и оставляет `.mp4` вторым source как fallback. Поэтому в бакете для каждого видео должны лежать оба файла с одинаковым basename:
+
+```text
+hero.webm
+hero.mp4
+```
 
 
-### Картинки/видео вне репозитория
+### Медиа вне репозитория
 
-Часть медиа не хранится в git и подгружается по URL (объектное хранилище). Сейчас в проекте используются ссылки вида:
+Часть медиа всё ещё не хранится в git и подгружается по URL (объектное хранилище). Сейчас в проекте используются ссылки вида:
 
 - `https://dunchek-test-bucket.s3-website.cloud.ru/dubside/...`
 
 Где это задаётся:
 
-- `src/shared/constants/videoGuideMap.ts` — мапа ссылок на видеобэкграунды для гайда по артистам.
-- `src/assets/data/articles/articlesInfo.json` и файлы в `src/assets/data/articles/*.json` — превью статей и ссылки на json'ы с контентом статей.
+- `src/shared/constants/videoGuideMap.ts` — мапа `.mp4` ссылок на видеобэкграунды; `.webm` source строится в компоненте автоматически.
+- `src/assets/data/articles/articlesInfo.json` — превью статей и внешние ссылки на json'ы с контентом статей.
 - `src/assets/data/tests/tests.json` — изображения для тестов в json'e с каждым тестом.
 - `src/shared/utils/checkResult.ts` — картинки результатов тестов (`result_good/ok/bad`).
 - `public/index.html` — OG/Twitter meta image (`meta.png`) — внешняя.
 
-> Все внешние медиа лежат в бакете на `icloud.ru` (поэтому с впн они не доступны)
+Трековые картинки для гайда и флип-карточек уже локальные: `public/tracks-imgs/<artist>/*.webp`.
+
+> Внешние медиа лежат в бакете на `cloud.ru` (поэтому с впн они могут быть недоступны)
 >
 > Если нужно хранить медиа в другом месте, удобнее всего централизованно заменить базовый URL в данных/константах, а не править вручную в компонентах.
 
@@ -149,7 +176,8 @@ react-dubside/
     CNAME                        — кастомный домен для GitHub Pages
     icons/
 
-    images/                      — локальные изображения артистов для флип-карточек (используются через __PUBLIC_PATH__)
+    images/                      — локальные портреты артистов front.webp для флип-карточек (через __PUBLIC_PATH__)
+    tracks-imgs/                 — локальные обложки/картинки треков 100x100 webp (через /tracks-imgs/...)
 
   src/                           — исходники
     index.tsx                    — entrypoint: RouterProvider + восстановление маршрута для GH Pages
@@ -177,7 +205,7 @@ react-dubside/
 
     assets/                      — “вшитые” в бандл ассеты/данные
       images/
-        Q_HeroEffect.png         — изображение эффект для hero
+        uh.png                   — локальное изображение, импортируемое из src/assets
       fonts/
       data/                      — контент в JSON (частично со ссылками на внешнее медиа)
         articles/
@@ -185,16 +213,18 @@ react-dubside/
         tests/
           tests.json             — база вопросов/картинок/результатов тестов
         flipCards/
-          flipCards.json         — данные для флип-карточек
+          flipCards.json         — данные для флип-карточек, включая локальные /tracks-imgs/*.webp
         guideArtistInfo/
-          guideArtistInfo.json   — данные для гида по артистам
+          guideArtistInfo.json   — данные для гида по артистам, включая локальные /tracks-imgs/*.webp
+        trackColors/
+          trackColors.json       — сгенерированные dominant colors для M_Track, ключи совпадают с img URL
 
     shared/
       api/
         http.ts                  — HTTP-клиент/обёртки
         articles.ts              — загрузка/получение данных статей (используются в getArticleContent() в /pages/article Article.tsx)
       constants/
-        videoGuideMap.ts         — ссылки на внешние видео (фоны на сайте)
+        videoGuideMap.ts         — .mp4 ссылки на внешние видео; webm fallback строится в Q_VideoBackground
       types/
         articles.ts              — типы для статей
         cards.ts                 — типы для карточек
@@ -213,6 +243,9 @@ react-dubside/
       config.scss                — переменные/scss конфиг — переменные из него по всему scss коду каждого комопнента
       fonts.scss
       style.scss                 — общий набор стилей (без привязки к компоненту)
+
+  scripts/
+    generate-track-colors.js     — читает картинки треков по URL или из public/ и обновляет trackColors.json
 
   docs/                          — сборка бандла + деплой директория для GitHub Pages (генерируется)
 ```
