@@ -1,21 +1,24 @@
 type videosGuideMapType = Record<string, string>;
 
+const VIDEO_BASE_URL = 'https://bucket-993992.s3-website.cloud.ru/dubside/videos';
+const getVideoUrl = (name: string) => `${VIDEO_BASE_URL}/${name}.mp4`;
+
 export const videosGuideMap: videosGuideMapType = {
-  hero: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/hero.mp4',
-  cards: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/hero.mp4',
-  about: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/hero.mp4',
-  articles: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/hero.mp4',
-  styleguide: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/hero.mp4',
-  kendrick: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/kendrick.mp4',
-  drake: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/drake.mp4',
-  '50cent': 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/50cent.mp4',
-  carti: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/carti.mp4',
-  eminem: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/eminem.mp4',
-  future: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/future.mp4',
-  jayz: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/jayz.mp4',
-  jcole: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/jcole.mp4',
-  kanye: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/kanye.mp4',
-  nicki: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/nicki.mp4',
-  travis: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/travis.mp4',
-  wayne: 'https://dunchek-test-bucket.s3-website.cloud.ru/dubside/videos/wayne.mp4'
+  hero: getVideoUrl('hero'),
+  cards: getVideoUrl('hero'),
+  about: getVideoUrl('hero'),
+  articles: getVideoUrl('hero'),
+  styleguide: getVideoUrl('hero'),
+  kendrick: getVideoUrl('kendrick'),
+  drake: getVideoUrl('drake'),
+  '50cent': getVideoUrl('50cent'),
+  carti: getVideoUrl('carti'),
+  eminem: getVideoUrl('eminem'),
+  future: getVideoUrl('future'),
+  jayz: getVideoUrl('jayz'),
+  jcole: getVideoUrl('jcole'),
+  kanye: getVideoUrl('kanye'),
+  nicki: getVideoUrl('nicki'),
+  travis: getVideoUrl('travis'),
+  wayne: getVideoUrl('wayne')
 };
