@@ -24,8 +24,12 @@
     content: '';
     position: absolute;
     inset: 0;
-    opacity: 80%;
-    background: url('@/assets/images/Q_HeroEffect.webp') center / cover no-repeat;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.35) 0%,
+      rgba(0, 0, 0, 0.35) 35%,
+      rgba(0, 0, 0, 0.95) 100%
+    );
     z-index: 1;
     pointer-events: none;
   }
