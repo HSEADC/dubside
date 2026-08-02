@@ -9,6 +9,12 @@
   height: 110vh;
   object-fit: cover;
   background-color: #000;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.vidReady {
+  opacity: 1;
 }
 
 .wrapper {
@@ -26,8 +32,12 @@
     content: '';
     position: absolute;
     inset: 0;
-    opacity: 80%;
-    background: url('@/assets/images/Q_HeroEffect.webp') center / cover no-repeat;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 35%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
     z-index: 1;
     pointer-events: none;
   }

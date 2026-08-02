@@ -17,6 +17,8 @@ const Q_VideoBackground = ({
   const wrapperRef = useRef<HTMLDivElement | null>(null); // ссылка на внешний <div>, за которым следит IntersectionObserver
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [isActive, setIsActive] = useState(false);
+  const [isVideoReady, setIsVideoReady] = useState(false);
+  const webmSource = source.replace(/\.mp4($|[?#])/i, '.webm$1');
 
   useEffect(() => {
     const wrapper = wrapperRef.current;
@@ -47,11 +49,13 @@ const Q_VideoBackground = ({
     if (!video) return;
 
     if (!isActive) {
+      setIsVideoReady(false);
       video.pause();
       video.load();
       return;
     }
 
+    setIsVideoReady(false);
     video.load();
     video.play().catch(() => {
       // Автоплей может быть заблочен браузером, будет виден постер
@@ -62,13 +66,15 @@ const Q_VideoBackground = ({
     <div className={classes.wrapper} ref={wrapperRef}>
       <video
         ref={videoRef}
-        className={classes.vid}
+        className={`${classes.vid} ${isVideoReady ? classes.vidReady : ''}`}
         preload="none"
         loop
         muted
         playsInline
         poster={poster}
+        onCanPlay={() => setIsVideoReady(true)}
         aria-hidden="true">
+        {isActive ? <source src={webmSource} type="video/webm" /> : null}
         {isActive ? <source src={source} type="video/mp4" /> : null}
       </video>
       <div className={classes.gradientdown}></div>
