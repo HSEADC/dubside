@@ -13,50 +13,50 @@
       {
         "name": "Swimming Pools (Drank)",
         "footer": "Good Kid, M.A.A.D City | 2012",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/swimmingpool.jfif",
+        "img": "/tracks-imgs/kendrick/swimmingpool.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "HUMBLE.",
         "footer": "Damn | 2017",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/humble.jfif",
+        "img": "/tracks-imgs/kendrick/humble.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "DNA.",
         "footer": "Damn | 2017",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/humble.jfif",
+        "img": "/tracks-imgs/kendrick/humble.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "United In Grief",
         "footer": "Mr. Morale & the Big Steppers | 2022",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/95.jfif",
+        "img": "/tracks-imgs/kendrick/95.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "N95",
         "footer": "Mr. Morale & the Big Steppers | 2022",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/95.jfif",
+        "img": "/tracks-imgs/kendrick/95.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "Not Like Us",
         "footer": "2024",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/notlikeus.jfif",
+        "img": "/tracks-imgs/kendrick/notlikeus.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "All the Stars",
         "footer": "Black Panther: The Album | 2018",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/allthestars.jfif",
+        "img": "/tracks-imgs/kendrick/allthestars.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       }
     ],
     "album": {
       "name": "DAMN.",
       "footer": "2018",
-      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kendrick/humble.jfif",
+      "img": "/tracks-imgs/kendrick/humble.webp",
       "link": "https://music.yandex.ru/album/521766/track/4650823"
     }
   },
@@ -73,44 +73,44 @@
       {
         "name": "Marvins Room",
         "footer": "Take Care | 2011",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/marvinsroom.jpg",
+        "img": "/tracks-imgs/drake/marvinsroom.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "Started From The Bottom",
         "footer": "Nothing Was the Same | 2013",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/startedfrombottom.jpg",
+        "img": "/tracks-imgs/drake/startedfrombottom.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "Hotline Bling",
         "footer": "Views | 2016",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/hotlinebling.jpg",
+        "img": "/tracks-imgs/drake/hotlinebling.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "God's Plan",
         "footer": "2018",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/godsplan.jpg",
+        "img": "/tracks-imgs/drake/godsplan.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "One Dance",
         "footer": "Views | 2016",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/hotlinebling.jpg",
+        "img": "/tracks-imgs/drake/hotlinebling.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       },
       {
         "name": "Nonstop",
         "footer": "Scorpion | 2018",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/godsplan.jpg",
+        "img": "/tracks-imgs/drake/godsplan.webp",
         "link": "https://music.yandex.ru/album/521766/track/4650823"
       }
     ],
     "album": {
       "name": "Take Care",
       "footer": "2011",
-      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/drake/albumtakecare.jpg",
+      "img": "/tracks-imgs/drake/albumtakecare.webp",
       "link": "https://music.yandex.ru/album/521766/track/4650823"
     }
   },
@@ -128,50 +128,50 @@
       {
         "name": "Stronger",
         "footer": "Graduation | 2007",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kanye/stronger.jpg",
+        "img": "/tracks-imgs/kanye/stronger.webp",
         "link": "https://music.yandex.ru/album/6796515/track/3264"
       },
       {
         "name": "Gold Digger",
         "footer": "Late Registration | 2005",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kanye/golddigger.jpg",
+        "img": "/tracks-imgs/kanye/golddigger.webp",
         "link": "https://music.yandex.ru/track/17819"
       },
       {
         "name": "POWER",
         "footer": "My Beautiful Dark Twisted Fantasy | 2010",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kanye/power.jpg",
+        "img": "/tracks-imgs/kanye/power.webp",
         "link": "https://music.yandex.ru/track/637971"
       },
       {
         "name": "Runaway",
         "footer": "My Beautiful Dark Twisted Fantasy | 2010",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kanye/power.jpg",
+        "img": "/tracks-imgs/kanye/power.webp",
         "link": "https://music.yandex.ru/track/1706700"
       },
       {
         "name": "Flashing Lights",
         "footer": "Graduation | 2007",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kanye/stronger.jpg",
+        "img": "/tracks-imgs/kanye/stronger.webp",
         "link": "https://music.yandex.ru/artist/644"
       },
       {
         "name": "All Falls Down",
         "footer": "The College Dropout | 2004",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kanye/jesuswalks.jpg",
+        "img": "/tracks-imgs/kanye/jesuswalks.webp",
         "link": "https://music.yandex.ru/artist/644"
       },
       {
         "name": "Jesus Walks",
         "footer": "The College Dropout | 2004",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kanye/jesuswalks.jpg",
+        "img": "/tracks-imgs/kanye/jesuswalks.webp",
         "link": "https://music.yandex.ru/artist/644"
       }
     ],
     "album": {
       "name": "My Beautiful Dark Twisted Fantasy",
       "footer": "2010",
-      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kanye/albummybdtf.jpg",
+      "img": "/tracks-imgs/kanye/albummybdtf.webp",
       "link": "https://music.yandex.ru/artist/644"
     }
   },
@@ -189,44 +189,44 @@
       {
         "name": "Empire State of Mind",
         "footer": "The Blueprint 3 | 2009",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jayz/empirestateofmind.jpg",
+        "img": "/tracks-imgs/jayz/empirestateofmind.webp",
         "link": "https://music.yandex.ru/track/417474"
       },
       {
         "name": "99 Problems",
         "footer": "The Black Album | 2003",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jayz/99problems.jpg",
+        "img": "/tracks-imgs/jayz/99problems.webp",
         "link": "https://music.yandex.ru/album/89484"
       },
       {
         "name": "Hard Knock Life (Ghetto Anthem)",
         "footer": "Vol. 2... Hard Knock Life | 1998",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jayz/hardknocklife.jpg",
+        "img": "/tracks-imgs/jayz/hardknocklife.webp",
         "link": "https://music.yandex.ru/artist/3440"
       },
       {
         "name": "Run This Town",
         "footer": "The Blueprint 3 | 2009",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jayz/empirestateofmind.jpg",
+        "img": "/tracks-imgs/jayz/empirestateofmind.webp",
         "link": "https://music.yandex.ru/album/3805753/track/20523763"
       },
       {
         "name": "IZZO (H.O.V.A.)",
         "footer": "The Blueprint | 2001",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jayz/izzo.jpg",
+        "img": "/tracks-imgs/jayz/izzo.webp",
         "link": "https://music.yandex.ru/artist/3440"
       },
       {
         "name": "Niggas in Paris",
         "footer": "Watch the Throne | 2011",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jayz/niggasinparis.jpg",
+        "img": "/tracks-imgs/jayz/niggasinparis.webp",
         "link": "https://music.yandex.ru/artist/3440"
       }
     ],
     "album": {
       "name": "The Blueprint 3",
       "footer": "2009",
-      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jayz/albumblueprint3.jpg",
+      "img": "/tracks-imgs/jayz/albumblueprint3.webp",
       "link": "https://music.yandex.ru/artist/3440"
     }
   },
@@ -244,50 +244,50 @@
       {
         "name": "Lose Yourself",
         "footer": "8 Mile Soundtrack | 2002",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/eminem/loseyourself.jpg",
+        "img": "/tracks-imgs/eminem/loseyourself.webp",
         "link": "https://music.yandex.ru/artist/1053"
       },
       {
         "name": "Stan",
         "footer": "The Marshall Mathers LP | 2000",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/eminem/stan.jpg",
+        "img": "/tracks-imgs/eminem/stan.webp",
         "link": "https://music.yandex.ru/album/4846/track/18862"
       },
       {
         "name": "The Real Slim Shady",
         "footer": "The Marshall Mathers LP | 2000",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/eminem/stan.jpg",
+        "img": "/tracks-imgs/eminem/stan.webp",
         "link": "https://music.yandex.ru/artist/1053"
       },
       {
         "name": "Rap God",
         "footer": "The Marshall Mathers LP2 | 2013",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/eminem/rapgod.jpg",
+        "img": "/tracks-imgs/eminem/rapgod.webp",
         "link": "https://music.yandex.ru/album/1671558/track/14678823"
       },
       {
         "name": "Love The Way You Lie",
         "footer": "Recovery | 2010",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/eminem/lovethewayoulie.jpg",
+        "img": "/tracks-imgs/eminem/lovethewayoulie.webp",
         "link": "https://music.yandex.ru/track/637095"
       },
       {
         "name": "Not Afraid",
         "footer": "Recovery | 2010",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/eminem/lovethewayoulie.jpg",
+        "img": "/tracks-imgs/eminem/lovethewayoulie.webp",
         "link": "https://music.yandex.ru/artist/1053"
       },
       {
         "name": "Without Me",
         "footer": "The Eminem Show | 2002",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/eminem/withoutme.jpg",
+        "img": "/tracks-imgs/eminem/withoutme.webp",
         "link": "https://music.yandex.ru/artist/1053"
       }
     ],
     "album": {
       "name": "The Marshall Mathers LP",
       "footer": "2000",
-      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/eminem/albummarshallmatherslp.jpg",
+      "img": "/tracks-imgs/eminem/albummarshallmatherslp.webp",
       "link": "https://music.yandex.ru/artist/1053"
     }
   },
@@ -305,44 +305,44 @@
       {
         "name": "Super Bass",
         "footer": "Pink Friday | 2010",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/nicki/romansrevenge.jpg",
+        "img": "/tracks-imgs/nicki/romansrevenge.webp",
         "link": "https://music.yandex.ru/album/220944/track/2181726"
       },
       {
         "name": "Anaconda",
         "footer": "The Pinkprint | 2014",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/nicki/anaconda.jpg",
+        "img": "/tracks-imgs/nicki/anaconda.webp",
         "link": "https://music.yandex.ru/artist/4113574"
       },
       {
         "name": "Starships",
         "footer": "Pink Friday: Roman Reloaded | 2012",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/nicki/starships.jpg",
+        "img": "/tracks-imgs/nicki/starships.webp",
         "link": "https://music.yandex.ru/artist/4113574"
       },
       {
         "name": "Monster",
         "footer": "My Beautiful Dark Twisted Fantasy | 2010",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/kanye/power.jpg",
+        "img": "/tracks-imgs/kanye/power.webp",
         "link": "https://music.yandex.ru/artist/4113574"
       },
       {
         "name": "Chun-Li",
         "footer": "Queen | 2018",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/nicki/chunli.jpg",
+        "img": "/tracks-imgs/nicki/chunli.webp",
         "link": "https://music.yandex.ru/artist/4113574"
       },
       {
         "name": "Roman's Revenge",
         "footer": "Pink Friday | 2010",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/nicki/romansrevenge.jpg",
+        "img": "/tracks-imgs/nicki/romansrevenge.webp",
         "link": "https://music.yandex.ru/artist/4113574"
       }
     ],
     "album": {
       "name": "Pink Friday",
       "footer": "2010",
-      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/nicki/albumpinkfriday.jpg",
+      "img": "/tracks-imgs/nicki/albumpinkfriday.webp",
       "link": "https://music.yandex.ru/artist/4113574"
     }
   },
@@ -360,44 +360,44 @@
       {
         "name": "Lollipop",
         "footer": "Tha Carter III | 2008",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/wayne/lollipop.jpg",
+        "img": "/tracks-imgs/wayne/lollipop.webp",
         "link": "https://music.yandex.ru/artist/3504"
       },
       {
         "name": "A Milli",
         "footer": "Tha Carter III | 2008",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/wayne/lollipop.jpg",
+        "img": "/tracks-imgs/wayne/lollipop.webp",
         "link": "https://music.yandex.ru/album/91056/track/79123"
       },
       {
         "name": "Mrs. Officer",
         "footer": "Tha Carter III | 2008",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/wayne/lollipop.jpg",
+        "img": "/tracks-imgs/wayne/lollipop.webp",
         "link": "https://music.yandex.ru/album/9919/track/84554"
       },
       {
         "name": "How To Love",
         "footer": "Tha Carter IV | 2011",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/wayne/howtolove.jpg",
+        "img": "/tracks-imgs/wayne/howtolove.webp",
         "link": "https://music.yandex.ru/album/287925/track/2277785"
       },
       {
         "name": "6 Foot 7 Foot",
         "footer": "Tha Carter IV | 2011",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/wayne/howtolove.jpg",
+        "img": "/tracks-imgs/wayne/howtolove.webp",
         "link": "https://music.yandex.ru/artist/3504"
       },
       {
         "name": "Hustler Musik",
         "footer": "Tha Carter II | 2005",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/wayne/hustlermusik.jpg",
+        "img": "/tracks-imgs/wayne/hustlermusik.webp",
         "link": "https://music.yandex.ru/artist/3504"
       }
     ],
     "album": {
       "name": "Tha Carter III",
       "footer": "2008",
-      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/wayne/albumcarteriii.jpg",
+      "img": "/tracks-imgs/wayne/albumcarteriii.webp",
       "link": "https://music.yandex.ru/artist/3504"
     }
   },
@@ -415,44 +415,44 @@
       {
         "name": "In Da Club",
         "footer": "Get Rich or Die Tryin' | 2003",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/50cent/pimp.jpg",
+        "img": "/tracks-imgs/50cent/pimp.webp",
         "link": "https://music.yandex.ru/album/4241617/track/10358"
       },
       {
         "name": "Many Men (Wish Death)",
         "footer": "Get Rich or Die Tryin' | 2003",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/50cent/pimp.jpg",
+        "img": "/tracks-imgs/50cent/pimp.webp",
         "link": "https://music.yandex.ru/artist/3476"
       },
       {
         "name": "P.I.M.P.",
         "footer": "Get Rich or Die Tryin' | 2003",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/50cent/pimp.jpg",
+        "img": "/tracks-imgs/50cent/pimp.webp",
         "link": "https://music.yandex.ru/artist/3476"
       },
       {
         "name": "Candy Shop",
         "footer": "The Massacre | 2005",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/50cent/discoinferno.jpg",
+        "img": "/tracks-imgs/50cent/discoinferno.webp",
         "link": "https://music.yandex.ru/artist/3476"
       },
       {
         "name": "21 Questions",
         "footer": "Get Rich or Die Tryin' | 2003",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/50cent/pimp.jpg",
+        "img": "/tracks-imgs/50cent/pimp.webp",
         "link": "https://music.yandex.ru/artist/3476"
       },
       {
         "name": "Disco Inferno",
         "footer": "The Massacre | 2005",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/50cent/discoinferno.jpg",
+        "img": "/tracks-imgs/50cent/discoinferno.webp",
         "link": "https://music.yandex.ru/album/3174/track/20588"
       }
     ],
     "album": {
       "name": "Get Rich or Die Tryin'",
       "footer": "2003",
-      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/50cent/albumgetrichordie.jpg",
+      "img": "/tracks-imgs/50cent/albumgetrichordie.webp",
       "link": "https://music.yandex.ru/artist/3476"
     }
   },
@@ -471,56 +471,56 @@
       {
         "name": "Sicko Mode",
         "footer": "Astroworld | 2018",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/travis/SickoMode.jpg",
+        "img": "/tracks-imgs/travis/SickoMode.webp",
         "link": "https://music.yandex.ru/album/38557190"
       },
       {
         "name": "Antidote",
         "footer": "Rodeo | 2015",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/travis/Antidote.jpg",
+        "img": "/tracks-imgs/travis/Antidote.webp",
         "link": "https://music.yandex.ru/album/3202618/track/26846478?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "Goosebumps",
         "footer": "Birds in the Trap Sing McKnight | 2016",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/travis/Goosebumps.jpg",
+        "img": "/tracks-imgs/travis/Goosebumps.webp",
         "link": "https://music.yandex.ru/album/10698935/track/65872555?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "Highest in the Room",
         "footer": "2019",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/travis/Highest_in_the_Room.jpg",
+        "img": "/tracks-imgs/travis/Highest_in_the_Room.webp",
         "link": "https://music.yandex.ru/album/13091625/track/74750502?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "FE!N",
         "footer": "Utopia | 2023",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/travis/Fein.png",
+        "img": "/tracks-imgs/travis/Fein.webp",
         "link": "https://music.yandex.ru/album/34425604/track/133059284?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "I Can Tell",
         "footer": "Rodeo | 2015",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/travis/Rodeo.png",
+        "img": "/tracks-imgs/travis/Rodeo.webp",
         "link": "https://vk.com/audio371745461_456239544_bd5065034a7a5e2e51"
       },
       {
         "name": "Nightcrawler",
         "footer": "Rodeo | 2015",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/travis/Rodeo.png",
+        "img": "/tracks-imgs/travis/Rodeo.webp",
         "link": "https://vk.com/audio371745443_456391028_363385ca5542a55f13"
       },
       {
         "name": "Maria I'm Drunk",
         "footer": "Rodeo | 2015",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/travis/Rodeo.png",
+        "img": "/tracks-imgs/travis/Rodeo.webp",
         "link": "https://music.yandex.ru/album/34425604/track/133059284?utm_source=web&utm_medium=copy_link"
       }
     ],
     "album": {
       "name": "Rodeo",
       "footer": "2015",
-      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/travis/Rodeo.png",
+      "img": "/tracks-imgs/travis/Rodeo.webp",
       "link": "https://vk.com/music/playlist/-153930932_254_3d68b22ef54377a062"
     }
   },
@@ -539,50 +539,50 @@
       {
         "name": "Middle Child",
         "footer": "2019",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jcole/Middle_Child.png",
+        "img": "/tracks-imgs/jcole/Middle_Child.webp",
         "link": "https://vk.com/audio474499320_456342768_a40be87cfd3b859f06"
       },
       {
         "name": "No Role Modelz",
         "footer": "2014 Forest Hills Drive | 2014",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jcole/NoRoleModelz.jpeg",
+        "img": "/tracks-imgs/jcole/NoRoleModelz.webp",
         "link": "https://music.yandex.ru/album/20025668/track/20994321"
       },
       {
         "name": "Wet Dreamz",
         "footer": "2014 Forest Hills Drive | 2014",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jcole/NoRoleModelz.jpeg",
+        "img": "/tracks-imgs/jcole/NoRoleModelz.webp",
         "link": "https://vk.com/audio371745466_456239461_d329b9d6fd7aabc96a"
       },
       {
         "name": "G.O.M.D.",
         "footer": "2014 Forest Hills Drive | 2014",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jcole/NoRoleModelz.jpeg",
+        "img": "/tracks-imgs/jcole/NoRoleModelz.webp",
         "link": "https://music.yandex.ru/album/34559321/track/97293188?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "Crooked Smile",
         "footer": "Born Sinner | 2013",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jcole/Crooked_Smile.jpg",
+        "img": "/tracks-imgs/jcole/Crooked_Smile.webp",
         "link": "https://music.yandex.ru/album/11762732/track/16221359?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "Amari",
         "footer": "The Off-Season | 2021",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jcole/amari.jpeg",
+        "img": "/tracks-imgs/jcole/amari.webp",
         "link": "https://music.yandex.ru/album/15582811/track/83017812?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "Work Out",
         "footer": "Cole World: The Sideline Story | 2011",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jcole/WorkOut.jpg",
+        "img": "/tracks-imgs/jcole/WorkOut.webp",
         "link": "https://music.yandex.ru/album/5877478/track/2308891?utm_source=web&utm_medium=copy_link"
       }
     ],
     "album": {
       "name": "2014 Forest Hills Drive",
       "footer": "2014",
-      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/jcole/NoRoleModelz.jpeg",
+      "img": "/tracks-imgs/jcole/NoRoleModelz.webp",
       "link": "https://music.yandex.ru/album/20025668?utm_source=web&utm_medium=copy_link"
     }
   },
@@ -601,56 +601,56 @@
       {
         "name": "Mask Off",
         "footer": "Future | 2017",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/future/Mask_Off.jpg",
+        "img": "/tracks-imgs/future/Mask_Off.webp",
         "link": "https://music.yandex.ru/album/12540886/track/33842446?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "March Madness",
         "footer": "56 Nights | 2015",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/future/MarchMadness.jpeg",
+        "img": "/tracks-imgs/future/MarchMadness.webp",
         "link": "https://music.yandex.ru/album/4670101/track/36975311?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "Tony Montana",
         "footer": "Pluto | 2012",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/future/Tony_Montana.jpg",
+        "img": "/tracks-imgs/future/Tony_Montana.webp",
         "link": "https://music.yandex.ru/album/757858/track/7146957?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "Codeine Crazy",
         "footer": "Monster | 2014",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/future/Monster.jpeg",
+        "img": "/tracks-imgs/future/Monster.webp",
         "link": "https://music.yandex.ru/album/2575711/track/22404163?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "Jumpman",
         "footer": "What a Time to Be Alive | 2016",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/future/Jammen.jpg",
+        "img": "/tracks-imgs/future/Jammen.webp",
         "link": "https://music.yandex.ru/album/2975873/track/25267662?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "I Serve The Base",
         "footer": "DS2 | 2015",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/future/DS2.jpg",
+        "img": "/tracks-imgs/future/DS2.webp",
         "link": "https://vk.com/audio371745456_456239166_87a8c4f45578d37077"
       },
       {
         "name": "Life Is Good",
         "footer": "High Off Life | 2020",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/future/Life_Is_Good.png",
+        "img": "/tracks-imgs/future/Life_Is_Good.webp",
         "link": "https://vk.com/audio668283352_456244717_671802c9be3cf0d2b9"
       },
       {
         "name": "Too Fast",
         "footer": "Mixtape Pluto | 2024",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/future/too_fast.jpg",
+        "img": "/tracks-imgs/future/too_fast.webp",
         "link": "https://vk.com/audio243315350_456240724_a56c14d2c9ee7c229b"
       }
     ],
     "album": {
       "name": "DS2",
       "footer": "2015",
-      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/future/DS2.jpg",
+      "img": "/tracks-imgs/future/DS2.webp",
       "link": "https://vk.com/music/playlist/-227983439_720_88322b81579efcd660"
     }
   },
@@ -668,56 +668,56 @@
       {
         "name": "Middle Child",
         "footer": "Playboi Carti | 2017",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/carti/magnolia.jpeg",
+        "img": "/tracks-imgs/carti/magnolia.webp",
         "link": "https://music.yandex.ru/album/8388275/track/56566971?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "wokeuplikethis*",
         "footer": "Playboi Carti | 2017",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/carti/wokeuplikethis.png",
+        "img": "/tracks-imgs/carti/wokeuplikethis.webp",
         "link": "https://music.yandex.ru/album/4275374/track/34569584?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "Long Time",
         "footer": "Die Lit | 2018",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/carti/Shoota.jpeg",
+        "img": "/tracks-imgs/carti/Shoota.webp",
         "link": "https://music.yandex.ru/album/5368515/track/41109414?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "Shoota",
         "footer": "Die Lit | 2018",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/carti/Shoota.jpeg",
+        "img": "/tracks-imgs/carti/Shoota.webp",
         "link": "https://music.yandex.ru/album/5368515/track/41109419?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "Sky",
         "footer": "Whole Lotta Red | 2020",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/carti/Whole_Lotta_Red.png",
+        "img": "/tracks-imgs/carti/Whole_Lotta_Red.webp",
         "link": "https://music.yandex.ru/album/13278981/track/75570067?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "Rockstar Made",
         "footer": "Whole Lotta Red | 2020",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/carti/Whole_Lotta_Red.png",
+        "img": "/tracks-imgs/carti/Whole_Lotta_Red.webp",
         "link": "https://music.yandex.ru/album/13278981/track/75570048?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "ILoveUIHateU",
         "footer": "Whole Lotta Red | 2020",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/carti/Whole_Lotta_Red.png",
+        "img": "/tracks-imgs/carti/Whole_Lotta_Red.webp",
         "link": "https://music.yandex.ru/album/13278981/track/75570069?utm_source=web&utm_medium=copy_link"
       },
       {
         "name": "@ Meh",
         "footer": "2020",
-        "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/carti/Meh.png",
+        "img": "/tracks-imgs/carti/Meh.webp",
         "link": "https://music.yandex.ru/album/10459000/track/64896426?utm_source=web&utm_medium=copy_link"
       }
     ],
     "album": {
       "name": "Die Lit",
       "footer": "2018",
-      "img": "https://dunchek-test-bucket.s3-website.cloud.ru/dubside/tracks-imgs/carti/Shoota.jpeg",
+      "img": "/tracks-imgs/carti/Shoota.webp",
       "link": "https://music.yandex.ru/album/5368515?utm_source=web&utm_medium=copy_link"
     }
   }
